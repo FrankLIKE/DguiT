@@ -449,7 +449,7 @@ class Canvas: Handle!(HDC), IDisposable
 		Size sz;
 
 		HFONT hOldFont = f ? SelectObject(c.handle, f.handle) : null;
-		GetTextExtentPoint32W(c.handle, toUTFz!(wchar*)(s), s.length, &sz.size);
+		GetTextExtentPoint32W(c.handle, toUTFz!(wchar*)(s), cast(int)s.length, &sz.size);
 
 		if(f)
 		{
@@ -1281,7 +1281,7 @@ final class Font: GraphicObject
 		LOGFONTW lf;
 
 		getInfo!(LOGFONTW)(this._handle, lf);
-		int idx = indexOf(lf.lfFaceName, '\0');
+		auto idx = indexOf(lf.lfFaceName, '\0');
 		return to!(string)(lf.lfFaceName[0..idx]);
 	}
 

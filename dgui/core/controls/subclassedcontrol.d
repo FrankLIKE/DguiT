@@ -30,7 +30,7 @@ abstract class SubclassedControl: ReflectedControl
 			m.result = CallWindowProcA(this._oldWndProc, this._handle, m.msg, m.wParam, m.lParam);
 		}
 
-		return m.result;
+		return cast(uint)m.result;
 	}
 
 	protected override void wndProc(ref Message m)

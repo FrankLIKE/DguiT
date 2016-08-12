@@ -9243,13 +9243,13 @@
   "file" : "..\\dgui\\core\\winapi.d",
   "members" : [
    {
-    "name" : "std.c.windows.windows",
+    "name" : "core.sys.windows.windows",
     "kind" : "import",
     "line" : 18,
     "char" : 15
    },
    {
-    "name" : "std.c.windows.com",
+    "name" : "core.sys.windows.com",
     "kind" : "import",
     "line" : 19,
     "char" : 15

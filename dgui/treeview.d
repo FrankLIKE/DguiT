@@ -530,7 +530,7 @@ class TreeView: SubclassedControl
 
 					if(node.lazyNode || node.nodes) //Is a Lazy Node, or has childNodes sooner or later a child node will be added
 					{
-						pTvDispInfo.item.cChildren = node.nodes ? node.nodes.length : 1;
+						pTvDispInfo.item.cChildren = node.nodes ? cast(int)node.nodes.length : 1;
 					}
 					else
 					{

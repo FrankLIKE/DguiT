@@ -591,7 +591,7 @@ abstract class Control: Handle!(HWND), IDisposable
 		Message m = Message(this._handle, msg, wParam, lParam);
 		this.sendMessage(m);
 
-		return m.result;
+		return cast(uint)m.result;
 	}
 
 	extern(Windows) package static LRESULT msgRouter(HWND hWnd, uint msg, WPARAM wParam, LPARAM lParam)
@@ -606,7 +606,7 @@ abstract class Control: Handle!(HWND), IDisposable
 
 			CREATESTRUCTW* pCreateStruct = cast(CREATESTRUCTW*)lParam;
 			LPARAM param = cast(LPARAM)pCreateStruct.lpCreateParams;
-			SetWindowLongW(hWnd, GWL_USERDATA, param);
+			SetWindowLongW(hWnd, GWL_USERDATA, cast(uint)param);
 			SetWindowLongW(hWnd, GWL_ID, cast(uint)hWnd);
 
 			Control theThis = winCast!(Control)(param);
@@ -855,7 +855,7 @@ abstract class Control: Handle!(HWND), IDisposable
 			m.result = DefWindowProcA(m.hWnd, m.msg, m.wParam, m.lParam);
 		}
 
-		return m.result;
+		return cast(uint)m.result;
 	}
 
 	protected void onDGuiMessage(ref Message m)

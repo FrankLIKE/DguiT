@@ -88,7 +88,7 @@ abstract class TextControl: SubclassedControl
 			return getWindowTextLength(this._handle);
 		}
 
-		return this._text.length;
+		return cast(int)(this._text.length);
 	}
 
 	@property public final string selectedText()

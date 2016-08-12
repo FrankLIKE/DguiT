@@ -70,7 +70,7 @@ final class RegistryValueBinary: RegistryValue!(ubyte[])
 
 	public void write(RegistryKey owner, string name)
 	{
-		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_BINARY, cast(ubyte*)this._value.ptr, this._value.length);
+		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_BINARY, cast(ubyte*)this._value.ptr, cast(uint)(this._value.length));
 
 		if(res != ERROR_SUCCESS)
 		{
@@ -98,7 +98,7 @@ final class RegistryValueString: RegistryValue!(string)
 
 	public void write(RegistryKey owner, string name)
 	{
-		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_SZ, cast(ubyte*)this._value.ptr, this._value.length);
+		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_SZ, cast(ubyte*)this._value.ptr, cast(uint)(this._value.length));
 
 		if(res != ERROR_SUCCESS)
 		{

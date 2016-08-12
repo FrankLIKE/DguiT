@@ -1,7 +1,6 @@
 dgui.core.controls.abstractbutton (..\\dgui\\core\\controls\\abstractbutton.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 dgui.core.dialogs.dialogresult (..\\dgui\\core\\dialogs\\dialogresult.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 dgui.core.winapi (..\\dgui\\core\\winapi.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
-std.c.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\windows.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 core.sys.windows.w32api (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\w32api.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d) : public : core.sys.windows.w32api (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\w32api.d)
@@ -278,9 +277,7 @@ core.sys.windows.imagehlp (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\imp
 core.sys.windows.imagehlp (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\imagehlp.d) : public : core.sys.windows.dbghelp_types (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\dbghelp_types.d):API_VERSION
 core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d) : public : core.sys.windows.imagehlp (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\imagehlp.d)
 core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d) : public : core.sys.windows.dbghelp_types (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\dbghelp_types.d)
-std.c.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\windows.d) : public : core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d)
-dgui.core.winapi (..\\dgui\\core\\winapi.d) : public : std.c.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\windows.d)
-std.c.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\com.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
+dgui.core.winapi (..\\dgui\\core\\winapi.d) : public : core.sys.windows.windows (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\windows.d)
 core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 core.atomic (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\atomic.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
 core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d) : private : core.atomic (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\atomic.d)
@@ -293,8 +290,7 @@ core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\
 core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d) : public : core.sys.windows.winerror (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\winerror.d):S_OK,S_FALSE,NOERROR,E_NOTIMPL,E_NOINTERFACE,E_POINTER,E_ABORT,E_FAIL,E_HANDLE,CLASS_E_NOAGGREGATION,E_OUTOFMEMORY,E_INVALIDARG,E_UNEXPECTED,RPC_E_CHANGED_MODE
 core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d) : public : core.sys.windows.wtypes (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\wtypes.d):OLECHAR,LPOLESTR,LPCOLESTR
 core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d) : public : core.sys.windows.uuid (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\uuid.d)
-std.c.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\com.d) : public : core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d)
-dgui.core.winapi (..\\dgui\\core\\winapi.d) : public : std.c.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\phobos\\std\\c\\windows\\com.d)
+dgui.core.winapi (..\\dgui\\core\\winapi.d) : public : core.sys.windows.com (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\core\\sys\\windows\\com.d)
 dgui.core.dialogs.dialogresult (..\\dgui\\core\\dialogs\\dialogresult.d) : private : dgui.core.winapi (..\\dgui\\core\\winapi.d)
 dgui.core.controls.abstractbutton (..\\dgui\\core\\controls\\abstractbutton.d) : public : dgui.core.dialogs.dialogresult (..\\dgui\\core\\dialogs\\dialogresult.d)
 dgui.core.controls.ownerdrawcontrol (..\\dgui\\core\\controls\\ownerdrawcontrol.d) : private : object (F:\\D\\dmd2\\windows\\bin\\..\\..\\src\\druntime\\import\\object.d)
