@@ -1,0 +1,24 @@
+<DProject>
+ <ProjectGuid>65f3b09a-9ada-45f8-bccb-9ff9f51a7958</ProjectGuid>
+ <Config name="Debug" platform="Win32">
+  <!-- default to defaults -->
+  <exefile>$(OutDir)\$(ProjectName).lib</exefile>
+  <lib>1</lib>
+ </Config>
+ <Config name="Release" platform="Win32">
+  <exefile>$(OutDir)\$(ProjectName).lib</exefile>
+  <lib>1</lib>
+ </Config>
+ <Config name="Debug" platform="x64">
+  <!-- default to defaults -->
+  <exefile>$(OutDir)\$(ProjectName).lib</exefile>
+  <lib>1</lib>
+ </Config>
+ <Config name="Release" platform="x64">
+  <exefile>$(OutDir)\$(ProjectName).lib</exefile>
+  <lib>1</lib>
+ </Config>
+ <Folder name="DguiT">
+  <File path="lib.d" />
+ </Folder>
+</DProject>

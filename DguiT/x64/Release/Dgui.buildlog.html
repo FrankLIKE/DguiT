@@ -1,0 +1,99 @@
+<html><head><META HTTP-EQUIV="Content-Type" content="text/html">
+</head><body><pre>
+<table width=100% bgcolor=#CFCFE5><tr><td>
+	<font face=arial size=+3>Build Log</font>
+</table>
+<table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Building x64\Release\Dgui64.lib
+</font></table>
+<table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>
+Command Line
+</font></table>
+set PATH=F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\\bin;F:\Program Files (x86)\Microsoft Visual Studio 14.0\\Common7\IDE;C:\Program Files (x86)\Windows Kits\8.1\\bin;F:\D\dmd2\windows\bin;%PATH%
+set DMD_LIB=F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\\lib\amd64;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64
+set WindowsSdkDir=C:\Program Files (x86)\Windows Kits\8.1\
+set VCINSTALLDIR=F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\
+set VSINSTALLDIR=F:\Program Files (x86)\Microsoft Visual Studio 14.0\
+
+echo ..\dgui\core\controls\abstractbutton.d &gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\containercontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\control.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\ownerdrawcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\reflectedcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\scrollablecontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\subclassedcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\controls\textcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\dialogs\commondialog.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\dialogs\dialogresult.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\controlcodeeventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\event.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\eventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\keyeventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\mouseeventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\painteventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\events\scrolleventargs.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\interfaces\idisposable.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\interfaces\ilayoutcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\menu\abstractmenu.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\charset.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\collection.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\exception.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\geometry.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\handle.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\message.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\tag.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\utils.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\winapi.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\wincomp.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\core\windowclass.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\layout\gridpanel.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\layout\layoutcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\layout\panel.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\layout\splitpanel.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\all.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\application.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\button.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\canvas.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\colordialog.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\combobox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\contextmenu.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\filebrowserdialog.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\folderbrowserdialog.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\fontdialog.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\form.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\imagelist.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\label.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\listbox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\listview.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\menubar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\messagebox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\picturebox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\progressbar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\registry.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\resources.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\richtextbox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\scrollbar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\statusbar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\tabcontrol.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\textbox.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\timer.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\toolbar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\tooltip.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\trackbar.d &gt;&gt;x64\Release\Dgui.build.rsp
+echo ..\dgui\treeview.d &gt;&gt;x64\Release\Dgui.build.rsp
+
+&quot;C:\Program Files (x86)\VisualD\pipedmd.exe&quot; dmd -m64 -O -inline -release -lib -X -Xf&quot;x64\Release\Dgui64.json&quot; -deps=&quot;x64\Release\Dgui.dep&quot; -of&quot;x64\Release\Dgui64.lib&quot; -map &quot;x64\Release\Dgui.map&quot; @x64\Release\Dgui.build.rsp
+if errorlevel 1 goto reportError
+if not exist &quot;x64\Release\Dgui64.lib&quot; (echo &quot;x64\Release\Dgui64.lib&quot; not created! &amp;&amp; goto reportError)
+
+goto noError
+
+:reportError
+echo Building x64\Release\Dgui64.lib failed!
+
+:noError
+<table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>
+Output
+</font></table>
+
+</body></html>
