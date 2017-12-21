@@ -8,6 +8,7 @@ Authors: Trogu Antonio Davide
 */
 module dgui.core.controls.textcontrol;
 
+import std.utf: toUTFz;
 public import dgui.core.controls.subclassedcontrol;
 
 abstract class TextControl: SubclassedControl
@@ -88,7 +89,7 @@ abstract class TextControl: SubclassedControl
 			return getWindowTextLength(this._handle);
 		}
 
-		return cast(int)(this._text.length);
+		return cast(int)this._text.length;
 	}
 
 	@property public final string selectedText()
@@ -118,14 +119,14 @@ abstract class TextControl: SubclassedControl
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
 		this.setStyle(WS_TABSTOP, true);
-		ccp.defaultBackColor = SystemColors.colorWindow;
+		ccp.DefaultBackColor = SystemColors.colorWindow;
 
 		super.createControlParams(ccp);
 	}
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		if(m.msg == WM_COMMAND && HIWORD(m.wParam) == EN_CHANGE && TextControl.hasBit(this._cBits, ControlBits.canNotify))
+		if(m.Msg == WM_COMMAND && HIWORD(m.wParam) == EN_CHANGE && TextControl.hasBit(cast(ulong)this._cBits,cast(ulong)ControlBits.CAN_NOTIFY))
 		{
 			this.onTextChanged(EventArgs.empty);
 		}

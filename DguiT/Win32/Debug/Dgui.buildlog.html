@@ -4,7 +4,7 @@
 	<font face=arial size=+3>Build Log</font>
 </table>
 <table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
-Building Win32\Debug\Dgui_debug.lib
+Building Win32\Debug\Dgui.lib
 </font></table>
 <table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>
 Command Line
@@ -78,14 +78,14 @@ echo ..\dgui\tooltip.d &gt;&gt;Win32\Debug\Dgui.build.rsp
 echo ..\dgui\trackbar.d &gt;&gt;Win32\Debug\Dgui.build.rsp
 echo ..\dgui\treeview.d &gt;&gt;Win32\Debug\Dgui.build.rsp
 
-&quot;C:\Program Files (x86)\VisualD\pipedmd.exe&quot; dmd -g -debug -lib -X -Xf&quot;Win32\Debug\Dgui_debug.json&quot; -deps=&quot;Win32\Debug\Dgui.dep&quot; -of&quot;Win32\Debug\Dgui_debug.lib&quot; -map &quot;Win32\Debug\Dgui.map&quot; -L/NOMAP @Win32\Debug\Dgui.build.rsp
+&quot;C:\Program Files (x86)\VisualD\pipedmd.exe&quot; dmd -g -debug -lib -X -Xf&quot;Win32\Debug\Dgui.json&quot; -deps=&quot;Win32\Debug\Dgui.dep&quot; -of&quot;Win32\Debug\Dgui.lib&quot; -map &quot;Win32\Debug\Dgui.map&quot; -L/NOMAP @Win32\Debug\Dgui.build.rsp
 if errorlevel 1 goto reportError
-if not exist &quot;Win32\Debug\Dgui_debug.lib&quot; (echo &quot;Win32\Debug\Dgui_debug.lib&quot; not created! &amp;&amp; goto reportError)
+if not exist &quot;Win32\Debug\Dgui.lib&quot; (echo &quot;Win32\Debug\Dgui.lib&quot; not created! &amp;&amp; goto reportError)
 
 goto noError
 
 :reportError
-echo Building Win32\Debug\Dgui_debug.lib failed!
+echo Building Win32\Debug\Dgui.lib failed!
 
 :noError
 <table width=100% bgcolor=#EFEFE5><tr><td><font face=arial size=+1>

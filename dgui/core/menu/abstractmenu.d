@@ -42,14 +42,14 @@ enum: uint
 
 enum MenuBits: ubyte
 {
-	enabled    = 1,
-	checked    = 2,
+	ENABLED    = 1,
+	CHECKED    = 2,
 }
 
 enum MenuStyle: ubyte
 {
-	normal	  = 1,
-	separator = 2,
+	NORMAL	  = 1,
+	SEPARATOR = 2,
 }
 
 abstract class Menu: Handle!(HMENU), IDisposable
@@ -112,7 +112,7 @@ abstract class Menu: Handle!(HMENU), IDisposable
 			this._items = new Collection!(MenuItem)();
 		}
 
-		MenuItem mi = new MenuItem(this, MenuStyle.normal, t, e);
+		MenuItem mi = new MenuItem(this, MenuStyle.NORMAL, t, e);
 		mi.imageIndex = imgIdx;
 
 		this._items.add(mi);
@@ -132,7 +132,7 @@ abstract class Menu: Handle!(HMENU), IDisposable
 			this._items = new Collection!(MenuItem)();
 		}
 
-		MenuItem mi = new MenuItem(this, MenuStyle.separator, null, true);
+		MenuItem mi = new MenuItem(this, MenuStyle.SEPARATOR, null, true);
 		this._items.add(mi);
 
 		if(this.created)
@@ -230,8 +230,8 @@ class MenuItem: Menu
 {
 	public Event!(MenuItem, EventArgs) click;
 
-	private MenuStyle _style = MenuStyle.normal;
-	private MenuBits _mBits = MenuBits.enabled;
+	private MenuStyle _style = MenuStyle.NORMAL;
+	private MenuBits _mBits = MenuBits.ENABLED;
 	private int _imgIndex = -1;
 	private int _index = -1;
 	private string _text;
@@ -244,7 +244,7 @@ class MenuItem: Menu
 
 		if(!e)
 		{
-			this._mBits &= ~MenuBits.enabled;
+			this._mBits &= ~MenuBits.ENABLED;
 		}
 	}
 
@@ -263,7 +263,7 @@ class MenuItem: Menu
 
 		switch(mi.style)
 		{
-			case MenuStyle.normal:
+			case MenuStyle.NORMAL:
 			{
 				WindowsVersion ver = getWindowsVersion();
 
@@ -277,7 +277,7 @@ class MenuItem: Menu
 				{
 					minfo.fMask |= MIIM_BITMAP;
 
-					if(ver > WindowsVersion.windowsXP) // Is Vista or 7
+					if(ver > WindowsVersion.WINDOWS_XP) // Is Vista or 7
 					{
 						HBITMAP hBitmap = iconToBitmapPARGB32(root.imageList.images[mi.imageIndex].handle);
 						root.bitmaps.add(hBitmap);
@@ -292,7 +292,7 @@ class MenuItem: Menu
 			}
 			break;
 
-			case MenuStyle.separator:
+			case MenuStyle.SEPARATOR:
 				minfo.fType = MFT_SEPARATOR;
 				break;
 
@@ -366,13 +366,8 @@ class MenuItem: Menu
 			RootMenu root = this.rootMenu;
 
 			int idx = this.index;
-
-			HBITMAP hBitmap = null;
-			if(imgIdx != -1)
-			{
-				hBitmap = iconToBitmapPARGB32(root.imageList.images[imgIdx].handle);
-				root.bitmaps.add(hBitmap);
-			}
+			HBITMAP hBitmap = iconToBitmapPARGB32(root.imageList.images[imgIdx].handle);
+			root.bitmaps.add(hBitmap);
 
 			MENUITEMINFOW minfo;
 
@@ -386,12 +381,12 @@ class MenuItem: Menu
 
 	@property public final bool enabled()
 	{
-		return cast(bool)(this._mBits & MenuBits.enabled);
+		return cast(bool)(this._mBits & MenuBits.ENABLED);
 	}
 
 	@property public final void enabled(bool b)
 	{
-		this._mBits |= MenuBits.enabled;
+		this._mBits |= MenuBits.ENABLED;
 
 		if(this._parent && this._parent.created)
 		{
@@ -432,12 +427,12 @@ class MenuItem: Menu
 
 	@property public final bool checked()
 	{
-		return cast(bool)(this._mBits & MenuBits.checked);
+		return cast(bool)(this._mBits & MenuBits.CHECKED);
 	}
 
 	@property public final void checked(bool b)
 	{
-		this._mBits |= MenuBits.checked;
+		this._mBits |= MenuBits.CHECKED;
 
 		if(this._parent && this._parent.created)
 		{

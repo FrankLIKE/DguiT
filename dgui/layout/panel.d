@@ -14,8 +14,8 @@ class Panel: LayoutControl
 {
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
-		ccp.className = WC_DPANEL;
-		ccp.defaultCursor = SystemCursors.arrow;
+		ccp.ClassName = WC_DPANEL;
+		ccp.DefaultCursor = SystemCursors.arrow;
 
 		super.createControlParams(ccp);
 	}

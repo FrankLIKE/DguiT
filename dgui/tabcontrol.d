@@ -14,18 +14,18 @@ import dgui.core.interfaces.ilayoutcontrol;
 import dgui.layout.panel;
 import dgui.imagelist;
 
-private struct TCItem
+private struct TcItem
 {
-	TCITEMHEADERW header;
-	TabPage page;
+	TCITEMHEADERW Header;
+	TabPage Page;
 }
 
 enum TabAlignment
 {
-	top    = 0,
-	left   = TCS_VERTICAL,
-	right  = TCS_VERTICAL | TCS_RIGHT,
-	bottom = TCS_BOTTOM,
+	TOP    = 0,
+	LEFT   = TCS_VERTICAL,
+	RIGHT  = TCS_VERTICAL | TCS_RIGHT,
+	BOTTOM = TCS_BOTTOM,
 }
 
 class TabPage: Panel
@@ -76,10 +76,10 @@ class TabPage: Panel
 
 		if(this._owner && this._owner.created)
 		{
-			TCItem tci = void;
+			TcItem tci = void;
 
-			tci.header.mask = TCIF_TEXT;
-			tci.header.pszText = toUTFz!(wchar*)(txt);
+			tci.Header.mask = TCIF_TEXT;
+			tci.Header.pszText = toUTFz!(wchar*)(txt);
 
 			this._owner.sendMessage(TCM_SETITEMW, this.index, cast(LPARAM)&tci);
 			this.redraw();
@@ -97,10 +97,10 @@ class TabPage: Panel
 
 		if(this._owner && this._owner.created)
 		{
-			TCItem tci = void;
+			TcItem tci = void;
 
-			tci.header.mask = TCIF_IMAGE;
-			tci.header.iImage = idx;
+			tci.Header.mask = TCIF_IMAGE;
+			tci.Header.iImage = idx;
 
 			this._owner.sendMessage(TCM_SETITEMW, this.index, cast(LPARAM)&tci);
 		}
@@ -129,7 +129,7 @@ class TabControl: SubclassedControl, ILayoutControl
 	public Event!(Control, EventArgs) tagPageChanged;
 
 	private Collection!(TabPage) _tabPages;
-	private TabAlignment _ta = TabAlignment.top;
+	private TabAlignment _ta = TabAlignment.TOP;
 	private ImageList _imgList;
 	private int _selIndex = 0; //By Default: select the first TagPage (if exists)
 
@@ -280,7 +280,7 @@ class TabControl: SubclassedControl, ILayoutControl
 		if(selPage)
 		{
 			TabControl tc = selPage.tabControl;
-			Rect adjRect, r = Rect(nullPoint, tc.clientSize);
+			Rect adjRect, r = Rect(NullPoint, tc.clientSize);
 
 			tc.sendMessage(TCM_ADJUSTRECT, false, cast(LPARAM)&adjRect.rect);
 
@@ -295,11 +295,11 @@ class TabControl: SubclassedControl, ILayoutControl
 
 	private void createTabPage(TabPage tp, bool adding = true)
 	{
-		TCItem tci;
-		tci.header.mask = TCIF_IMAGE | TCIF_TEXT | TCIF_PARAM;
-		tci.header.iImage = tp.imageIndex;
-		tci.header.pszText = toUTFz!(wchar*)(tp.text);
-		tci.page = tp;
+		TcItem tci;
+		tci.Header.mask = TCIF_IMAGE | TCIF_TEXT | TCIF_PARAM;
+		tci.Header.iImage = tp.imageIndex;
+		tci.Header.pszText = toUTFz!(wchar*)(tp.text);
+		tci.Page = tp;
 
 		tp.sendMessage(DGUI_CREATEONLY, 0, 0); //Calls Control.create()
 
@@ -338,8 +338,8 @@ class TabControl: SubclassedControl, ILayoutControl
 		this.setStyle(WS_CLIPCHILDREN | WS_CLIPSIBLINGS, true);
 		this.setExStyle(WS_EX_CONTROLPARENT, true);
 
-		ccp.superclassName = WC_TABCONTROL;
-		ccp.className = WC_DTABCONTROL;
+		ccp.SuperclassName = WC_TABCONTROL;
+		ccp.ClassName = WC_DTABCONTROL;
 
 		super.createControlParams(ccp);
 	}
@@ -357,7 +357,7 @@ class TabControl: SubclassedControl, ILayoutControl
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		if(m.msg == WM_NOTIFY)
+		if(m.Msg == WM_NOTIFY)
 		{
 			NMHDR* pNotify = cast(NMHDR*)m.lParam;
 
@@ -366,7 +366,7 @@ class TabControl: SubclassedControl, ILayoutControl
 				case TCN_SELCHANGING:
 					scope CancelTabPageEventArgs e = new CancelTabPageEventArgs(this.selectedPage);
 					this.onTabPageChanging(e);
-					m.result = e.cancel;
+					m.Result = e.cancel;
 					break;
 
 				case TCN_SELCHANGE:

@@ -16,21 +16,21 @@ public import dgui.core.controls.ownerdrawcontrol;
   */
 enum CheckState: uint
 {
-	checked = BST_CHECKED, 				///Checked State
-	unchecked = BST_UNCHECKED,			///Unchecked State
-	indeterminate = BST_INDETERMINATE,	///Indeterminate State
+	CHECKED = BST_CHECKED, 				///Checked State
+	UNCHECKED = BST_UNCHECKED,			///Unchecked State
+	INDETERMINATE = BST_INDETERMINATE,	///Indeterminate State
 }
 
 /// Abstract class of a _Button/_CheckBox/_RadioButton
 abstract class AbstractButton: OwnerDrawControl
 {
-	protected DialogResult _dr = DialogResult.none;
+	protected DialogResult _dr = DialogResult.NONE;
 
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
-		AbstractButton.setBit(this._cBits, ControlBits.ownClickMsg, true); // Let Button to handle Click Event itself
+		AbstractButton.setBit(cast(ulong)(this._cBits), cast(ulong)(ControlBits.OWN_CLICK_MSG), true); // Let Button to handle Click Event itself
 
-		ccp.superclassName = WC_BUTTON;
+		ccp.SuperclassName = WC_BUTTON;
 		this.setStyle(WS_TABSTOP, true);
 
 		super.createControlParams(ccp);
@@ -38,7 +38,7 @@ abstract class AbstractButton: OwnerDrawControl
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_COMMAND:
 			{
@@ -46,28 +46,28 @@ abstract class AbstractButton: OwnerDrawControl
 				{
 					 case BN_CLICKED:
 					 {
-						MouseKeys mk = MouseKeys.none;
+						MouseKeys mk = MouseKeys.NONE;
 
 						if(GetAsyncKeyState(MK_LBUTTON))
 						{
-							mk |= MouseKeys.left;
+							mk |= MouseKeys.LEFT;
 						}
 
 						if(GetAsyncKeyState(MK_MBUTTON))
 						{
-							mk |= MouseKeys.middle;
+							mk |= MouseKeys.MIDDLE;
 						}
 
 						if(GetAsyncKeyState(MK_RBUTTON))
 						{
-							mk |= MouseKeys.right;
+							mk |= MouseKeys.RIGHT;
 						}
 
 						Point p = Point(LOWORD(m.lParam), HIWORD(m.lParam));
 						scope MouseEventArgs e = new MouseEventArgs(p, mk);
 						this.onClick(EventArgs.empty);
 
-						if(this._dr !is DialogResult.none)
+						if(this._dr !is DialogResult.NONE)
 						{
 							Control c = this.topLevelControl;
 
@@ -98,7 +98,7 @@ abstract class CheckedButton: AbstractButton
 {
 	public Event!(Control, EventArgs) checkChanged; ///Checked Changed Event of a Checkable _Button
 
-	private CheckState _checkState = CheckState.unchecked;
+	private CheckState _checkState = CheckState.UNCHECKED;
 
 	/**
 	 Returns:
@@ -109,7 +109,7 @@ abstract class CheckedButton: AbstractButton
 	 */
 	@property public bool checked()
 	{
-		return this.checkState is CheckState.checked;
+		return this.checkState is CheckState.CHECKED;
 	}
 
 	/**
@@ -120,7 +120,7 @@ abstract class CheckedButton: AbstractButton
 	  */
 	@property public void checked(bool b)
 	{
-		this.checkState = b ? CheckState.checked : CheckState.unchecked;
+		this.checkState = b ? CheckState.CHECKED : CheckState.UNCHECKED;
 	}
 
 	/**
@@ -158,7 +158,7 @@ abstract class CheckedButton: AbstractButton
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_COMMAND:
 			{

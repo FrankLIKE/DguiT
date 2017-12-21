@@ -26,16 +26,16 @@ final class Resources
 
 	public Icon getIcon(ushort id)
 	{
-		return getIcon(id, nullSize);
+		return getIcon(id, NullSize);
 	}
 
 	public Icon getIcon(ushort id, Size sz)
 	{
-		HICON hIcon = loadImage(getHInstance(), cast(wchar*)id, IMAGE_ICON, sz.width, sz.height, LR_LOADTRANSPARENT | (sz == nullSize ? LR_DEFAULTSIZE : 0));
+		HICON hIcon = loadImage(getHInstance(), cast(wchar*)id, IMAGE_ICON, sz.width, sz.height, LR_LOADTRANSPARENT | (sz == NullSize ? LR_DEFAULTSIZE : 0));
 
 		if(!hIcon)
 		{
-			throwException!(GDIException)("Cannot load Icon: '%d'", id);
+			throwException!(GdiException)("Cannot load Icon: '%d'", id);
 		}
 
 		return Icon.fromHICON(hIcon);
@@ -47,7 +47,7 @@ final class Resources
 
 		if(!hBitmap)
 		{
-			throwException!(GDIException)("Cannot load Bitmap: '%d'", id);
+			throwException!(GdiException)("Cannot load Bitmap: '%d'", id);
 		}
 
 		return Bitmap.fromHBITMAP(hBitmap);
@@ -59,7 +59,7 @@ final class Resources
 
 		if(!hRsrc)
 		{
-			throwException!(GDIException)("Cannot load Custom Resource: '%d'", id);
+			throwException!(GdiException)("Cannot load Custom Resource: '%d'", id);
 		}
 
 		return cast(T*)LockResource(LoadResource(null, hRsrc));

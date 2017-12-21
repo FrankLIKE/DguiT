@@ -15,14 +15,14 @@ private import dgui.core.utils;
 
 enum FileBrowseMode
 {
-	open = 0,
-	save = 1,
+	OPEN = 0,
+	SAVE = 1,
 }
 
 class FileBrowserDialog: CommonDialog!(OPENFILENAMEW, string)
 {
 	private string _filter;
-	private FileBrowseMode _fbm = FileBrowseMode.open;
+	private FileBrowseMode _fbm = FileBrowseMode.OPEN;
 
 	@property public void browseMode(FileBrowseMode fbm)
 	{
@@ -56,11 +56,11 @@ class FileBrowserDialog: CommonDialog!(OPENFILENAMEW, string)
 
 		switch(this._fbm)
 		{
-			case FileBrowseMode.open:
+			case FileBrowseMode.OPEN:
 				res = cast(bool)GetOpenFileNameW(&this._dlgStruct);
 				break;
 
-			case FileBrowseMode.save:
+			case FileBrowseMode.SAVE:
 				res = cast(bool)GetSaveFileNameW(&this._dlgStruct);
 				break;
 
@@ -70,9 +70,10 @@ class FileBrowserDialog: CommonDialog!(OPENFILENAMEW, string)
 
 		if(res)
 		{
-			this._dlgRes = to!(string)(toUTF8(buffer).ptr);
+			this._dlgRes = to!string(buffer);
 		}
 
 		return res;
 	}
 }
+

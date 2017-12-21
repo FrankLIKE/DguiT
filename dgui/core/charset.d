@@ -12,7 +12,7 @@ Authors: Trogu Antonio Davide
 module dgui.core.charset;
 
 import std.conv: to;
-public import std.utf: toUTFz;
+import std.utf: toUTFz;
 import dgui.core.winapi;
 import dgui.core.utils;
 

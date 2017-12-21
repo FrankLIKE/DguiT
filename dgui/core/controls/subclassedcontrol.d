@@ -16,30 +16,30 @@ abstract class SubclassedControl: ReflectedControl
 
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
-		this._oldWndProc = WindowClass.superclass(ccp.superclassName, ccp.className, cast(WNDPROC) /*FIXME may throw*/ &Control.msgRouter);
+		this._oldWndProc = WindowClass.superclass(ccp.SuperclassName, ccp.ClassName, cast(WNDPROC) /*FIXME may throw*/ &Control.msgRouter);
 	}
 
 	protected override uint originalWndProc(ref Message m)
 	{
 		if(IsWindowUnicode(this._handle))
 		{
-			m.result = CallWindowProcW(this._oldWndProc, this._handle, m.msg, m.wParam, m.lParam);
+			m.Result = CallWindowProcW(this._oldWndProc, this._handle, m.Msg, m.wParam, m.lParam);
 		}
 		else
 		{
-			m.result = CallWindowProcA(this._oldWndProc, this._handle, m.msg, m.wParam, m.lParam);
+			m.Result = CallWindowProcA(this._oldWndProc, this._handle, m.Msg, m.wParam, m.lParam);
 		}
 
-		return cast(uint)m.result;
+		return cast(uint)m.Result;
 	}
 
 	protected override void wndProc(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_ERASEBKGND:
 			{
-				if(SubclassedControl.hasBit(this._cBits, ControlBits.doubleBuffered))
+				if(SubclassedControl.hasBit(cast(ulong)this._cBits, cast(ulong)ControlBits.DOUBLE_BUFFERED))
 				{
 					Rect r = void;
 					GetUpdateRect(this._handle, &r.rect, false);
@@ -49,11 +49,11 @@ abstract class SubclassedControl: ReflectedControl
 
 					Message rm = m;
 
-					rm.msg = WM_ERASEBKGND;
+					rm.Msg = WM_ERASEBKGND;
 					rm.wParam = cast(WPARAM)memCanvas.handle;
 					this.originalWndProc(rm);
 
-					rm.msg = WM_PAINT;
+					rm.Msg = WM_PAINT;
 					//rm.wParam = cast(WPARAM)memCanvas.handle;
 					this.originalWndProc(rm);
 
@@ -61,8 +61,8 @@ abstract class SubclassedControl: ReflectedControl
 					this.onPaint(e);
 
 					memCanvas.copyTo(orgCanvas, r, r.position);
-					SubclassedControl.setBit(this._cBits, ControlBits.erased, true);
-					m.result = 0;
+					SubclassedControl.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.ERASED, true);
+					m.Result = 0;
 				}
 				else
 				{
@@ -73,10 +73,10 @@ abstract class SubclassedControl: ReflectedControl
 
 			case WM_PAINT:
 			{
-				if(SubclassedControl.hasBit(this._cBits, ControlBits.doubleBuffered) && SubclassedControl.hasBit(this._cBits, ControlBits.erased))
+				if(SubclassedControl.hasBit(cast(ulong)this._cBits, cast(ulong)ControlBits.DOUBLE_BUFFERED) && SubclassedControl.hasBit(cast(ulong)this._cBits,cast(ulong)ControlBits.ERASED))
 				{
-					SubclassedControl.setBit(this._cBits, ControlBits.erased, false);
-					m.result = 0;
+					SubclassedControl.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.ERASED, false);
+					m.Result = 0;
 				}
 				else
 				{

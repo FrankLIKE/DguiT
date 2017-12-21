@@ -12,14 +12,14 @@ import dgui.core.controls.textcontrol;
 
 enum CharacterCasing
 {
-	normal = 0,
-	uppercase = ES_UPPERCASE,
-	lowercase = ES_LOWERCASE,
+	NORMAL = 0,
+	UPPERCASE = ES_UPPERCASE,
+	LOWERCASE = ES_LOWERCASE,
 }
 
 class TextBox: TextControl
 {
-	private CharacterCasing _chChasing  = CharacterCasing.normal;
+	private CharacterCasing _chChasing  = CharacterCasing.NORMAL;
 	private uint _maxLength = 0;
 
 	@property public final bool multiline()
@@ -100,9 +100,9 @@ class TextBox: TextControl
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
 		this.setExStyle(WS_EX_CLIENTEDGE, true);
-		this.setStyle(ES_AUTOHSCROLL | this._chChasing, true);
-		ccp.superclassName = WC_EDIT;
-		ccp.className = WC_DEDIT;
+		this.setStyle(this._chChasing, true);
+		ccp.SuperclassName = WC_EDIT;
+		ccp.ClassName = WC_DEDIT;
 
 		this.height = 20; //E questo cos'è?
 		super.createControlParams(ccp);

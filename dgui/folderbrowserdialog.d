@@ -31,10 +31,11 @@ class FolderBrowserDialog: CommonDialog!(BROWSEINFOW, string)
 		if(pidl)
 		{
 			SHGetPathFromIDListW(pidl, buffer.ptr); //Get Full Path.
-			this._dlgRes = toUTF8(buffer);
+			this._dlgRes = to!string(buffer);
 			return true;
 		}
 
 		return false;
 	}
 }
+

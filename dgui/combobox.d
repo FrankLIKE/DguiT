@@ -15,10 +15,10 @@ public import dgui.imagelist;
 
 enum DropDownStyles: uint
 {
-	none 		  = 0, // Internal Use
-	simple 		  = CBS_SIMPLE,
-	dropdown 	  = CBS_DROPDOWN,
-	dropdownList = CBS_DROPDOWNLIST,
+	NONE 		  = 0, // Internal Use
+	SIMPLE 		  = CBS_SIMPLE,
+	DROPDOWN 	  = CBS_DROPDOWN,
+	DROPDOWN_LIST = CBS_DROPDOWNLIST,
 }
 
 class ComboBoxItem
@@ -27,7 +27,7 @@ class ComboBoxItem
 	private string _text;
 	private int _imgIndex = -1;
 
-	mixin tagProperty;
+	mixin TagProperty;
 
 	package this(string txt, int idx = -1)
 	{
@@ -109,13 +109,13 @@ class ComboBox: SubclassedControl
 	public Event!(Control, EventArgs) itemChanged;
 
 	private Collection!(ComboBoxItem) _items;
-	private DropDownStyles _oldDDStyle = DropDownStyles.none;
+	private DropDownStyles _oldDdStyle = DropDownStyles.NONE;
 	private int _selectedIndex;
 	private ImageList _imgList;
 
 	public this()
 	{
-		this.setStyle(DropDownStyles.dropdown, true);
+		this.setStyle(DropDownStyles.DROPDOWN, true);
 	}
 
 	public final ComboBoxItem addItem(string s, int imgIndex = -1)
@@ -227,12 +227,12 @@ class ComboBox: SubclassedControl
 
 	@property public final void dropDownStyle(DropDownStyles dds)
 	{
-		if(dds !is this._oldDDStyle)
+		if(dds !is this._oldDdStyle)
 		{
-			this.setStyle(this._oldDDStyle, false); //Rimuovo il vecchio
+			this.setStyle(this._oldDdStyle, false); //Rimuovo il vecchio
 			this.setStyle(dds, true); //Aggiungo il nuovo
 
-			this._oldDDStyle = dds;
+			this._oldDdStyle = dds;
 		}
 	}
 
@@ -271,8 +271,8 @@ class ComboBox: SubclassedControl
 	{
 		// Use Original Paint Routine, the double buffered one causes some issues
 
-		ccp.superclassName = WC_COMBOBOXEX;
-		ccp.className = WC_DCOMBOBOX;
+		ccp.SuperclassName = WC_COMBOBOXEX;
+		ccp.ClassName = WC_DCOMBOBOX;
 
 		this.setStyle(WS_CLIPCHILDREN | WS_CLIPSIBLINGS, true); //Clip child ComboBox
 		//this.setStyle(CBS_NOINTEGRALHEIGHT, true);
@@ -305,7 +305,7 @@ class ComboBox: SubclassedControl
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		if(m.msg == WM_COMMAND && HIWORD(m.wParam) == CBN_SELCHANGE)
+		if(m.Msg == WM_COMMAND && HIWORD(m.wParam) == CBN_SELCHANGE)
 		{
 			this._selectedIndex = this.sendMessage(CB_GETCURSEL, 0, 0);
 			this.onItemChanged(EventArgs.empty);
@@ -316,7 +316,7 @@ class ComboBox: SubclassedControl
 
 	protected override void wndProc(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_COMMAND:
 			{

@@ -12,7 +12,7 @@ import std.string: format;
 import std.windows.syserror;
 import dgui.core.winapi: GetLastError;
 
-mixin template exceptionBody()
+mixin template ExceptionBody()
 {
 	public this(string msg)
 	{
@@ -22,27 +22,27 @@ mixin template exceptionBody()
 
 final class DGuiException: Exception
 {
-	mixin exceptionBody;
+	mixin ExceptionBody;
 }
 
 final class Win32Exception: Exception
 {
-	mixin exceptionBody;
+	mixin ExceptionBody;
 }
 
 final class RegistryException: Exception
 {
-	mixin exceptionBody;
+	mixin ExceptionBody;
 }
 
-final class GDIException: Exception
+final class GdiException: Exception
 {
-	mixin exceptionBody;
+	mixin ExceptionBody;
 }
 
 final class WindowsNotSupportedException: Exception
 {
-	mixin exceptionBody;
+	mixin ExceptionBody;
 }
 
 void throwException(T1, T2...)(string fmt, T2 args)

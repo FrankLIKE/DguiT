@@ -8,32 +8,32 @@ Authors: Trogu Antonio Davide
 */
 module dgui.listview;
 
-import std.utf: toUTF8;
+import std.utf: toUTF8,toUTFz;
 public import dgui.core.controls.ownerdrawcontrol;
 import dgui.core.utils;
 import dgui.imagelist;
 
 enum ColumnTextAlign: int
 {
-	left = LVCFMT_LEFT,
-	center = LVCFMT_CENTER,
-	right = LVCFMT_RIGHT,
+	LEFT = LVCFMT_LEFT,
+	CENTER = LVCFMT_CENTER,
+	RIGHT = LVCFMT_RIGHT,
 }
 
 enum ViewStyle: uint
 {
-	list = LVS_LIST,
-	report = LVS_REPORT,
-	largeIcon = LVS_ICON,
-	smallIcon = LVS_SMALLICON,
+	LIST = LVS_LIST,
+	REPORT = LVS_REPORT,
+	LARGE_ICON = LVS_ICON,
+	SMALL_ICON = LVS_SMALLICON,
 }
 
 enum ListViewBits: ubyte
 {
-	none 			   = 0,
-	gridLines  	   = 1,
-	fullRowSelect    = 2,
-	checkBoxes 	   = 4,
+	NONE 			   = 0,
+	GRID_LINES  	   = 1,
+	FULL_ROW_SELECT    = 2,
+	CHECK_BOXES 	   = 4,
 }
 
 class ListViewItem
@@ -45,7 +45,7 @@ class ListViewItem
 	private string _text;
 	private int _imgIdx;
 
-	mixin tagProperty;
+	mixin TagProperty;
 
 	package this(ListView owner, string txt, int imgIdx, bool check)
 	{
@@ -302,7 +302,7 @@ class ListView: OwnerDrawControl
 
 	private Collection!(ListViewColumn) _columns;
 	private Collection!(ListViewItem) _items;
-	private ListViewBits _lBits = ListViewBits.none;
+	private ListViewBits _lBits = ListViewBits.NONE;
 	private ListViewItem _selectedItem;
 	private ImageList _imgList;
 
@@ -324,21 +324,21 @@ class ListView: OwnerDrawControl
 
 	@property public final ViewStyle viewStyle()
 	{
-		if(this.getStyle() & ViewStyle.largeIcon)
+		if(this.getStyle() & ViewStyle.LARGE_ICON)
 		{
-			return ViewStyle.largeIcon;
+			return ViewStyle.LARGE_ICON;
 		}
-		else if(this.getStyle() & ViewStyle.smallIcon)
+		else if(this.getStyle() & ViewStyle.SMALL_ICON)
 		{
-			return ViewStyle.smallIcon;
+			return ViewStyle.SMALL_ICON;
 		}
-		else if(this.getStyle() & ViewStyle.list)
+		else if(this.getStyle() & ViewStyle.LIST)
 		{
-			return ViewStyle.list;
+			return ViewStyle.LIST;
 		}
-		else if(this.getStyle() & ViewStyle.report)
+		else if(this.getStyle() & ViewStyle.REPORT)
 		{
-			return ViewStyle.report;
+			return ViewStyle.REPORT;
 		}
 
 		assert(false, "Unknwown ListView Style");
@@ -347,19 +347,19 @@ class ListView: OwnerDrawControl
 	@property public final void viewStyle(ViewStyle vs)
 	{
 		/* Remove flickering in Report Mode */
-		ListView.setBit(this._cBits, ControlBits.doubleBuffered, vs is ViewStyle.report);
+		ListView.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.DOUBLE_BUFFERED, vs is ViewStyle.REPORT);
 
 		this.setStyle(vs, true);
 	}
 
 	@property public final bool fullRowSelect()
 	{
-		return cast(bool)(this._lBits & ListViewBits.fullRowSelect);
+		return cast(bool)(this._lBits & ListViewBits.FULL_ROW_SELECT);
 	}
 
 	@property public final void fullRowSelect(bool b)
 	{
-		this._lBits |= ListViewBits.fullRowSelect;
+		this._lBits |= ListViewBits.FULL_ROW_SELECT;
 
 		if(this.created)
 		{
@@ -369,12 +369,12 @@ class ListView: OwnerDrawControl
 
 	@property public final bool gridLines()
 	{
-		return cast(bool)(this._lBits & ListViewBits.gridLines);
+		return cast(bool)(this._lBits & ListViewBits.GRID_LINES);
 	}
 
 	@property public final void gridLines(bool b)
 	{
-		this._lBits |= ListViewBits.gridLines;
+		this._lBits |= ListViewBits.GRID_LINES;
 
 		if(this.created)
 		{
@@ -384,12 +384,12 @@ class ListView: OwnerDrawControl
 
 	@property public final bool checkBoxes()
 	{
-		return cast(bool)(this._lBits & ListViewBits.checkBoxes);
+		return cast(bool)(this._lBits & ListViewBits.CHECK_BOXES);
 	}
 
 	@property public final void checkBoxes(bool b)
 	{
-		this._lBits |= ListViewBits.checkBoxes;
+		this._lBits |= ListViewBits.CHECK_BOXES;
 
 		if(this.created)
 		{
@@ -402,7 +402,7 @@ class ListView: OwnerDrawControl
 		return this._selectedItem;
 	}
 
-	public final ListViewColumn addColumn(string txt, int w, ColumnTextAlign cta = ColumnTextAlign.left)
+	public final ListViewColumn addColumn(string txt, int w, ColumnTextAlign cta = ColumnTextAlign.LEFT)
 	{
 		if(!this._columns)
 		{
@@ -563,22 +563,22 @@ class ListView: OwnerDrawControl
 		this.setStyle(LVS_ALIGNLEFT | LVS_ALIGNTOP | LVS_AUTOARRANGE | LVS_SHAREIMAGELISTS, true);
 
 		/* WS_CLIPSIBLINGS | WS_CLIPCHILDREN: There is a SysHeader Component inside a list view in Report Mode */
-		if(this.getStyle() & ViewStyle.report)
+		if(this.getStyle() & ViewStyle.REPORT)
 		{
 			this.setStyle(WS_CLIPSIBLINGS | WS_CLIPCHILDREN, true);
 		}
 
-		ccp.superclassName = WC_LISTVIEW;
-		ccp.className = WC_DLISTVIEW;
-		ccp.defaultBackColor = SystemColors.colorWindow;
+		ccp.SuperclassName = WC_LISTVIEW;
+		ccp.ClassName = WC_DLISTVIEW;
+		ccp.DefaultBackColor = SystemColors.colorWindow;
 
 		switch(this._drawMode)
 		{
-			case OwnerDrawMode.fixed:
+			case OwnerDrawMode.FIXED:
 				this.setStyle(LVS_OWNERDRAWFIXED, true);
 				break;
 
-			case OwnerDrawMode.variable:
+			case OwnerDrawMode.VARIABLE:
 				assert(false, "ListView: Owner Draw Variable Style not allowed");
 
 			default:
@@ -591,7 +591,7 @@ class ListView: OwnerDrawControl
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_NOTIFY:
 			{
@@ -638,17 +638,17 @@ class ListView: OwnerDrawControl
 
 	protected override void onHandleCreated(EventArgs e)
 	{
-		if(this._lBits & ListViewBits.gridLines)
+		if(this._lBits & ListViewBits.GRID_LINES)
 		{
 			this.sendMessage(LVM_SETEXTENDEDLISTVIEWSTYLE, LVS_EX_GRIDLINES, LVS_EX_GRIDLINES);
 		}
 
-		if(this._lBits & ListViewBits.fullRowSelect)
+		if(this._lBits & ListViewBits.FULL_ROW_SELECT)
 		{
 			this.sendMessage(LVM_SETEXTENDEDLISTVIEWSTYLE, LVS_EX_FULLROWSELECT, LVS_EX_FULLROWSELECT);
 		}
 
-		if(this._lBits & ListViewBits.checkBoxes)
+		if(this._lBits & ListViewBits.CHECK_BOXES)
 		{
 			this.sendMessage(LVM_SETEXTENDEDLISTVIEWSTYLE, LVS_EX_CHECKBOXES, LVS_EX_CHECKBOXES);
 		}
@@ -659,7 +659,7 @@ class ListView: OwnerDrawControl
 			this.sendMessage(LVM_SETIMAGELIST, LVSIL_SMALL, cast(LPARAM)this._imgList.handle);
 		}
 
-		if(this.getStyle() & ViewStyle.report)
+		if(this.getStyle() & ViewStyle.REPORT)
 		{
 			if(this._columns)
 			{
@@ -670,7 +670,7 @@ class ListView: OwnerDrawControl
 			}
 
 			/* Remove flickering in Report Mode */
-			ListView.setBit(this._cBits, ControlBits.doubleBuffered, true);
+			ListView.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.DOUBLE_BUFFERED, true);
 		}
 
 		if(this._items)

@@ -11,7 +11,6 @@ module dgui.application;
 pragma(lib, "gdi32.lib");
 pragma(lib, "comdlg32.lib");
 
-import std.path;
 private import dgui.core.winapi;
 private import dgui.core.utils;
 private import dgui.richtextbox;
@@ -21,14 +20,27 @@ private import dgui.label;
 private import std.utf: toUTFz;
 private import std.file;
 private import std.conv;
+private import std.path;
 public import dgui.resources;
 
 private enum
 {
-	info = "Exception Information:",
-	xpManifestFile = "dgui.xml.manifest",
-	errMsg = "An application exception has occured.\r\n1) Click \"Ignore\" to continue (The program can be unstable).\r\n2) Click \"Quit\" to exit.\r\n",
-	xpManifest = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` "\r\n"
+	INFO = "Exception Information:",
+	XP_MANIFEST_FILE = "dgui.xml.manifest",
+	ERR_MSG = "An application exception has occured.\r\n1) Click \"Ignore\" to continue (The program can be unstable).\r\n2) Click \"Quit\" to exit.\r\n",
+		XP_MANIFEST ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+		~"\x0d\x0a"~"<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\">"
+		~"\x0d\x0a"~"<assemblyIdentity version=\"1.0.0.0\" name=\"MyApplication.app\"/>"
+			~"\x0d\x0a"~"<trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v2\">"
+				~"\x0d\x0a"~"<security>"
+				~"\x0d\x0a"~"<requestedPrivileges xmlns=\"urn:schemas-microsoft-com:asm.v3\">"
+					~"\x0d\x0a"~"<requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/>"
+						~"\x0d\x0a"~"</requestedPrivileges>"
+						~"\x0d\x0a"~"</security>"
+						~"\x0d\x0a"~"</trustInfo>"
+						~"\x0d\x0a"~"</assembly>",
+		/*
+	XP_MANIFEST = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` "\r\n"
 					`<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">` "\r\n"
 					  `<assemblyIdentity` "\r\n"
 						`version="1.0.0.0"` "\r\n"
@@ -68,6 +80,7 @@ private enum
 						  `</asmv3:windowsSettings>` "\r\n"
 						  `</asmv3:application>` "\r\n"
 					`</assembly>` "\r\n",
+		*/
 }
 private alias extern(Windows) BOOL function(HANDLE hActCtx, ULONG_PTR* lpCookie) ActivateActCtxProc;
 private alias extern(Windows) HANDLE function(ACTCTXW* pActCtx) CreateActCtxWProc;
@@ -87,29 +100,29 @@ class Application
 			this.text = "An Exception was thrown...";
 			this.size = Size(400, 220);
 			this.controlBox = false;
-			this.startPosition = FormStartPosition.centerParent;
-			this.formBorderStyle = FormBorderStyle.fixedDialog;
+			this.startPosition = FormStartPosition.CENTER_PARENT;
+			this.formBorderStyle = FormBorderStyle.FIXED_DIALOG;
 
 			this._lblHead = new Label();
-			this._lblHead.alignment = TextAlignment.middle | TextAlignment.left;
+			this._lblHead.alignment = TextAlignment.MIDDLE | TextAlignment.LEFT;
 			this._lblHead.foreColor = Color(0xB4, 0x00, 0x00);
-			this._lblHead.dock = DockStyle.top;
+			this._lblHead.dock = DockStyle.TOP;
 			this._lblHead.height = 50;
-			this._lblHead.text = errMsg;
+			this._lblHead.text = ERR_MSG;
 			this._lblHead.parent = this;
 
 			this._lblInfo = new Label();
-			this._lblInfo.alignment = TextAlignment.middle | TextAlignment.left;
-			this._lblInfo.dock = DockStyle.top;
+			this._lblInfo.alignment = TextAlignment.MIDDLE | TextAlignment.LEFT;
+			this._lblInfo.dock = DockStyle.TOP;
 			this._lblInfo.height = 20;
-			this._lblInfo.text = info;
+			this._lblInfo.text = INFO;
 			this._lblInfo.parent = this;
 
 			this._rtfText = new RichTextBox();
-			this._rtfText.borderStyle = BorderStyle.fixed3d;
-			this._rtfText.dock = DockStyle.top;
+			this._rtfText.borderStyle = BorderStyle.FIXED_3D;
+			this._rtfText.dock = DockStyle.TOP;
 			this._rtfText.height = 90;
-			this._rtfText.backColor = SystemColors.colorButtonFace;
+			this._rtfText.backColor = SystemColors.colorBtnFace;
 			this._rtfText.scrollBars = true;
 			this._rtfText.readOnly = true;
 			this._rtfText.text = e.msg;
@@ -117,13 +130,13 @@ class Application
 
 			this._btnQuit = new Button();
 			this._btnQuit.bounds = Rect(310, 164, 80, 23);
-			this._btnQuit.dialogResult = DialogResult.abort;
+			this._btnQuit.dialogResult = DialogResult.ABORT;
 			this._btnQuit.text = "Quit";
 			this._btnQuit.parent = this;
 
 			this._btnIgnore = new Button();
 			this._btnIgnore.bounds = Rect(225, 164, 80, 23);
-			this._btnIgnore.dialogResult = DialogResult.ignore;
+			this._btnIgnore.dialogResult = DialogResult.IGNORE;
 			this._btnIgnore.text = "Ignore";
 			this._btnIgnore.parent = this;
 		}
@@ -210,8 +223,8 @@ class Application
 			{
 				string temp = dgui.core.utils.getTempPath();
 				ActivateActCtxProc activateActCtx = cast(ActivateActCtxProc)GetProcAddress(hKernel32, "ActivateActCtx");
-				temp = std.path.buildPath(temp, xpManifestFile);
-				std.file.write(temp, xpManifest);
+				temp = std.path.buildPath(temp, XP_MANIFEST_FILE);
+				std.file.write(temp, XP_MANIFEST);
 
 				ACTCTXW actx;
 
@@ -279,11 +292,11 @@ class Application
 		{
 			switch(Application.showExceptionForm(e))
 			{
-				case DialogResult.abort:
+				case DialogResult.ABORT:
 					TerminateProcess(GetCurrentProcess(), -1);
 					break;
 
-				case DialogResult.ignore:
+				case DialogResult.IGNORE:
 					Application.doRun(mainForm);
 					break;
 
@@ -325,7 +338,7 @@ class Application
 	  application or terminate it.
 
 	  Returns:
-		A DialogResult enum that contains the button clicked by the user (ignore or abort)
+		A DialogResult enum that contains the button clicked by the user (IGNORE or EXIT)
 	  */
 	package static DialogResult showExceptionForm(Throwable e)
 	{

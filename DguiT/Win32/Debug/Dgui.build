@@ -67,13 +67,13 @@ echo ..\dgui\tooltip.d >>Win32\Debug\Dgui.build.rsp
 echo ..\dgui\trackbar.d >>Win32\Debug\Dgui.build.rsp
 echo ..\dgui\treeview.d >>Win32\Debug\Dgui.build.rsp
 
-"C:\Program Files (x86)\VisualD\pipedmd.exe" dmd -g -debug -lib -X -Xf"Win32\Debug\Dgui_debug.json" -deps="Win32\Debug\Dgui.dep" -of"Win32\Debug\Dgui_debug.lib" -map "Win32\Debug\Dgui.map" -L/NOMAP @Win32\Debug\Dgui.build.rsp
+"C:\Program Files (x86)\VisualD\pipedmd.exe" dmd -g -debug -lib -X -Xf"Win32\Debug\Dgui.json" -deps="Win32\Debug\Dgui.dep" -of"Win32\Debug\Dgui.lib" -map "Win32\Debug\Dgui.map" -L/NOMAP @Win32\Debug\Dgui.build.rsp
 if errorlevel 1 goto reportError
-if not exist "Win32\Debug\Dgui_debug.lib" (echo "Win32\Debug\Dgui_debug.lib" not created! && goto reportError)
+if not exist "Win32\Debug\Dgui.lib" (echo "Win32\Debug\Dgui.lib" not created! && goto reportError)
 
 goto noError
 
 :reportError
-echo Building Win32\Debug\Dgui_debug.lib failed!
+echo Building Win32\Debug\Dgui.lib failed!
 
 :noError

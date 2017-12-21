@@ -16,7 +16,7 @@ abstract class ReflectedControl: Control
 	{
 		HWND hFrom = void; //Inizializzata sotto
 
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_NOTIFY:
 				NMHDR* pNotify = cast(NMHDR*)m.lParam;
@@ -81,13 +81,13 @@ abstract class ReflectedControl: Control
 
 	protected override void wndProc(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_NOTIFY, WM_COMMAND, WM_MEASUREITEM, WM_DRAWITEM, WM_CTLCOLOREDIT, WM_CTLCOLORBTN:
 			{
 				this.originalWndProc(m); //Components like: ComboBoxEx need this one!
 
-				if(ReflectedControl.hasBit(this._cBits, ControlBits.canNotify)) //Avoid fake notification messages caused by component's properties (like text(), checked(), ...)
+				if(ReflectedControl.hasBit(cast(ulong)this._cBits, cast(ulong)ControlBits.CAN_NOTIFY)) //Avoid fake notification messages caused by component's properties (like text(), checked(), ...)
 				{
 					this.reflectMessageToChild(m);
 				}

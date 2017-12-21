@@ -15,7 +15,7 @@ class Collection(T)
 	public final int add(T t)
 	{
 		this._t ~= t;
-		return cast(int)(this._t.length) - 1;
+		return cast(int)(this._t.length - 1);
 	}
 
 	public final void clear()
@@ -30,7 +30,7 @@ class Collection(T)
 
 	@property public final int length()
 	{
-		return cast(int)(this._t.length);
+		return cast(int)this._t.length;
 	}
 
 	public final void remove(T t)

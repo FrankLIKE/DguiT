@@ -8,17 +8,17 @@ Authors: Trogu Antonio Davide
 */
 module dgui.core.utils;
 
-import std.path;
 import dgui.core.winapi;
 import dgui.core.charset;
+import std.path;
 
 enum WindowsVersion
 {
-	unknown       = 0,
-	windows2000  = 1,
-	windowsXP    = 2,
-	windowsVista = 4,
-	windows7     = 8,
+	UNKNOWN       = 0,
+	WINDOWS_2000  = 1,
+	WINDOWS_XP    = 2,
+	WINDOWS_VISTA = 4,
+	WINDOWS_7     = 8,
 }
 
 T winCast(T)(Object o)
@@ -61,7 +61,7 @@ string getStartupPath()
 
 	if(!startPath.length)
 	{
-		startPath = std.path.dirName(getExecutablePath());
+		startPath = dirName(getExecutablePath());
 	}
 
 	return startPath;
@@ -97,17 +97,17 @@ string makeFilter(string userFilter)
 
 public WindowsVersion getWindowsVersion()
 {
-	static WindowsVersion ver = WindowsVersion.unknown;
+	static WindowsVersion ver = WindowsVersion.UNKNOWN;
 	static WindowsVersion[uint][uint] versions;
 
-	if(ver is WindowsVersion.unknown)
+	if(ver is WindowsVersion.UNKNOWN)
 	{
 		if(!versions.length)
 		{
-			versions[5][0] = WindowsVersion.windows2000;
-			versions[5][1] = WindowsVersion.windowsXP;
-			versions[6][0] = WindowsVersion.windowsVista;
-			versions[6][1] = WindowsVersion.windows7;
+			versions[5][0] = WindowsVersion.WINDOWS_2000;
+			versions[5][1] = WindowsVersion.WINDOWS_XP;
+			versions[6][0] = WindowsVersion.WINDOWS_VISTA;
+			versions[6][1] = WindowsVersion.WINDOWS_7;
 		}
 
 		OSVERSIONINFOW ovi;

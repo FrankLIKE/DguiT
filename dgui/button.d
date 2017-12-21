@@ -15,7 +15,7 @@ class Button: AbstractButton
 {
 	/**
 	  Returns:
-		A DialogResult enum (ok, ignore, close, yes, no, cancel, ...)
+		A DialogResult enum (OK, IGNORE, CLOSE, YES, NO, CANCEL, ...)
 
 	See_Also:
 		Form.showDialog()
@@ -43,11 +43,11 @@ class Button: AbstractButton
 	{
 		switch(this._drawMode)
 		{
-			case OwnerDrawMode.normal:
-				this.setStyle(BS_PUSHBUTTON, true);
+			case OwnerDrawMode.NORMAL:
+				this.setStyle(BS_DEFPUSHBUTTON, true);
 				break;
 
-			case OwnerDrawMode.fixed, OwnerDrawMode.variable:
+			case OwnerDrawMode.FIXED, OwnerDrawMode.VARIABLE:
 				this.setStyle(BS_OWNERDRAW, true);
 				break;
 
@@ -55,7 +55,7 @@ class Button: AbstractButton
 				break;
 		}
 
-		ccp.className = WC_DBUTTON;
+		ccp.ClassName = WC_DBUTTON;
 
 		super.createControlParams(ccp);
 	}
@@ -68,11 +68,11 @@ class CheckBox: CheckedButton
 	{
 		switch(this._drawMode)
 		{
-			case OwnerDrawMode.normal:
+			case OwnerDrawMode.NORMAL:
 				this.setStyle(BS_AUTOCHECKBOX, true);
 				break;
 
-			case OwnerDrawMode.fixed, OwnerDrawMode.variable:
+			case OwnerDrawMode.FIXED, OwnerDrawMode.VARIABLE:
 				this.setStyle(BS_OWNERDRAW, true);
 				break;
 
@@ -80,7 +80,7 @@ class CheckBox: CheckedButton
 				break;
 		}
 
-		ccp.className = WC_DCHECKBOX;
+		ccp.ClassName = WC_DCHECKBOX;
 
 		super.createControlParams(ccp);
 	}
@@ -93,11 +93,11 @@ class RadioButton: CheckedButton
 	{
 		switch(this._drawMode)
 		{
-			case OwnerDrawMode.normal:
+			case OwnerDrawMode.NORMAL:
 				this.setStyle(BS_AUTORADIOBUTTON, true);
 				break;
 
-			case OwnerDrawMode.fixed, OwnerDrawMode.variable:
+			case OwnerDrawMode.FIXED, OwnerDrawMode.VARIABLE:
 				this.setStyle(BS_OWNERDRAW, true);
 				break;
 
@@ -105,7 +105,7 @@ class RadioButton: CheckedButton
 				break;
 		}
 
-		ccp.className = WC_DRADIOBUTTON;
+		ccp.ClassName = WC_DRADIOBUTTON;
 
 		super.createControlParams(ccp);
 	}

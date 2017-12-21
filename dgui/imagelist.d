@@ -17,11 +17,11 @@ import dgui.canvas;
 
 enum ColorDepth: uint
 {
-	depth4bit = ILC_COLOR4,
-	depth8bit = ILC_COLOR8,
-	depth16bit = ILC_COLOR16,
-	depth24bit = ILC_COLOR24,
-	depth32bit = ILC_COLOR32,
+	DEPTH_4BIT = ILC_COLOR4,
+	DEPTH_8BIT = ILC_COLOR8,
+	DEPTH_16BIT = ILC_COLOR16,
+	DEPTH_24BIT = ILC_COLOR24,
+	DEPTH_32BIT = ILC_COLOR32,
 }
 
 /*
@@ -44,7 +44,7 @@ class ImageList: Handle!(HIMAGELIST), IDisposable
 	private static ImageList_DrawProc imageList_Draw;
 	private static ImageList_SetBkColorProc imageList_SetBkColor;
 
-	private ColorDepth _depth = ColorDepth.depth32bit;
+	private ColorDepth _depth = ColorDepth.DEPTH_32BIT;
 	private Size _size;
 	private Collection!(Icon) _images;
 
@@ -89,7 +89,7 @@ class ImageList: Handle!(HIMAGELIST), IDisposable
 	{
 		if(!this.created)
 		{
-			if(this._size == nullSize)
+			if(this._size == NullSize)
 			{
 				this._size.width = 16;
 				this._size.height = 16;
@@ -118,7 +118,7 @@ class ImageList: Handle!(HIMAGELIST), IDisposable
 
 		if(!this.created)
 		{
-			if(this._size == nullSize)
+			if(this._size == NullSize)
 			{
 				this._size.width = 16;
 				this._size.height = 16;

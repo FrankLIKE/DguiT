@@ -13,35 +13,35 @@ import dgui.core.winapi;
 
 enum ScrollMode: uint
 {
-	bottom 		  = SB_BOTTOM,
-	endScroll 	  = SB_ENDSCROLL,
-	lineDown  	  = SB_LINEDOWN,
-	lineUp 		  = SB_LINEUP,
-	pageDown	  = SB_PAGEDOWN,
-	pageUp 		  = SB_PAGEUP,
-	thumbPosition = SB_THUMBPOSITION,
-	thumbTrack 	  = SB_THUMBTRACK,
-	top 		  = SB_TOP,
-	left  		  = SB_LEFT,
-	right 		  = SB_RIGHT,
-	lineLeft      = SB_LINELEFT,
-	lineRight 	  = SB_LINERIGHT,
-	pageLeft 	  = SB_PAGELEFT,
-	pageRight 	  = SB_PAGERIGHT,
+	BOTTOM 		  = SB_BOTTOM,
+	ENDSCROLL 	  = SB_ENDSCROLL,
+	LINEDOWN  	  = SB_LINEDOWN,
+	LINEUP 		  = SB_LINEUP,
+	PAGEDOWN	  = SB_PAGEDOWN,
+	PAGEUP 		  = SB_PAGEUP,
+	THUMBPOSITION = SB_THUMBPOSITION,
+	THUMBTRACK 	  = SB_THUMBTRACK,
+	TOP 		  = SB_TOP,
+	LEFT  		  = SB_LEFT,
+	RIGHT 		  = SB_RIGHT,
+	LINELEFT      = SB_LINELEFT,
+	LINERIGHT 	  = SB_LINERIGHT,
+	PAGELEFT 	  = SB_PAGELEFT,
+	PAGERIGHT 	  = SB_PAGERIGHT,
 }
 
 enum ScrollWindowDirection: ubyte
 {
-	left  = 0,
-	up    = 1,
-	right = 2,
-	down  = 4,
+	LEFT  = 0,
+	UP    = 1,
+	RIGHT = 2,
+	DOWN  = 4,
 }
 
 enum ScrollDirection: ubyte
 {
-	vertical,
-	horizontal,
+	VERTICAL,
+	HORIZONTAL,
 }
 
 class ScrollEventArgs: EventArgs

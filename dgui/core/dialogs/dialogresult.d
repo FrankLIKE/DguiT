@@ -12,13 +12,13 @@ private import dgui.core.winapi;
 
 enum DialogResult: int
 {
-	none,
-	ok = IDOK,
-	yes = IDYES,
-	no = IDNO,
-	cancel = IDCANCEL,
-	retry = IDRETRY,
-	abort = IDABORT,
-	ignore = IDIGNORE,
-	close = cancel, //Same as 'cancel'
+	NONE,
+	OK = IDOK,
+	YES = IDYES,
+	NO = IDNO,
+	CANCEL = IDCANCEL,
+	RETRY = IDRETRY,
+	ABORT = IDABORT,
+	IGNORE = IDIGNORE,
+	CLOSE = CANCEL, //Same as 'CANCEL'
 }

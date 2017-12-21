@@ -20,10 +20,10 @@ import dgui.core.handle;
 
 enum RegistryValueType: uint
 {
-	binary = REG_BINARY,
-	dword = REG_DWORD,
-	qword = REG_QWORD,
-	string_ = REG_SZ,
+	BINARY = REG_BINARY,
+	DWORD = REG_DWORD,
+	QWORD = REG_QWORD,
+	STRING = REG_SZ,
 }
 
 interface IRegistryValue
@@ -53,7 +53,7 @@ final class RegistryValueBinary: RegistryValue!(ubyte[])
 
 	@property public override RegistryValueType valueType()
 	{
-		return RegistryValueType.binary;
+		return RegistryValueType.BINARY;
 	}
 
 	public override string toString()
@@ -70,7 +70,7 @@ final class RegistryValueBinary: RegistryValue!(ubyte[])
 
 	public void write(RegistryKey owner, string name)
 	{
-		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_BINARY, cast(ubyte*)this._value.ptr, cast(uint)(this._value.length));
+		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_BINARY, cast(ubyte*)this._value.ptr, cast(uint)this._value.length);
 
 		if(res != ERROR_SUCCESS)
 		{
@@ -88,7 +88,7 @@ final class RegistryValueString: RegistryValue!(string)
 
 	@property public override RegistryValueType valueType()
 	{
-		return RegistryValueType.string_;
+		return RegistryValueType.STRING;
 	}
 
 	public override string toString()
@@ -98,7 +98,7 @@ final class RegistryValueString: RegistryValue!(string)
 
 	public void write(RegistryKey owner, string name)
 	{
-		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), 0, REG_SZ, cast(ubyte*)this._value.ptr, cast(uint)(this._value.length));
+		ulong res = RegSetValueExW(owner.handle, toUTFz!(wchar*)(name), cast(uint)0, REG_SZ, cast(ubyte*)this._value.ptr, cast(uint)this._value.length);
 
 		if(res != ERROR_SUCCESS)
 		{
@@ -116,7 +116,7 @@ final class RegistryValueDword: RegistryValue!(uint)
 
 	@property public override RegistryValueType valueType()
 	{
-		return RegistryValueType.dword;
+		return RegistryValueType.DWORD;
 	}
 
 	public override string toString()
@@ -144,7 +144,7 @@ final class RegistryValueQword: RegistryValue!(ulong)
 
 	@property public override RegistryValueType valueType()
 	{
-		return RegistryValueType.qword;
+		return RegistryValueType.QWORD;
 	}
 
 	public override string toString()

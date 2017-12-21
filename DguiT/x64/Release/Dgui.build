@@ -71,13 +71,13 @@ echo ..\dgui\tooltip.d >>x64\Release\Dgui.build.rsp
 echo ..\dgui\trackbar.d >>x64\Release\Dgui.build.rsp
 echo ..\dgui\treeview.d >>x64\Release\Dgui.build.rsp
 
-"C:\Program Files (x86)\VisualD\pipedmd.exe" dmd -m64 -O -inline -release -lib -X -Xf"x64\Release\Dgui64.json" -deps="x64\Release\Dgui.dep" -of"x64\Release\Dgui64.lib" -map "x64\Release\Dgui.map" @x64\Release\Dgui.build.rsp
+"C:\Program Files (x86)\VisualD\pipedmd.exe" dmd -m64 -O -inline -release -lib -X -Xf"x64\Release\Dgui.json" -deps="x64\Release\Dgui.dep" -of"x64\Release\Dgui.lib" -map "x64\Release\Dgui.map" @x64\Release\Dgui.build.rsp
 if errorlevel 1 goto reportError
-if not exist "x64\Release\Dgui64.lib" (echo "x64\Release\Dgui64.lib" not created! && goto reportError)
+if not exist "x64\Release\Dgui.lib" (echo "x64\Release\Dgui.lib" not created! && goto reportError)
 
 goto noError
 
 :reportError
-echo Building x64\Release\Dgui64.lib failed!
+echo Building x64\Release\Dgui.lib failed!
 
 :noError

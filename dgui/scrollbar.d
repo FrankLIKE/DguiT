@@ -13,9 +13,9 @@ import dgui.core.winapi;
 
 enum ScrollBarType
 {
-	vertical = SB_VERT,
-	horizontal = SB_HORZ,
-	separate = SB_CTL,
+	VERTICAL = SB_VERT,
+	HORIZONTAL = SB_HORZ,
+	SEPARATE = SB_CTL,
 }
 
 class ScrollBar: Control
@@ -24,7 +24,7 @@ class ScrollBar: Control
 
 	public this()
 	{
-		this._sbt = ScrollBarType.separate;
+		this._sbt = ScrollBarType.SEPARATE;
 	}
 
 	private this(Control c, ScrollBarType sbt)
@@ -147,7 +147,7 @@ class ScrollBar: Control
 
 	public static ScrollBar fromControl(Control c, ScrollBarType sbt)
 	{
-		assert(sbt !is ScrollBarType.separate, "ScrollBarType.separate not allowed here");
+		assert(sbt !is ScrollBarType.SEPARATE, "ScrollBarType.SEPARATE not allowed here");
 		return new ScrollBar(c, sbt);
 	}
 }

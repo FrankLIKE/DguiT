@@ -8,19 +8,20 @@ Authors: Trogu Antonio Davide
 */
 module dgui.tooltip;
 
+import std.utf: toUTFz;
 import dgui.core.controls.subclassedcontrol;
 
 enum ToolTipIcons
 {
-	none	= TTI_NONE,
-	info 	= TTI_INFO,
-	warning = TTI_WARNING,
-	error   = TTI_ERROR,
+	NONE	= TTI_NONE,
+	INFO 	= TTI_INFO,
+	WARNING = TTI_WARNING,
+	ERROR   = TTI_ERROR,
 }
 
 class ToolTip: SubclassedControl
 {
-	private ToolTipIcons _ttIcon = ToolTipIcons.none;
+	private ToolTipIcons _ttIcon = ToolTipIcons.NONE;
 	private bool _creating = false;
 	private Control _ctrl;
 	private string _title;
@@ -151,10 +152,10 @@ class ToolTip: SubclassedControl
 
 	protected override void createControlParams(ref CreateControlParams ccp)
 	{
-		ccp.superclassName = WC_TOOLTIP;
-		ccp.className = WC_DTOOLTIP;
-		ccp.defaultBackColor = SystemColors.colorInfo;
-		ccp.defaultForeColor = SystemColors.colorInfoText;
+		ccp.SuperclassName = WC_TOOLTIP;
+		ccp.ClassName = WC_DTOOLTIP;
+		ccp.DefaultBackColor = SystemColors.colorInfoBk;
+		ccp.DefaultForeColor = SystemColors.colorInfoText;
 
 		this.setStyle(WS_POPUP | TTS_NOPREFIX, true);
 		this.setExStyle(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, true);
@@ -166,13 +167,13 @@ class ToolTip: SubclassedControl
 		    The width varies based on the length of the string currently in the tooltip window. */
 		this.bounds = Rect(CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT);
 
-		ToolTip.setBit(this._cBits, ControlBits.cannotAddChild | ControlBits.useCachedText, true);
+		ToolTip.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.CANNOT_ADD_CHILD | ControlBits.USE_CACHED_TEXT, true);
 		super.createControlParams(ccp);
 	}
 
 	protected override void onReflectedMessage(ref Message m)
 	{
-		if(m.msg == WM_NOTIFY)
+		if(m.Msg == WM_NOTIFY)
 		{
 			NMHDR* pNotify = cast(NMHDR*)m.lParam;
 
@@ -188,7 +189,7 @@ class ToolTip: SubclassedControl
 
 	protected override void onHandleCreated(EventArgs e)
 	{
-		if(this._ttIcon !is ToolTipIcons.none || this._title.length)
+		if(this._ttIcon !is ToolTipIcons.NONE || this._title.length)
 		{
 			this.sendMessage(TTM_SETTITLEW, this._ttIcon, cast(LPARAM)toUTFz!(wchar*)(this._title));
 		}

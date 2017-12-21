@@ -25,17 +25,17 @@ enum
 struct Message
 {
 	HWND hWnd;
-	uint msg;
+	uint Msg;
 	WPARAM wParam;
 	LPARAM lParam;
-	LRESULT result;
+	LRESULT Result;
 
 	public static Message opCall(HWND h, uint msg, WPARAM wp, LPARAM lp)
 	{
 		Message m;
 
 		m.hWnd = h;
-		m.msg = msg;
+		m.Msg = msg;
 		m.wParam = wp;
 		m.lParam = lp;
 

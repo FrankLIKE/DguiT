@@ -15,45 +15,46 @@ import dgui.layout.layoutcontrol;
 import dgui.core.events.eventargs;
 
 alias CancelEventArgs!(Form) CancelFormEventArgs;
-
+ 
 enum FormBits: ulong
 {
-	none 		 	= 0,
-	modalCompleted = 1,
+	NONE 		 	= 0,
+	MODAL_COMPLETED = 1,
 }
 
 enum FormBorderStyle: ubyte
 {
-	none 				= 0,
-	manual 				= 1, // Internal Use
-	fixedSingle 		= 2,
-	fixed3d 			= 4,
-	fixedDialog		= 8,
-	sizeable 			= 16,
-	fixedToolWindow 	= 32,
-	sizeableToolWindow = 64,
+	NONE 				= 0,
+	MANUAL 				= 1, // Internal Use
+	FIXED_SINGLE 		= 2,
+	FIXED_3D 			= 4,
+	FIXED_DIALOG		= 8,
+	SIZEABLE 			= 16,
+	FIXED_TOOLWINDOW 	= 32,
+	SIZEABLE_TOOLWINDOW = 64,
 }
 
 enum FormStartPosition: ubyte
 {
-	manual 			 = 0,
-	centerParent	 = 1,
-	centerScreen	 = 2,
-	defaultLocation = 4,
+	MANUAL 			 = 0,
+	CENTER_PARENT	 = 1,
+	CENTER_SCREEN	 = 2,
+	DEFAULT_LOCATION = 4,
 }
 
 class Form: LayoutControl
 {
-	private FormBits _fBits = FormBits.none;
-	private FormStartPosition _startPosition = FormStartPosition.manual;
-	private FormBorderStyle _formBorder = FormBorderStyle.sizeable;
-	private DialogResult _dlgResult = DialogResult.cancel;
+	private FormBits _fBits = FormBits.NONE;
+	private FormStartPosition _startPosition = FormStartPosition.MANUAL;
+	private FormBorderStyle _formBorder = FormBorderStyle.SIZEABLE;
+	private DialogResult _dlgResult = DialogResult.CANCEL;
 	private HWND _hActiveWnd;
 	private Icon _formIcon;
 	private MenuBar _menu;
 
 	public Event!(Control, EventArgs) close;
 	public Event!(Control, CancelFormEventArgs) closing;
+	public Event!(Control, EventArgs) load;
 
 	public this()
 	{
@@ -159,7 +160,7 @@ class Form: LayoutControl
 
 		while(GetMessageW(&m, null, 0, 0))
 		{
-			if(Form.hasBit(this._cBits, ControlBits.modalControl) && Form.hasBit(this._fBits, FormBits.modalCompleted))
+			if(Form.hasBit(cast(ulong)this._cBits, cast(ulong)ControlBits.MODAL_CONTROL) && Form.hasBit(cast(ulong)this._fBits, cast(ulong)FormBits.MODAL_COMPLETED))
 			{
 				break;
 			}
@@ -180,7 +181,7 @@ class Form: LayoutControl
 
 	public final DialogResult showDialog()
 	{
-		Form.setBit(this._cBits, ControlBits.modalControl, true);
+		Form.setBit(cast(ulong)this._cBits, cast(ulong)ControlBits.MODAL_CONTROL, true);
 		this._hActiveWnd = GetActiveWindow();
 		EnableWindow(this._hActiveWnd, false);
 
@@ -190,8 +191,8 @@ class Form: LayoutControl
 
 	private final void doFormStartPosition()
 	{
-		if((this._startPosition is FormStartPosition.centerParent && !this.parent) ||
-			this._startPosition is FormStartPosition.centerScreen)
+		if((this._startPosition is FormStartPosition.CENTER_PARENT && !this.parent) ||
+			this._startPosition is FormStartPosition.CENTER_SCREEN)
 		{
 			Rect wa = Screen.workArea;
 			Rect b = this._bounds;
@@ -199,7 +200,7 @@ class Form: LayoutControl
 			this._bounds.position = Point((wa.width - b.width) / 2,
 										  (wa.height - b.height) / 2);
 		}
-		else if(this._startPosition is FormStartPosition.centerParent)
+		else if(this._startPosition is FormStartPosition.CENTER_PARENT)
 		{
 			Rect pr = this.parent.bounds;
 			Rect b = this._bounds;
@@ -207,7 +208,7 @@ class Form: LayoutControl
 			this._bounds.position = Point(pr.left + (pr.width - b.width) / 2,
 										  pr.top + (pr.height - b.height) / 2);
 		}
-		else if(this._startPosition is FormStartPosition.defaultLocation)
+		else if(this._startPosition is FormStartPosition.DEFAULT_LOCATION)
 		{
 			this._bounds.position = Point(CW_USEDEFAULT, CW_USEDEFAULT);
 		}
@@ -217,7 +218,7 @@ class Form: LayoutControl
 	{
 		switch(fbs)
 		{
-			case FormBorderStyle.fixed3d:
+			case FormBorderStyle.FIXED_3D:
 				style &= ~(WS_BORDER | WS_THICKFRAME | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_TOOLWINDOW | WS_EX_STATICEDGE);
 
@@ -225,7 +226,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_CLIENTEDGE | WS_EX_WINDOWEDGE | WS_EX_DLGMODALFRAME;
 				break;
 
-			case FormBorderStyle.fixedDialog:
+			case FormBorderStyle.FIXED_DIALOG:
 				style &= ~(WS_BORDER | WS_THICKFRAME);
 				exStyle &= ~(WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE);
 
@@ -233,7 +234,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_DLGMODALFRAME | WS_EX_WINDOWEDGE;
 				break;
 
-			case FormBorderStyle.fixedSingle:
+			case FormBorderStyle.FIXED_SINGLE:
 				style &= ~(WS_THICKFRAME | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_WINDOWEDGE | WS_EX_STATICEDGE);
 
@@ -241,7 +242,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_WINDOWEDGE | WS_EX_DLGMODALFRAME;
 				break;
 
-			case FormBorderStyle.fixedToolWindow:
+			case FormBorderStyle.FIXED_TOOLWINDOW:
 				style &= ~(WS_BORDER | WS_THICKFRAME | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_CLIENTEDGE | WS_EX_STATICEDGE);
 
@@ -249,7 +250,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE | WS_EX_DLGMODALFRAME;
 				break;
 
-			case FormBorderStyle.sizeable:
+			case FormBorderStyle.SIZEABLE:
 				style &= ~(WS_BORDER | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE);
 
@@ -257,7 +258,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_WINDOWEDGE;
 				break;
 
-			case FormBorderStyle.sizeableToolWindow:
+			case FormBorderStyle.SIZEABLE_TOOLWINDOW:
 				style &= ~(WS_BORDER | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_CLIENTEDGE | WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE);
 
@@ -265,7 +266,7 @@ class Form: LayoutControl
 				exStyle |= WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE;
 				break;
 
-			case FormBorderStyle.none:
+			case FormBorderStyle.NONE:
 				style &= ~(WS_BORDER | WS_THICKFRAME | WS_CAPTION | WS_DLGFRAME);
 				exStyle &= ~(WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE | WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE | WS_EX_WINDOWEDGE);
 				break;
@@ -278,13 +279,13 @@ class Form: LayoutControl
 
 	protected override void onDGuiMessage(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case DGUI_SETDIALOGRESULT:
 			{
 				this._dlgResult = cast(DialogResult)m.wParam;
 
-				Form.setBit(this._fBits, FormBits.modalCompleted, true);
+				Form.setBit(cast(ulong)this._fBits, cast(ulong)FormBits.MODAL_COMPLETED, true);
 				ShowWindow(this._handle, SW_HIDE); // Hide this window (it waits to be destroyed)
 				EnableWindow(this._hActiveWnd, true);
 				SetActiveWindow(this._hActiveWnd); // Restore the previous active window
@@ -305,8 +306,8 @@ class Form: LayoutControl
 
 		this.setStyle(style, true);
 		this.setExStyle(exStyle, true);
-		ccp.className = WC_FORM;
-		ccp.defaultCursor = SystemCursors.arrow;
+		ccp.ClassName = WC_FORM;
+		ccp.DefaultCursor = SystemCursors.arrow;
 
 		this.doFormStartPosition();
 		super.createControlParams(ccp);
@@ -326,7 +327,7 @@ class Form: LayoutControl
 			Message m = Message(this._handle, WM_SETICON, ICON_BIG, cast(LPARAM)this._formIcon.handle);
 			this.originalWndProc(m);
 
-			m.msg = ICON_SMALL;
+			m.Msg = ICON_SMALL;
 			this.originalWndProc(m);
 		}
 
@@ -335,7 +336,7 @@ class Form: LayoutControl
 
 	protected override void wndProc(ref Message m)
 	{
-		switch(m.msg)
+		switch(m.Msg)
 		{
 			case WM_CLOSE:
 			{
@@ -346,7 +347,7 @@ class Form: LayoutControl
 				{
 					this.onClose(EventArgs.empty);
 
-					if(Form.hasBit(this._cBits, ControlBits.modalControl))
+					if(Form.hasBit(cast(ulong)this._cBits, cast(ulong)ControlBits.MODAL_CONTROL))
 					{
 						EnableWindow(this._hActiveWnd, true);
 						SetActiveWindow(this._hActiveWnd);
@@ -355,25 +356,14 @@ class Form: LayoutControl
 					super.wndProc(m);
 				}
 
-				m.result = 0;
+				m.Result = 0;
 			}
 			break;
-
-			case WM_CONTEXTMENU:
-			{
-				// Display default shortcut menu in case of click on window's caption.
-
-				Rect r = void;
-				GetClientRect(handle, &r.rect);
-
-				auto pt = Point(LOWORD(m.lParam), HIWORD(m.lParam));
-				convertPoint(pt, null, this);
-				if(pt.inRect(r))
-					goto default;
-
-				originalWndProc(m);
-			}
-			break;
+			//case 1024:
+			//    EventArgs e = new EventArgs(this);
+			//    this.onLoad(e);
+			//    super.wndProc(m);
+			//break;
 
 			default:
 				super.wndProc(m);
@@ -390,4 +380,11 @@ class Form: LayoutControl
 	{
 		this.close(this, e);
 	}
+	
+	protected void onLoad(EventArgs e)
+	{
+		this.load(this, e);
+	}
+	
+ 
 }

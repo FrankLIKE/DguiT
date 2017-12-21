@@ -135,7 +135,7 @@
       "kind" : "variable",
       "line" : 99,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 428
      },
      {
@@ -295,7 +295,7 @@
       "protection" : "protected",
       "line" : 15,
       "char" : 33,
-      "deco" : "C4dgui4core10collection53__T10CollectionTC4dgui4core8controls7control7ControlZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBnQBl8controls7control7ControlZQBu",
       "originalType" : "Collection!Control",
       "offset" : 384
      },
@@ -968,9 +968,9 @@
       "kind" : "variable",
       "protection" : "protected",
       "line" : 95,
-      "char" : 18,
-      "deco" : "m",
-      "init" : "4LU",
+      "char" : 24,
+      "deco" : "E4dgui4core8controls7control11ControlBits",
+      "init" : "cast(ControlBits)4LU",
       "offset" : 96
      },
      {
@@ -978,7 +978,7 @@
       "kind" : "variable",
       "line" : 97,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14painteventargs14PaintEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14painteventargs14PaintEventArgsZQDf",
       "offset" : 104
      },
      {
@@ -986,7 +986,7 @@
       "kind" : "variable",
       "line" : 98,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 120
      },
      {
@@ -994,7 +994,7 @@
       "kind" : "variable",
       "line" : 99,
       "char" : 43,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events12keyeventargs16KeyCharEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl12keyeventargs16KeyCharEventArgsZQDf",
       "offset" : 136
      },
      {
@@ -1002,7 +1002,7 @@
       "kind" : "variable",
       "line" : 100,
       "char" : 47,
-      "deco" : "S4dgui4core6events5event110__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events20controlcodeeventargs20ControlCodeEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl20controlcodeeventargs20ControlCodeEventArgsZQDr",
       "offset" : 152
      },
      {
@@ -1010,7 +1010,7 @@
       "kind" : "variable",
       "line" : 101,
       "char" : 39,
-      "deco" : "S4dgui4core6events5event94__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events12keyeventargs12KeyEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl12keyeventargs12KeyEventArgsZQDb",
       "offset" : 168
      },
      {
@@ -1018,7 +1018,7 @@
       "kind" : "variable",
       "line" : 102,
       "char" : 39,
-      "deco" : "S4dgui4core6events5event94__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events12keyeventargs12KeyEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl12keyeventargs12KeyEventArgsZQDb",
       "offset" : 184
      },
      {
@@ -1026,7 +1026,7 @@
       "kind" : "variable",
       "line" : 103,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 200
      },
      {
@@ -1034,7 +1034,7 @@
       "kind" : "variable",
       "line" : 104,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 216
      },
      {
@@ -1042,7 +1042,7 @@
       "kind" : "variable",
       "line" : 105,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 232
      },
      {
@@ -1050,7 +1050,7 @@
       "kind" : "variable",
       "line" : 106,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 248
      },
      {
@@ -1058,7 +1058,7 @@
       "kind" : "variable",
       "line" : 107,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 264
      },
      {
@@ -1066,7 +1066,7 @@
       "kind" : "variable",
       "line" : 108,
       "char" : 41,
-      "deco" : "S4dgui4core6events5event98__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs14MouseEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs14MouseEventArgsZQDf",
       "offset" : 280
      },
      {
@@ -1074,7 +1074,7 @@
       "kind" : "variable",
       "line" : 109,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 296
      },
      {
@@ -1082,7 +1082,7 @@
       "kind" : "variable",
       "line" : 110,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 312
      },
      {
@@ -1090,7 +1090,7 @@
       "kind" : "variable",
       "line" : 111,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 328
      },
      {
@@ -1098,7 +1098,7 @@
       "kind" : "variable",
       "line" : 112,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 344
      },
      {
@@ -1146,7 +1146,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FKS4dgui4core8geometry4RectC4dgui4core8controls7control7ControlC4dgui4core8controls7control7ControlZv",
+      "deco" : "FKS4dgui4core8geometry4RectCQzQw8controls7control7ControlQBeZv",
       "parameters" : [
        {
         "name" : "rect",
@@ -1175,7 +1175,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FKS4dgui4core8geometry5PointC4dgui4core8controls7control7ControlC4dgui4core8controls7control7ControlZv",
+      "deco" : "FKS4dgui4core8geometry5PointCQBaQy8controls7control7ControlQBfZv",
       "parameters" : [
        {
         "name" : "pt",
@@ -1204,7 +1204,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FKS4dgui4core8geometry4SizeC4dgui4core8controls7control7ControlC4dgui4core8controls7control7ControlZv",
+      "deco" : "FKS4dgui4core8geometry4SizeCQzQw8controls7control7ControlQBeZv",
       "parameters" : [
        {
         "name" : "sz",
@@ -2698,7 +2698,7 @@
       "kind" : "constructor",
       "line" : 38,
       "char" : 9,
-      "deco" : "FC4dgui6canvas6CanvasiiiZC4dgui4core8controls16ownerdrawcontrol20MeasureItemEventArgs",
+      "deco" : "FC4dgui6canvas6CanvasiiiZCQy4core8controls16ownerdrawcontrol20MeasureItemEventArgs",
       "originalType" : "(Canvas c, int width, int height, int index)",
       "parameters" : [
        {
@@ -2856,7 +2856,7 @@
       "kind" : "constructor",
       "line" : 86,
       "char" : 9,
-      "deco" : "FC4dgui6canvas6CanvasE4dgui4core8controls16ownerdrawcontrol13DrawItemStateS4dgui4core8geometry4RectS4dgui6canvas5ColorS4dgui6canvas5ColoriZC4dgui4core8controls16ownerdrawcontrol17DrawItemEventArgs",
+      "deco" : "FC4dgui6canvas6CanvasEQu4core8controls16ownerdrawcontrol13DrawItemStateSQCsQBz8geometry4RectSQDnQDl5ColorQniZCQEeQDlQDjQDd17DrawItemEventArgs",
       "originalType" : "(Canvas c, DrawItemState state, Rect itemRect, Color foreColor, Color backColor, int index)",
       "parameters" : [
        {
@@ -2973,7 +2973,7 @@
       "kind" : "variable",
       "line" : 143,
       "char" : 47,
-      "deco" : "S4dgui4core6events5event108__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core8controls16ownerdrawcontrol20MeasureItemEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQBh16ownerdrawcontrol20MeasureItemEventArgsZQDn",
       "offset" : 388
      },
      {
@@ -2981,7 +2981,7 @@
       "kind" : "variable",
       "line" : 144,
       "char" : 44,
-      "deco" : "S4dgui4core6events5event105__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core8controls16ownerdrawcontrol17DrawItemEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQBh16ownerdrawcontrol17DrawItemEventArgsZQDk",
       "offset" : 404
      },
      {
@@ -3196,7 +3196,7 @@
       "kind" : "variable",
       "line" : 17,
       "char" : 42,
-      "deco" : "S4dgui4core6events5event100__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events15scrolleventargs15ScrollEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl15scrolleventargs15ScrollEventArgsZQDh",
       "offset" : 384
      },
      {
@@ -3204,7 +3204,7 @@
       "kind" : "variable",
       "line" : 18,
       "char" : 46,
-      "deco" : "S4dgui4core6events5event103__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events14mouseeventargs19MouseWheelEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl14mouseeventargs19MouseWheelEventArgsZQDk",
       "offset" : 400
      },
      {
@@ -3239,7 +3239,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FE4dgui4core6events15scrolleventargs21ScrollWindowDirectioniS4dgui4core8geometry4RectZv",
+      "deco" : "FE4dgui4core6events15scrolleventargs21ScrollWindowDirectioniSQChQCf8geometry4RectZv",
       "parameters" : [
        {
         "name" : "swd",
@@ -3447,15 +3447,9 @@
   "file" : "..\\dgui\\core\\controls\\textcontrol.d",
   "members" : [
    {
-    "name" : "dgui.core.controls.subclassedcontrol",
-    "kind" : "import",
-    "line" : 11,
-    "char" : 15
-   },
-   {
     "name" : "std.utf",
     "kind" : "import",
-    "line" : 12,
+    "line" : 11,
     "char" : 8,
     "protection" : "private",
     "selective" : [
@@ -3463,24 +3457,30 @@
     ]
    },
    {
+    "name" : "dgui.core.controls.subclassedcontrol",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 15
+   },
+   {
     "name" : "TextControl",
     "kind" : "class",
-    "line" : 13,
+    "line" : 14,
     "char" : 10,
     "base" : "dgui.core.controls.subclassedcontrol.SubclassedControl",
     "members" : [
      {
       "name" : "textChanged",
       "kind" : "variable",
-      "line" : 15,
+      "line" : 16,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 388
      },
      {
       "name" : "appendText",
       "kind" : "function",
-      "line" : 17,
+      "line" : 18,
       "char" : 14,
       "deco" : "FAyaZv",
       "parameters" : [
@@ -3489,25 +3489,25 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 27,
+      "endline" : 28,
       "endchar" : 2
      },
      {
       "name" : "readOnly",
       "kind" : "function",
-      "line" : 29,
+      "line" : 30,
       "char" : 30,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZb",
-      "endline" : 32,
+      "endline" : 33,
       "endchar" : 2
      },
      {
       "name" : "readOnly",
       "kind" : "function",
-      "line" : 34,
+      "line" : 35,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -3519,76 +3519,76 @@
         "deco" : "b"
        }
       ],
-      "endline" : 37,
+      "endline" : 38,
       "endchar" : 2
      },
      {
       "name" : "undo",
       "kind" : "function",
-      "line" : 39,
+      "line" : 40,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 42,
+      "endline" : 43,
       "endchar" : 2
      },
      {
       "name" : "cut",
       "kind" : "function",
-      "line" : 44,
+      "line" : 45,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 47,
+      "endline" : 48,
       "endchar" : 2
      },
      {
       "name" : "copy",
       "kind" : "function",
-      "line" : 49,
+      "line" : 50,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 52,
+      "endline" : 53,
       "endchar" : 2
      },
      {
       "name" : "paste",
       "kind" : "function",
-      "line" : 54,
+      "line" : 55,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 57,
+      "endline" : 58,
       "endchar" : 2
      },
      {
       "name" : "selectAll",
       "kind" : "function",
-      "line" : 59,
+      "line" : 60,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 62,
+      "endline" : 63,
       "endchar" : 2
      },
      {
       "name" : "clear",
       "kind" : "function",
-      "line" : 64,
+      "line" : 65,
       "char" : 14,
       "deco" : "FZv",
-      "endline" : 67,
+      "endline" : 68,
       "endchar" : 2
      },
      {
       "name" : "modified",
       "kind" : "function",
-      "line" : 69,
+      "line" : 70,
       "char" : 24,
       "deco" : "FNdZb",
-      "endline" : 77,
+      "endline" : 78,
       "endchar" : 2
      },
      {
       "name" : "modified",
       "kind" : "function",
-      "line" : 79,
+      "line" : 80,
       "char" : 24,
       "deco" : "FNdbZv",
       "parameters" : [
@@ -3597,59 +3597,59 @@
         "deco" : "b"
        }
       ],
-      "endline" : 82,
+      "endline" : 83,
       "endchar" : 2
      },
      {
       "name" : "textLength",
       "kind" : "function",
-      "line" : 84,
+      "line" : 85,
       "char" : 23,
       "deco" : "FNdZi",
-      "endline" : 98,
+      "endline" : 93,
       "endchar" : 2
      },
      {
       "name" : "selectedText",
       "kind" : "function",
-      "line" : 100,
+      "line" : 95,
       "char" : 32,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZAya",
-      "endline" : 106,
+      "endline" : 101,
       "endchar" : 2
      },
      {
       "name" : "selectionStart",
       "kind" : "function",
-      "line" : 108,
+      "line" : 103,
       "char" : 29,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZi",
-      "endline" : 114,
+      "endline" : 109,
       "endchar" : 2
      },
      {
       "name" : "selectionLength",
       "kind" : "function",
-      "line" : 116,
+      "line" : 111,
       "char" : 29,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZi",
-      "endline" : 122,
+      "endline" : 117,
       "endchar" : 2
      },
      {
       "name" : "createControlParams",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 124,
+      "line" : 119,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -3664,7 +3664,7 @@
         ]
        }
       ],
-      "endline" : 130,
+      "endline" : 125,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.subclassedcontrol.SubclassedControl.createControlParams"
@@ -3674,7 +3674,7 @@
       "name" : "onReflectedMessage",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 132,
+      "line" : 127,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -3689,7 +3689,7 @@
         ]
        }
       ],
-      "endline" : 140,
+      "endline" : 135,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.onReflectedMessage"
@@ -3699,7 +3699,7 @@
       "name" : "onHandleCreated",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 142,
+      "line" : 137,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -3711,7 +3711,7 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 147,
+      "endline" : 142,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.onHandleCreated"
@@ -3721,7 +3721,7 @@
       "name" : "onTextChanged",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 149,
+      "line" : 144,
       "char" : 17,
       "deco" : "FC4dgui4core6events9eventargs9EventArgsZv",
       "parameters" : [
@@ -3730,13 +3730,13 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 152,
+      "endline" : 147,
       "endchar" : 2
      },
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 13,
+      "line" : 14,
       "char" : 10,
       "deco" : "FZC4dgui4core8controls11textcontrol11TextControl",
       "originalType" : "()"
@@ -5807,7 +5807,7 @@
       "kind" : "constructor",
       "line" : 216,
       "char" : 9,
-      "deco" : "FE4dgui4core6events12keyeventargs4KeysZC4dgui4core6events12keyeventargs12KeyEventArgs",
+      "deco" : "FE4dgui4core6events12keyeventargs4KeysZCQBmQBkQBiQBe12KeyEventArgs",
       "originalType" : "(Keys keys)",
       "parameters" : [
        {
@@ -5874,7 +5874,7 @@
       "kind" : "constructor",
       "line" : 241,
       "char" : 9,
-      "deco" : "FE4dgui4core6events12keyeventargs4KeysaZC4dgui4core6events12keyeventargs16KeyCharEventArgs",
+      "deco" : "FE4dgui4core6events12keyeventargs4KeysaZCQBnQBlQBjQBf16KeyCharEventArgs",
       "originalType" : "(Keys keys, char keyCh)",
       "parameters" : [
        {
@@ -6017,7 +6017,7 @@
       "kind" : "constructor",
       "line" : 40,
       "char" : 9,
-      "deco" : "FS4dgui4core8geometry5PointE4dgui4core6events14mouseeventargs9MouseKeysZC4dgui4core6events14mouseeventargs14MouseEventArgs",
+      "deco" : "FS4dgui4core8geometry5PointEQBaQy6events14mouseeventargs9MouseKeysZCQCoQCmQBpQBl14MouseEventArgs",
       "originalType" : "(Point cursorPos, MouseKeys mk)",
       "parameters" : [
        {
@@ -6073,7 +6073,7 @@
       "kind" : "constructor",
       "line" : 61,
       "char" : 9,
-      "deco" : "FS4dgui4core8geometry5PointE4dgui4core6events14mouseeventargs9MouseKeysE4dgui4core6events14mouseeventargs10MouseWheelZC4dgui4core6events14mouseeventargs19MouseWheelEventArgs",
+      "deco" : "FS4dgui4core8geometry5PointEQBaQy6events14mouseeventargs9MouseKeysEQCnQClQBoQBk10MouseWheelZCQDnQDlQCoQCk19MouseWheelEventArgs",
       "originalType" : "(Point cursorPos, MouseKeys mk, MouseWheel mw)",
       "parameters" : [
        {
@@ -6161,7 +6161,7 @@
       "kind" : "constructor",
       "line" : 20,
       "char" : 9,
-      "deco" : "FC4dgui6canvas6CanvasS4dgui4core8geometry4RectZC4dgui4core6events14painteventargs14PaintEventArgs",
+      "deco" : "FC4dgui6canvas6CanvasSQu4core8geometry4RectZCQBrQy6events14painteventargs14PaintEventArgs",
       "originalType" : "(Canvas c, Rect r)",
       "parameters" : [
        {
@@ -6426,7 +6426,7 @@
       "kind" : "constructor",
       "line" : 52,
       "char" : 9,
-      "deco" : "FE4dgui4core6events15scrolleventargs15ScrollDirectionE4dgui4core6events15scrolleventargs10ScrollModeZC4dgui4core6events15scrolleventargs15ScrollEventArgs",
+      "deco" : "FE4dgui4core6events15scrolleventargs15ScrollDirectionEQCaQByQBwQBs10ScrollModeZCQDaQCyQCwQCs15ScrollEventArgs",
       "originalType" : "(ScrollDirection sd, ScrollMode sm)",
       "parameters" : [
        {
@@ -6752,7 +6752,7 @@
       "kind" : "variable",
       "line" : 57,
       "char" : 33,
-      "deco" : "S4dgui4core6events5event85__T5EventTC4dgui4core4menu12abstractmenu4MenuTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg4menu12abstractmenu4MenuTCQCoQCmQCk9eventargs9EventArgsZQCs",
       "offset" : 16
      },
      {
@@ -6761,7 +6761,7 @@
       "protection" : "private",
       "line" : 59,
       "char" : 32,
-      "deco" : "C4dgui4core10collection56__T10CollectionTC4dgui4core4menu12abstractmenu8MenuItemZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBnQBl4menu12abstractmenu8MenuItemZQBx",
       "originalType" : "Collection!MenuItem",
       "offset" : 32
      },
@@ -6979,7 +6979,7 @@
       "protection" : "protected",
       "line" : 167,
       "char" : 33,
-      "deco" : "C4dgui4core10collection19__T10CollectionTPvZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTPvZQq",
       "originalType" : "Collection!HBITMAP",
       "offset" : 40
      },
@@ -7014,7 +7014,7 @@
       "protection" : "package",
       "line" : 188,
       "char" : 41,
-      "deco" : "FNdZC4dgui4core10collection19__T10CollectionTPvZ10Collection",
+      "deco" : "FNdZC4dgui4core10collection__T10CollectionTPvZQq",
       "originalType" : "@property Collection!HBITMAP()",
       "endline" : 191,
       "endchar" : 2
@@ -7072,7 +7072,7 @@
       "kind" : "variable",
       "line" : 231,
       "char" : 37,
-      "deco" : "S4dgui4core6events5event89__T5EventTC4dgui4core4menu12abstractmenu8MenuItemTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg4menu12abstractmenu8MenuItemTCQCsQCqQCo9eventargs9EventArgsZQCw",
       "offset" : 40
      },
      {
@@ -7130,7 +7130,7 @@
       "protection" : "protected",
       "line" : 239,
       "char" : 12,
-      "deco" : "FC4dgui4core4menu12abstractmenu4MenuE4dgui4core4menu12abstractmenu9MenuStyleAyabZC4dgui4core4menu12abstractmenu8MenuItem",
+      "deco" : "FC4dgui4core4menu12abstractmenu4MenuEQBjQBhQBfQBd9MenuStyleAyabZCQClQCjQChQCf8MenuItem",
       "originalType" : "(Menu parent, MenuStyle mt, string t, bool e)",
       "parameters" : [
        {
@@ -7413,7 +7413,7 @@
     "kind" : "function",
     "line" : 22,
     "char" : 13,
-    "deco" : "FkAyaAyakiiiiPvPvZPv",
+    "deco" : "FkAyaQdkiiiiPvQcZQf",
     "originalType" : "HWND(DWORD exStyle, string className, string windowName, DWORD style, int x, int y, int nWidth, int nHeight, HWND hWndParent, LPVOID lpParam)",
     "parameters" : [
      {
@@ -7521,7 +7521,7 @@
     "kind" : "function",
     "line" : 47,
     "char" : 15,
-    "deco" : "FPvAyakiikZPv",
+    "deco" : "FPvAyakiikZQk",
     "originalType" : "HANDLE(HINSTANCE hInstance, string s, UINT uType, int cxDesired, int cyDesired, UINT fuLoad)",
     "parameters" : [
      {
@@ -7557,7 +7557,7 @@
     "kind" : "function",
     "line" : 52,
     "char" : 15,
-    "deco" : "FPvPukiikZPv",
+    "deco" : "FPvPukiikZQj",
     "originalType" : "HANDLE(HINSTANCE hInstance, wchar* pResID, UINT uType, int cxDesired, int cyDesired, UINT fuLoad)",
     "parameters" : [
      {
@@ -7593,7 +7593,7 @@
     "kind" : "function",
     "line" : 57,
     "char" : 12,
-    "deco" : "FPvAyaPS4core3sys7windows6windef4RECTkPS4dgui4core6winapi14DRAWTEXTPARAMSZi",
+    "deco" : "FPvAyaPS4core3sys7windows6windef4RECTkPS4dguiQBl6winapi14DRAWTEXTPARAMSZi",
     "originalType" : "int(HDC hdc, string s, RECT* lprc, UINT dwDTFormat, DRAWTEXTPARAMS* lpDTParams)",
     "parameters" : [
      {
@@ -7827,7 +7827,7 @@
     "kind" : "function",
     "line" : 145,
     "char" : 13,
-    "deco" : "FAyaPvPvPWNbPvkkiZikZt",
+    "deco" : "FAyaPvQcPWNbQikkiZikZt",
     "originalType" : "ATOM(string className, HCURSOR hCursor, HBRUSH hBackground, WNDPROC wndProc, uint style)",
     "parameters" : [
      {
@@ -7917,49 +7917,49 @@
           "type" : "T"
          }
         ],
-        "endline" : 26,
+        "endline" : 19,
         "endchar" : 2
        },
        {
         "name" : "clear",
         "kind" : "function",
-        "line" : 28,
+        "line" : 21,
         "char" : 20,
         "storageClass" : [
          "final"
         ],
         "type" : "void()",
-        "endline" : 31,
+        "endline" : 24,
         "endchar" : 2
        },
        {
         "name" : "get",
         "kind" : "function",
-        "line" : 33,
+        "line" : 26,
         "char" : 19,
         "storageClass" : [
          "final"
         ],
         "type" : "T[]()",
-        "endline" : 36,
+        "endline" : 29,
         "endchar" : 2
        },
        {
         "name" : "length",
         "kind" : "function",
-        "line" : 38,
+        "line" : 31,
         "char" : 29,
         "storageClass" : [
          "final"
         ],
         "type" : "@property int()",
-        "endline" : 48,
+        "endline" : 34,
         "endchar" : 2
        },
        {
         "name" : "remove",
         "kind" : "function",
-        "line" : 50,
+        "line" : 36,
         "char" : 20,
         "storageClass" : [
          "final"
@@ -7971,13 +7971,13 @@
           "type" : "T"
          }
         ],
-        "endline" : 53,
+        "endline" : 39,
         "endchar" : 2
        },
        {
         "name" : "removeAt",
         "kind" : "function",
-        "line" : 55,
+        "line" : 41,
         "char" : 20,
         "storageClass" : [
          "final"
@@ -7989,13 +7989,13 @@
           "deco" : "i"
          }
         ],
-        "endline" : 70,
+        "endline" : 56,
         "endchar" : 2
        },
        {
         "name" : "find",
         "kind" : "function",
-        "line" : 72,
+        "line" : 58,
         "char" : 19,
         "storageClass" : [
          "final"
@@ -8007,13 +8007,13 @@
           "type" : "T"
          }
         ],
-        "endline" : 83,
+        "endline" : 69,
         "endchar" : 2
        },
        {
         "name" : "opIndex",
         "kind" : "function",
-        "line" : 85,
+        "line" : 71,
         "char" : 11,
         "type" : "nothrow T(int i)",
         "parameters" : [
@@ -8022,13 +8022,13 @@
           "deco" : "i"
          }
         ],
-        "endline" : 93,
+        "endline" : 79,
         "endchar" : 2
        },
        {
         "name" : "opApply",
         "kind" : "function",
-        "line" : 95,
+        "line" : 81,
         "char" : 13,
         "type" : "int(int delegate(ref T) dg)",
         "parameters" : [
@@ -8037,13 +8037,13 @@
           "type" : "int delegate(ref T)"
          }
         ],
-        "endline" : 113,
+        "endline" : 99,
         "endchar" : 2
        },
        {
         "name" : "opApply",
         "kind" : "function",
-        "line" : 115,
+        "line" : 101,
         "char" : 13,
         "type" : "int(int delegate(ref int, ref T) dg)",
         "parameters" : [
@@ -8052,7 +8052,7 @@
           "type" : "int delegate(ref int, ref T)"
          }
         ],
-        "endline" : 133,
+        "endline" : 119,
         "endchar" : 2
        }
       ]
@@ -8305,7 +8305,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FS4dgui4core8geometry5PointS4dgui4core8geometry4SizeZS4dgui4core8geometry4Rect",
+      "deco" : "FS4dgui4core8geometry5PointSQBaQyQv4SizeZSQBoQBmQBk4Rect",
       "parameters" : [
        {
         "name" : "pt",
@@ -8529,7 +8529,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FPS4core3sys7windows6windef4RECTZS4dgui4core8geometry4Rect",
+      "deco" : "FPS4core3sys7windows6windef4RECTZS4dguiQBk8geometry4Rect",
       "parameters" : [
        {
         "name" : "pWinRect",
@@ -9053,15 +9053,12 @@
     "kind" : "import",
     "line" : 13,
     "char" : 8,
-    "protection" : "private",
-    "selective" : [
-     "dirName"
-    ]
+    "protection" : "private"
    },
    {
     "name" : "WindowsVersion",
     "kind" : "enum",
-    "line" : 14,
+    "line" : 15,
     "char" : 1,
     "baseDeco" : "i",
     "members" : [
@@ -9069,42 +9066,42 @@
       "name" : "UNKNOWN",
       "kind" : "enum member",
       "value" : "0",
-      "line" : 16,
+      "line" : 17,
       "char" : 2
      },
      {
       "name" : "WINDOWS_2000",
       "kind" : "enum member",
       "value" : "1",
-      "line" : 17,
+      "line" : 18,
       "char" : 2
      },
      {
       "name" : "WINDOWS_XP",
       "kind" : "enum member",
       "value" : "2",
-      "line" : 18,
+      "line" : 19,
       "char" : 2
      },
      {
       "name" : "WINDOWS_VISTA",
       "kind" : "enum member",
       "value" : "4",
-      "line" : 19,
+      "line" : 20,
       "char" : 2
      },
      {
       "name" : "WINDOWS_7",
       "kind" : "enum member",
       "value" : "8",
-      "line" : 20,
+      "line" : 21,
       "char" : 2
      }
     ]
    },
    {
     "kind" : "template",
-    "line" : 23,
+    "line" : 24,
     "char" : 3,
     "name" : "winCast",
     "parameters" : [
@@ -9117,7 +9114,7 @@
      {
       "name" : "winCast",
       "kind" : "function",
-      "line" : 23,
+      "line" : 24,
       "char" : 3,
       "type" : "T(Object o)",
       "parameters" : [
@@ -9126,14 +9123,14 @@
         "type" : "Object"
        }
       ],
-      "endline" : 26,
+      "endline" : 27,
       "endchar" : 1
      }
     ]
    },
    {
     "kind" : "template",
-    "line" : 28,
+    "line" : 29,
     "char" : 3,
     "name" : "winCast",
     "parameters" : [
@@ -9146,7 +9143,7 @@
      {
       "name" : "winCast",
       "kind" : "function",
-      "line" : 28,
+      "line" : 29,
       "char" : 3,
       "type" : "T(size_t st)",
       "parameters" : [
@@ -9155,7 +9152,7 @@
         "type" : "size_t"
        }
       ],
-      "endline" : 31,
+      "endline" : 32,
       "endchar" : 1
      }
     ]
@@ -9163,62 +9160,62 @@
    {
     "name" : "getHInstance",
     "kind" : "function",
-    "line" : 33,
+    "line" : 34,
     "char" : 11,
     "deco" : "FZPv",
     "originalType" : "HINSTANCE()",
-    "endline" : 43,
+    "endline" : 44,
     "endchar" : 1
    },
    {
     "name" : "getExecutablePath",
     "kind" : "function",
-    "line" : 45,
+    "line" : 46,
     "char" : 8,
     "deco" : "FZAya",
-    "endline" : 55,
+    "endline" : 56,
     "endchar" : 1
    },
    {
     "name" : "getStartupPath",
     "kind" : "function",
-    "line" : 57,
+    "line" : 58,
     "char" : 8,
     "deco" : "FZAya",
-    "endline" : 67,
+    "endline" : 68,
     "endchar" : 1
    },
    {
     "name" : "getTempPath",
     "kind" : "function",
-    "line" : 69,
+    "line" : 70,
     "char" : 8,
     "deco" : "FZAya",
-    "endline" : 79,
+    "endline" : 80,
     "endchar" : 1
    },
    {
     "name" : "makeFilter",
     "kind" : "function",
-    "line" : 81,
+    "line" : 82,
     "char" : 8,
-    "deco" : "FAyaZAya",
+    "deco" : "FAyaZQe",
     "parameters" : [
      {
       "name" : "userFilter",
       "deco" : "Aya"
      }
     ],
-    "endline" : 95,
+    "endline" : 96,
     "endchar" : 1
    },
    {
     "name" : "getWindowsVersion",
     "kind" : "function",
-    "line" : 97,
+    "line" : 98,
     "char" : 23,
     "deco" : "FZE4dgui4core5utils14WindowsVersion",
-    "endline" : 131,
+    "endline" : 132,
     "endchar" : 1
    }
   ]
@@ -19828,7 +19825,7 @@
     "kind" : "function",
     "line" : 2234,
     "char" : 14,
-    "deco" : "WPS4dgui4core6winapi11BROWSEINFOWZPS4dgui4core6winapi10ITEMIDLIST",
+    "deco" : "WPS4dgui4core6winapi11BROWSEINFOWZPSQBhQBfQBd10ITEMIDLIST",
     "parameters" : [
      {
       "name" : "lpbi",
@@ -19859,7 +19856,7 @@
     "kind" : "function",
     "line" : 2236,
     "char" : 8,
-    "deco" : "WPvPxuPtZPv",
+    "deco" : "WPvPxuPtZQi",
     "originalType" : "extern (Windows) HICON(HINSTANCE hInst, LPCWSTR lpIconPath, WORD* lpiIcon)",
     "parameters" : [
      {
@@ -19959,7 +19956,7 @@
     "kind" : "function",
     "line" : 2246,
     "char" : 8,
-    "deco" : "WPvPxuPxutZPv",
+    "deco" : "WPvPxuQdtZQj",
     "originalType" : "extern (Windows) HRSRC(HMODULE hModule, LPCWSTR lpType, LPCWSTR lpName, WORD wLanguage)",
     "parameters" : [
      {
@@ -20017,7 +20014,7 @@
     "kind" : "function",
     "line" : 2249,
     "char" : 10,
-    "deco" : "WPvPvZPv",
+    "deco" : "WPvQcZQf",
     "originalType" : "extern (Windows) HGLOBAL(HMODULE hModule, HRSRC hResInfo)",
     "parameters" : [
      {
@@ -20035,7 +20032,7 @@
     "kind" : "function",
     "line" : 2250,
     "char" : 8,
-    "deco" : "WPvPvZk",
+    "deco" : "WPvQcZk",
     "originalType" : "extern (Windows) DWORD(HMODULE hModule, HRSRC hResInfo)",
     "parameters" : [
      {
@@ -20104,7 +20101,7 @@
     "kind" : "function",
     "line" : 2256,
     "char" : 6,
-    "deco" : "WPvPxuPxukZi",
+    "deco" : "WPvPxuQdkZi",
     "originalType" : "extern (Windows) int(HWND hWnd, LPCWSTR lpText, LPCWSTR lpCaption, UINT uType)",
     "parameters" : [
      {
@@ -20170,7 +20167,7 @@
     "kind" : "function",
     "line" : 2259,
     "char" : 7,
-    "deco" : "WkPxuPxukiiiiPvPvPvPvZPv",
+    "deco" : "WkPxuQdkiiiiPvQcQeQgZQj",
     "originalType" : "extern (Windows) HWND(DWORD dwExStyle, LPCWSTR lpClassName, LPCWSTR lpWindowName, DWORD dwStyle, int x, int y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam)",
     "parameters" : [
      {
@@ -20228,7 +20225,7 @@
     "kind" : "function",
     "line" : 2260,
     "char" : 7,
-    "deco" : "WkPvPviiiikZk",
+    "deco" : "WkPvQciiiikZk",
     "originalType" : "extern (Windows) HDWP(HDWP hWinPosInfo, HWND hWnd, HWND hWndInsertAfter, int x, int y, int cx, int cy, UINT uFlags)",
     "parameters" : [
      {
@@ -20270,7 +20267,7 @@
     "kind" : "function",
     "line" : 2262,
     "char" : 9,
-    "deco" : "WPvPxukiikZPv",
+    "deco" : "WPvPxukiikZQk",
     "originalType" : "extern (Windows) HANDLE(HINSTANCE hinst, LPCWSTR lpszName, UINT uType, int cxDesired, int cyDesired, UINT fuLoad)",
     "parameters" : [
      {
@@ -20304,7 +20301,7 @@
     "kind" : "function",
     "line" : 2263,
     "char" : 10,
-    "deco" : "WPWNbPvkkiZiPvkkiZi",
+    "deco" : "WPWNbPvkkiZiQhkkiZi",
     "originalType" : "extern (Windows) LRESULT(WNDPROC lpPrevWndFunc, HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)",
     "parameters" : [
      {
@@ -20334,7 +20331,7 @@
     "kind" : "function",
     "line" : 2264,
     "char" : 10,
-    "deco" : "WPWNbPvkkiZiPvkkiZi",
+    "deco" : "WPWNbPvkkiZiQhkkiZi",
     "originalType" : "extern (Windows) LRESULT(WNDPROC lpPrevWndFunc, HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)",
     "parameters" : [
      {
@@ -20364,7 +20361,7 @@
     "kind" : "function",
     "line" : 2265,
     "char" : 7,
-    "deco" : "WPvPviiiikZi",
+    "deco" : "WPvQciiiikZi",
     "originalType" : "extern (Windows) BOOL(HWND hWnd, HWND hWndInsertAfter, int X, int Y, int cx, int cy, UINT uFlags)",
     "parameters" : [
      {
@@ -20532,7 +20529,7 @@
     "kind" : "function",
     "line" : 2271,
     "char" : 7,
-    "deco" : "WPvkkPWNbPvkkkZvZk",
+    "deco" : "WPvkkPWNbQikkkZvZk",
     "originalType" : "extern (Windows) UINT(HWND hWnd, UINT nIDEvent, UINT uElapse, TIMERPROC lpTimerFunc)",
     "parameters" : [
      {
@@ -20778,7 +20775,7 @@
     "kind" : "function",
     "line" : 2282,
     "char" : 7,
-    "deco" : "WPvPvZPv",
+    "deco" : "WPvQcZQf",
     "originalType" : "extern (Windows) HWND(HWND hWndChild, HWND hWndNewParent)",
     "parameters" : [
      {
@@ -20850,7 +20847,7 @@
     "kind" : "function",
     "line" : 2286,
     "char" : 8,
-    "deco" : "WPviZPv",
+    "deco" : "WPviZQe",
     "originalType" : "extern (Windows) HMENU(HWND hWnd, BOOL bRevert)",
     "parameters" : [
      {
@@ -21014,7 +21011,7 @@
     "kind" : "function",
     "line" : 2296,
     "char" : 7,
-    "deco" : "WPvPvZi",
+    "deco" : "WPvQcZi",
     "originalType" : "extern (Windows) BOOL(HWND hWnd, HMENU hMenu)",
     "parameters" : [
      {
@@ -21221,7 +21218,7 @@
     "kind" : "function",
     "line" : 2311,
     "char" : 7,
-    "deco" : "WPvZPv",
+    "deco" : "WPvZQd",
     "originalType" : "extern (Windows) HWND(HWND hWnd)",
     "parameters" : [
      {
@@ -21235,7 +21232,7 @@
     "kind" : "function",
     "line" : 2312,
     "char" : 7,
-    "deco" : "WPvZPv",
+    "deco" : "WPvZQd",
     "originalType" : "extern (Windows) HWND(HWND hWnd)",
     "parameters" : [
      {
@@ -21277,7 +21274,7 @@
     "kind" : "function",
     "line" : 2315,
     "char" : 8,
-    "deco" : "WPvZPv",
+    "deco" : "WPvZQd",
     "originalType" : "extern (Windows) HMENU(HWND hWnd)",
     "parameters" : [
      {
@@ -21369,7 +21366,7 @@
     "kind" : "function",
     "line" : 2333,
     "char" : 6,
-    "deco" : "WPvPvZi",
+    "deco" : "WPvQcZi",
     "originalType" : "extern (Windows) int(HIMAGELIST himl, HICON hicon)",
     "parameters" : [
      {
@@ -21387,7 +21384,7 @@
     "kind" : "function",
     "line" : 2334,
     "char" : 6,
-    "deco" : "WPviPvZi",
+    "deco" : "WPviQdZi",
     "originalType" : "extern (Windows) int(HIMAGELIST, int, HICON)",
     "parameters" : [
      {
@@ -21438,7 +21435,7 @@
     "kind" : "function",
     "line" : 2341,
     "char" : 7,
-    "deco" : "WPviiPviikPvkZi",
+    "deco" : "WPviiQeiikQjkZi",
     "originalType" : "extern (Windows) BOOL(HDC hdc, int xLeft, int yTop, HICON hIcon, int cxWidth, int cyWidth, UINT istepIfAniCur, HBRUSH hbrFlickerFreeDraw, UINT diFlags)",
     "parameters" : [
      {
@@ -21484,7 +21481,7 @@
     "kind" : "function",
     "line" : 2342,
     "char" : 7,
-    "deco" : "WPvPS4core3sys7windows6windef5POINTPviiiiPviiZi",
+    "deco" : "WPvPS4core3sys7windows6windef5POINTQBiiiiiQBpiiZi",
     "originalType" : "extern (Windows) BOOL(HDC hdcDest, POINT* lpPoint, HDC hdcSrc, int nXSrc, int nYSrc, int nWidth, int nHeight, HBITMAP hbmMask, int xMask, int yMask)",
     "parameters" : [
      {
@@ -21534,7 +21531,7 @@
     "kind" : "function",
     "line" : 2343,
     "char" : 7,
-    "deco" : "WPviiiiPviikZi",
+    "deco" : "WPviiiiQgiikZi",
     "originalType" : "extern (Windows) BOOL(HDC hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, HDC hdcSrc, int nXSrc, int nYSrc, DWORD dwRop)",
     "parameters" : [
      {
@@ -21580,7 +21577,7 @@
     "kind" : "function",
     "line" : 2344,
     "char" : 6,
-    "deco" : "WPvPvkkPvPS4core3sys7windows6wingdi10BITMAPINFOkZi",
+    "deco" : "WPvQckkQgPS4core3sys7windows6wingdi10BITMAPINFOkZi",
     "originalType" : "extern (Windows) int(HDC hdc, HBITMAP hbmp, UINT uStartScan, UINT cScanLines, void* lpvBits, BITMAPINFO* lpbi, UINT uUsage)",
     "parameters" : [
      {
@@ -21618,7 +21615,7 @@
     "kind" : "function",
     "line" : 2345,
     "char" : 10,
-    "deco" : "WPvPS4core3sys7windows6wingdi10BITMAPINFOkPPvPvkZPv",
+    "deco" : "WPvPS4core3sys7windows6wingdi10BITMAPINFOkPQBqQBtkZQBy",
     "originalType" : "extern (Windows) HBITMAP(HDC hdc, BITMAPINFO* pbmi, UINT iUsage, void** ppvBits, HANDLE hSection, DWORD dwOffset)",
     "parameters" : [
      {
@@ -21652,7 +21649,7 @@
     "kind" : "function",
     "line" : 2346,
     "char" : 6,
-    "deco" : "WPvPxuiPS4core3sys7windows6windef4RECTkPS4dgui4core6winapi14DRAWTEXTPARAMSZi",
+    "deco" : "WPvPxuiPS4core3sys7windows6windef4RECTkPS4dguiQBl6winapi14DRAWTEXTPARAMSZi",
     "originalType" : "extern (Windows) int(HDC hdc, LPCWSTR lpchText, int cchText, RECT* lprc, UINT dwDTFormat, DRAWTEXTPARAMS* lpDTParams)",
     "parameters" : [
      {
@@ -21810,7 +21807,7 @@
     "kind" : "function",
     "line" : 2352,
     "char" : 10,
-    "deco" : "WPviiZPv",
+    "deco" : "WPviiZQf",
     "originalType" : "extern (Windows) HBITMAP(HDC hdc, int nWidth, int nHeight)",
     "parameters" : [
      {
@@ -21858,7 +21855,7 @@
     "kind" : "function",
     "line" : 2354,
     "char" : 6,
-    "deco" : "WPviPvZi",
+    "deco" : "WPviQdZi",
     "originalType" : "extern (Windows) int(HGDIOBJ hgdiobj, int cbBuffer, void* lpvObject)",
     "parameters" : [
      {
@@ -22026,7 +22023,7 @@
     "kind" : "function",
     "line" : 2366,
     "char" : 7,
-    "deco" : "WPvPxukPukkPS4core3sys7windows5winnt19SECURITY_ATTRIBUTESPPvPkZi",
+    "deco" : "WPvPxukPukkPS4core3sys7windows5winnt19SECURITY_ATTRIBUTESPQCfPkZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, LPCWSTR lpSubKey, DWORD Reserved, LPTSTR lpClass, DWORD dwOptions, REGSAM samDesired, LPSECURITY_ATTRIBUTES lpSecurityAttributes, PHKEY phkResult, LPDWORD lpdwDisposition)",
     "parameters" : [
      {
@@ -22072,7 +22069,7 @@
     "kind" : "function",
     "line" : 2367,
     "char" : 7,
-    "deco" : "WPvPxukkPPvZi",
+    "deco" : "WPvPxukkPQiZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, LPCWSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult)",
     "parameters" : [
      {
@@ -22102,7 +22099,7 @@
     "kind" : "function",
     "line" : 2368,
     "char" : 7,
-    "deco" : "WPvPxuPkPkPhPkZi",
+    "deco" : "WPvPxuPkQcPhQgZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, LPCWSTR lpValueName, DWORD* lpReserved, DWORD* lpType, BYTE* lpData, DWORD* lpcbData)",
     "parameters" : [
      {
@@ -22170,7 +22167,7 @@
     "kind" : "function",
     "line" : 2370,
     "char" : 7,
-    "deco" : "WPvPuPkPkPkPkPkPkPkPkPkPS4core3sys7windows7winbase8FILETIMEZi",
+    "deco" : "WPvPuPkQcQeQgQiQkQmQoQqPS4core3sys7windows7winbase8FILETIMEZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, LPWSTR lpClass, LPDWORD lpcClass, LPDWORD lpReserved, LPDWORD lpcSubKeys, LPDWORD lpcMaxSubKeyLen, LPDWORD lpcMaxClassLen, LPDWORD lpcValues, LPDWORD lpcMaxValueNameLen, LPDWORD lpcMaxValueLen, LPDWORD lpcbSecurityDescriptor, PFILETIME lpftLastWriteTime)",
     "parameters" : [
      {
@@ -22228,7 +22225,7 @@
     "kind" : "function",
     "line" : 2371,
     "char" : 7,
-    "deco" : "WPvkPuPkPkPuPkPS4core3sys7windows7winbase8FILETIMEZi",
+    "deco" : "WPvkPuPkQcQgQgPS4core3sys7windows7winbase8FILETIMEZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, DWORD dwIndex, LPWSTR lpName, LPDWORD lpcName, LPDWORD lpReserved, LPWSTR lpClass, LPDWORD lpcClass, PFILETIME lpftLastWriteTime)",
     "parameters" : [
      {
@@ -22270,7 +22267,7 @@
     "kind" : "function",
     "line" : 2372,
     "char" : 7,
-    "deco" : "WPvkPuPkPkPkPhPkZi",
+    "deco" : "WPvkPuPkQcQePhQiZi",
     "originalType" : "extern (Windows) LONG(HKEY hKey, DWORD dwIndex, LPWSTR lpValueName, LPDWORD lpcchValueName, LPDWORD lpReserved, LPDWORD lpType, LPBYTE lpData, LPDWORD lpcbData)",
     "parameters" : [
      {
@@ -22480,7 +22477,7 @@
     "protection" : "private",
     "line" : 37,
     "char" : 105,
-    "deco" : "PWPvPS4core3sys7windows6windef4RECTkPS4dgui4core7wincomp14BP_PAINTPARAMSPPvZPv"
+    "deco" : "PWPvPS4core3sys7windows6windef4RECTkPS4dguiQBl7wincomp14BP_PAINTPARAMSPQCrZQCv"
    },
    {
     "name" : "GetBufferedPaintBitsProc",
@@ -22504,7 +22501,7 @@
     "protection" : "private",
     "line" : 41,
     "char" : 32,
-    "deco" : "PWPvPS4core3sys7windows6windef4RECTkPS4dgui4core7wincomp14BP_PAINTPARAMSPPvZPv",
+    "deco" : "PWPvPS4core3sys7windows6windef4RECTkPS4dguiQBl7wincomp14BP_PAINTPARAMSPQCrZQCv",
     "originalType" : "BeginBufferedPaintProc"
    },
    {
@@ -22531,7 +22528,7 @@
     "protection" : "private",
     "line" : 45,
     "char" : 14,
-    "deco" : "FKS4core3sys7windows6wingdi10BITMAPINFOS4dgui4core6winapi4SIZEZv",
+    "deco" : "FKS4core3sys7windows6wingdi10BITMAPINFOS4dguiQBq6winapi4SIZEZv",
     "parameters" : [
      {
       "name" : "bi",
@@ -22554,7 +22551,7 @@
     "protection" : "private",
     "line" : 55,
     "char" : 17,
-    "deco" : "FPvS4dgui4core6winapi4SIZEZPv",
+    "deco" : "FPvS4dgui4core6winapi4SIZEZQBa",
     "originalType" : "HBITMAP(HDC hdc, SIZE sz)",
     "parameters" : [
      {
@@ -22599,7 +22596,7 @@
     "protection" : "private",
     "line" : 83,
     "char" : 14,
-    "deco" : "FPvPkPvS4dgui4core6winapi4SIZEiZv",
+    "deco" : "FPvPkQeS4dgui4core6winapi4SIZEiZv",
     "originalType" : "void(HDC hdc, ARGB* pArgb, HBITMAP hBmpMask, SIZE sz, int cxRow)",
     "parameters" : [
      {
@@ -22632,7 +22629,7 @@
     "protection" : "private",
     "line" : 114,
     "char" : 14,
-    "deco" : "FPvPvPvS4dgui4core6winapi4SIZEZv",
+    "deco" : "FPvQcQeS4dgui4core6winapi4SIZEZv",
     "originalType" : "void(HPAINTBUFFER hPaintBuffer, HDC hdc, HICON hIcon, SIZE szIco)",
     "parameters" : [
      {
@@ -22660,7 +22657,7 @@
     "kind" : "function",
     "line" : 137,
     "char" : 16,
-    "deco" : "FPvZPv",
+    "deco" : "FPvZQd",
     "originalType" : "HBITMAP(HICON hIcon)",
     "parameters" : [
      {
@@ -23089,7 +23086,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaE4dgui4core11windowclass11ClassStylesC4dgui6canvas6CursorPWNbPvkkiZiZv",
+      "deco" : "FAyaE4dgui4core11windowclass11ClassStylesCQBl6canvas6CursorPWNbPvkkiZiZv",
       "originalType" : "void(string className, ClassStyles classStyle, Cursor cursor, WNDPROC wndProc)",
       "parameters" : [
        {
@@ -23120,7 +23117,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaAyaPWNbPvkkiZiZPWNbPvkkiZi",
+      "deco" : "FAyaQdPWNbPvkkiZiZQm",
       "originalType" : "WNDPROC(string oldClassName, string newClassName, WNDPROC newWndProc)",
       "parameters" : [
        {
@@ -23234,7 +23231,7 @@
       "protection" : "package",
       "line" : 23,
       "char" : 10,
-      "deco" : "FC4dgui6layout9gridpanel9GridPanelC4dgui4core8controls7control7ControlZC4dgui6layout9gridpanel10ColumnPart",
+      "deco" : "FC4dgui6layout9gridpanel9GridPanelCQBh4core8controls7control7ControlZCQCqQCoQCk10ColumnPart",
       "originalType" : "(GridPanel gp, Control c)",
       "parameters" : [
        {
@@ -23381,7 +23378,7 @@
       "protection" : "private",
       "line" : 91,
       "char" : 34,
-      "deco" : "C4dgui4core10collection52__T10CollectionTC4dgui6layout9gridpanel10ColumnPartZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn6layout9gridpanel10ColumnPartZQBv",
       "originalType" : "Collection!ColumnPart",
       "offset" : 12
      },
@@ -23431,7 +23428,7 @@
       "protection" : "package",
       "line" : 97,
       "char" : 10,
-      "deco" : "FC4dgui6layout9gridpanel9GridPanelZC4dgui6layout9gridpanel7RowPart",
+      "deco" : "FC4dgui6layout9gridpanel9GridPanelZCQBiQBgQBc7RowPart",
       "originalType" : "(GridPanel gp)",
       "parameters" : [
        {
@@ -23558,7 +23555,7 @@
       "kind" : "function",
       "line" : 165,
       "char" : 20,
-      "deco" : "FC4dgui4core8controls7control7ControlZC4dgui6layout9gridpanel10ColumnPart",
+      "deco" : "FC4dgui4core8controls7control7ControlZCQBl6layout9gridpanel10ColumnPart",
       "parameters" : [
        {
         "name" : "c",
@@ -23611,7 +23608,7 @@
       "protection" : "private",
       "line" : 213,
       "char" : 31,
-      "deco" : "C4dgui4core10collection48__T10CollectionTC4dgui6layout9gridpanel7RowPartZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn6layout9gridpanel7RowPartZQBr",
       "originalType" : "Collection!RowPart",
       "offset" : 392
      },
@@ -23821,7 +23818,7 @@
       "kind" : "function",
       "line" : 37,
       "char" : 14,
-      "deco" : "FC4dgui4core8controls7control7ControlS4dgui4core8geometry5PointZv",
+      "deco" : "FC4dgui4core8controls7control7ControlSQBkQBi8geometry5PointZv",
       "parameters" : [
        {
         "name" : "ctrl",
@@ -23863,7 +23860,7 @@
       "kind" : "function",
       "line" : 47,
       "char" : 14,
-      "deco" : "FC4dgui4core8controls7control7ControlS4dgui4core8geometry4SizeZv",
+      "deco" : "FC4dgui4core8controls7control7ControlSQBkQBi8geometry4SizeZv",
       "parameters" : [
        {
         "name" : "ctrl",
@@ -23905,7 +23902,7 @@
       "kind" : "function",
       "line" : 57,
       "char" : 14,
-      "deco" : "FC4dgui4core8controls7control7ControlS4dgui4core8geometry4RectE4dgui4core8controls7control17PositionSpecifiedZv",
+      "deco" : "FC4dgui4core8controls7control7ControlSQBkQBi8geometry4RectEQCfQCdQCbQBv17PositionSpecifiedZv",
       "originalType" : "void(Control ctrl, Rect r, PositionSpecified ps = PositionSpecified.ALL)",
       "parameters" : [
        {
@@ -23930,7 +23927,7 @@
       "kind" : "function",
       "line" : 62,
       "char" : 14,
-      "deco" : "FC4dgui4core8controls7control7ControliiiiE4dgui4core8controls7control17PositionSpecifiedZv",
+      "deco" : "FC4dgui4core8controls7control7ControliiiiEQBoQBmQBkQBe17PositionSpecifiedZv",
       "originalType" : "void(Control ctrl, int x, int y, int w, int h, PositionSpecified ps = PositionSpecified.ALL)",
       "parameters" : [
        {
@@ -24703,6 +24700,12 @@
     "kind" : "import",
     "line" : 88,
     "char" : 22
+   },
+   {
+    "name" : "dgui.timer",
+    "kind" : "import",
+    "line" : 88,
+    "char" : 35
    }
   ]
  },
@@ -24782,10 +24785,7 @@
     "kind" : "import",
     "line" : 23,
     "char" : 16,
-    "protection" : "private",
-    "selective" : [
-     "buildPath"
-    ]
+    "protection" : "private"
    },
    {
     "name" : "dgui.resources",
@@ -24818,34 +24818,18 @@
     "char" : 2
    },
    {
-    "name" : "XP_MANIFEST32",
-    "kind" : "enum member",
-    "protection" : "private",
-    "value" : "\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"yes\\\"?>\\x0d\\x0a<assembly xmlns=\\\"urn:schemas-microsoft-com:asm.v1\\\" manifestVersion=\\\"1.0\\\">\\x0d\\x0a<assemblyIdentity\\x0d\\x0aversion=\\\"1.0.0.0\\\"\\x0d\\x0aprocessorArchitecture=\\\"X86\\\"\\x0d\\x0aname=\\\"client\\\"\\x0d\\x0atype=\\\"win32\\\"\\x0d\\x0a/>\\x0d\\x0a<description></description>\\x0d\\x0a\\x0d\\x0a<!-- Enable Windows XP and higher themes with common controls -->\\x0d\\x0a<dependency>\\x0d\\x0a<dependentAssembly>\\x0d\\x0a<assemblyIdentity\\x0d\\x0atype=\\\"win32\\\"\\x0d\\x0aname=\\\"Microsoft.Windows.Common-Controls\\\"\\x0d\\x0aversion=\\\"6.0.0.0\\\"\\x0d\\x0aprocessorArchitecture=\\\"X86\\\"\\x0d\\x0apublicKeyToken=\\\"6595b64144ccf1df\\\"\\x0d\\x0alanguage=\\\"*\\\"\\x0d\\x0a/>\\x0d\\x0a</dependentAssembly>\\x0d\\x0a</dependency>\\x0d\\x0a\\x0d\\x0a<!-- Disable Windows Vista UAC compatibility heuristics -->\\x0d\\x0a<trustInfo xmlns=\\\"urn:schemas-microsoft-com:asm.v2\\\">\\x0d\\x0a<security>\\x0d\\x0a<requestedPrivileges>\\x0d\\x0a<requestedExecutionLevel level=\\\"asInvoker\\\"/>\\x0d\\x0a</requestedPrivileges>\\x0d\\x0a</security>\\x0d\\x0a</trustInfo> \\x0d\\x0a\\x0d\\x0a<!-- Enable Windows Vista-style font scaling on Vista -->\\x0d\\x0a<asmv3:application xmlns:asmv3=\\\"urn:schemas-microsoft-com:asm.v3\\\">\\x0d\\x0a<asmv3:windowsSettings xmlns=\\\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\\\">\\x0d\\x0a<dpiAware>true</dpiAware>\\x0d\\x0a</asmv3:windowsSettings>\\x0d\\x0a</asmv3:application>\\x0d\\x0a</assembly>\\x0d\\x0a\"",
-    "line" : 31,
-    "char" : 2
-   },
-   {
-    "name" : "XP_MANIFEST64",
-    "kind" : "enum member",
-    "protection" : "private",
-    "value" : "\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"yes\\\"?>\\x0d\\x0a<assembly xmlns=\\\"urn:schemas-microsoft-com:asm.v1\\\" manifestVersion=\\\"1.0\\\">\\x0d\\x0a<assemblyIdentity\\x0d\\x0aversion=\\\"1.0.0.0\\\"\\x0d\\x0aprocessorArchitecture=\\\"X64\\\"\\x0d\\x0aname=\\\"client\\\"\\x0d\\x0atype=\\\"X64\\\"\\x0d\\x0a/>\\x0d\\x0a<description></description>\\x0d\\x0a\\x0d\\x0a<!-- Enable Windows XP and higher themes with common controls -->\\x0d\\x0a<dependency>\\x0d\\x0a<dependentAssembly>\\x0d\\x0a<assemblyIdentity\\x0d\\x0atype=\\\"X64\\\"\\x0d\\x0aname=\\\"Microsoft.Windows.Common-Controls\\\"\\x0d\\x0aversion=\\\"10.0.0.0\\\"\\x0d\\x0aprocessorArchitecture=\\\"X64\\\"\\x0d\\x0apublicKeyToken=\\\"6595b64144ccf1df\\\"\\x0d\\x0alanguage=\\\"*\\\"\\x0d\\x0a/>\\x0d\\x0a</dependentAssembly>\\x0d\\x0a</dependency>\\x0d\\x0a\\x0d\\x0a<!-- Disable Windows Vista UAC compatibility heuristics -->\\x0d\\x0a<trustInfo xmlns=\\\"urn:schemas-microsoft-com:asm.v2\\\">\\x0d\\x0a<security>\\x0d\\x0a<requestedPrivileges>\\x0d\\x0a<requestedExecutionLevel level=\\\"asInvoker\\\"/>\\x0d\\x0a</requestedPrivileges>\\x0d\\x0a</security>\\x0d\\x0a</trustInfo> \\x0d\\x0a\\x0d\\x0a<!-- Enable Windows Vista-style font scaling on Vista -->\\x0d\\x0a<asmv3:application xmlns:asmv3=\\\"urn:schemas-microsoft-com:asm.v3\\\">\\x0d\\x0a<asmv3:windowsSettings xmlns=\\\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\\\">\\x0d\\x0a<dpiAware>true</dpiAware>\\x0d\\x0a</asmv3:windowsSettings>\\x0d\\x0a</asmv3:application>\\x0d\\x0a</assembly>\\x0d\\x0a\"",
-    "line" : 72,
-    "char" : 3
-   },
-   {
     "name" : "XP_MANIFEST",
     "kind" : "enum member",
     "protection" : "private",
-    "value" : "XP_MANIFEST64",
-    "line" : 112,
+    "value" : "\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"yes\\\"?>\\x0d\\x0a<assembly xmlns=\\\"urn:schemas-microsoft-com:asm.v1\\\" manifestVersion=\\\"1.0\\\">\\x0d\\x0a<assemblyIdentity version=\\\"1.0.0.0\\\" name=\\\"MyApplication.app\\\"/>\\x0d\\x0a<trustInfo xmlns=\\\"urn:schemas-microsoft-com:asm.v2\\\">\\x0d\\x0a<security>\\x0d\\x0a<requestedPrivileges xmlns=\\\"urn:schemas-microsoft-com:asm.v3\\\">\\x0d\\x0a<requestedExecutionLevel level=\\\"asInvoker\\\" uiAccess=\\\"false\\\"/>\\x0d\\x0a</requestedPrivileges>\\x0d\\x0a</security>\\x0d\\x0a</trustInfo>\\x0d\\x0a\" ~ \"</assembly>\"",
+    "line" : 31,
     "char" : 3
    },
    {
     "name" : "ActivateActCtxProc",
     "kind" : "alias",
     "protection" : "private",
-    "line" : 143,
+    "line" : 85,
     "char" : 82,
     "deco" : "PWPvPkZi"
    },
@@ -24853,7 +24837,7 @@
     "name" : "CreateActCtxWProc",
     "kind" : "alias",
     "protection" : "private",
-    "line" : 144,
+    "line" : 86,
     "char" : 65,
     "deco" : "PWPS4dgui4core6winapi7ACTCTXWZPv"
    },
@@ -24861,28 +24845,28 @@
     "name" : "InitCommonControlsExProc",
     "kind" : "alias",
     "protection" : "private",
-    "line" : 145,
+    "line" : 87,
     "char" : 68,
     "deco" : "PWPS4dgui4core6winapi20INITCOMMONCONTROLSEXZb"
    },
    {
     "name" : "Application",
     "kind" : "class",
-    "line" : 152,
+    "line" : 94,
     "char" : 1,
     "members" : [
      {
       "name" : "ExceptionForm",
       "kind" : "class",
       "protection" : "private",
-      "line" : 154,
+      "line" : 96,
       "char" : 17,
       "base" : "dgui.form.Form",
       "members" : [
        {
         "name" : "this",
         "kind" : "constructor",
-        "line" : 156,
+        "line" : 98,
         "char" : 10,
         "deco" : "FC6object9ThrowableZC4dgui11application11Application13ExceptionForm",
         "originalType" : "(Throwable e)",
@@ -24892,165 +24876,165 @@
           "deco" : "C6object9Throwable"
          }
         ],
-        "endline" : 200,
+        "endline" : 142,
         "endchar" : 3
        },
        {
         "name" : "_rtfText",
         "kind" : "variable",
         "protection" : "private",
-        "line" : 202,
+        "line" : 144,
         "char" : 23,
         "deco" : "C4dgui11richtextbox11RichTextBox",
         "originalType" : "RichTextBox",
-        "offset" : 452
+        "offset" : 468
        },
        {
         "name" : "_lblHead",
         "kind" : "variable",
         "protection" : "private",
-        "line" : 203,
+        "line" : 145,
         "char" : 17,
         "deco" : "C4dgui5label5Label",
         "originalType" : "Label",
-        "offset" : 456
+        "offset" : 472
        },
        {
         "name" : "_lblInfo",
         "kind" : "variable",
         "protection" : "private",
-        "line" : 204,
+        "line" : 146,
         "char" : 17,
         "deco" : "C4dgui5label5Label",
         "originalType" : "Label",
-        "offset" : 460
+        "offset" : 476
        },
        {
         "name" : "_btnIgnore",
         "kind" : "variable",
         "protection" : "private",
-        "line" : 205,
+        "line" : 147,
         "char" : 18,
         "deco" : "C4dgui6button6Button",
         "originalType" : "Button",
-        "offset" : 464
+        "offset" : 480
        },
        {
         "name" : "_btnQuit",
         "kind" : "variable",
         "protection" : "private",
-        "line" : 206,
+        "line" : 148,
         "char" : 18,
         "deco" : "C4dgui6button6Button",
         "originalType" : "Button",
-        "offset" : 468
+        "offset" : 484
        }
       ]
      },
      {
       "name" : "_staticCtor1",
       "kind" : "function",
-      "line" : 210,
+      "line" : 152,
       "char" : 9,
       "storageClass" : [
        "static"
       ],
       "deco" : "FZv",
-      "endline" : 213,
+      "endline" : 155,
       "endchar" : 2
      },
      {
       "name" : "instance",
       "kind" : "function",
-      "line" : 221,
+      "line" : 163,
       "char" : 36,
       "storageClass" : [
        "static"
       ],
       "deco" : "FNdZPv",
       "originalType" : "@property HINSTANCE()",
-      "endline" : 224,
+      "endline" : 166,
       "endchar" : 2
      },
      {
       "name" : "executablePath",
       "kind" : "function",
-      "line" : 230,
+      "line" : 172,
       "char" : 33,
       "storageClass" : [
        "static"
       ],
       "deco" : "FNdZAya",
-      "endline" : 233,
+      "endline" : 175,
       "endchar" : 2
      },
      {
       "name" : "tempPath",
       "kind" : "function",
-      "line" : 241,
+      "line" : 183,
       "char" : 33,
       "storageClass" : [
        "static"
       ],
       "deco" : "FNdZAya",
-      "endline" : 244,
+      "endline" : 186,
       "endchar" : 2
      },
      {
       "name" : "startupPath",
       "kind" : "function",
-      "line" : 250,
+      "line" : 192,
       "char" : 33,
       "storageClass" : [
        "static"
       ],
       "deco" : "FNdZAya",
-      "endline" : 253,
+      "endline" : 195,
       "endchar" : 2
      },
      {
       "name" : "resources",
       "kind" : "function",
-      "line" : 264,
+      "line" : 206,
       "char" : 36,
       "storageClass" : [
        "static"
       ],
       "deco" : "FNdZC4dgui9resources9Resources",
-      "endline" : 267,
+      "endline" : 209,
       "endchar" : 2
      },
      {
       "name" : "enableManifest",
       "kind" : "function",
       "protection" : "private",
-      "line" : 272,
+      "line" : 214,
       "char" : 22,
       "storageClass" : [
        "static"
       ],
       "deco" : "FZv",
-      "endline" : 309,
+      "endline" : 251,
       "endchar" : 2
      },
      {
       "name" : "initCommonControls",
       "kind" : "function",
       "protection" : "private",
-      "line" : 314,
+      "line" : 256,
       "char" : 22,
       "storageClass" : [
        "static"
       ],
       "deco" : "FZv",
-      "endline" : 332,
+      "endline" : 274,
       "endchar" : 2
      },
      {
       "name" : "doRun",
       "kind" : "function",
       "protection" : "private",
-      "line" : 343,
+      "line" : 285,
       "char" : 21,
       "storageClass" : [
        "static"
@@ -25062,13 +25046,13 @@
         "deco" : "C4dgui4form4Form"
        }
       ],
-      "endline" : 367,
+      "endline" : 309,
       "endchar" : 2
      },
      {
       "name" : "run",
       "kind" : "function",
-      "line" : 377,
+      "line" : 319,
       "char" : 20,
       "storageClass" : [
        "static"
@@ -25080,13 +25064,13 @@
         "deco" : "C4dgui4form4Form"
        }
       ],
-      "endline" : 381,
+      "endline" : 323,
       "endchar" : 2
      },
      {
       "name" : "exit",
       "kind" : "function",
-      "line" : 388,
+      "line" : 330,
       "char" : 21,
       "storageClass" : [
        "static"
@@ -25099,14 +25083,14 @@
         "default" : "0"
        }
       ],
-      "endline" : 391,
+      "endline" : 333,
       "endchar" : 2
      },
      {
       "name" : "showExceptionForm",
       "kind" : "function",
       "protection" : "package",
-      "line" : 401,
+      "line" : 343,
       "char" : 30,
       "storageClass" : [
        "static"
@@ -25118,19 +25102,19 @@
         "deco" : "C6object9Throwable"
        }
       ],
-      "endline" : 405,
+      "endline" : 347,
       "endchar" : 2
      },
      {
       "name" : "onMainFormClose",
       "kind" : "function",
       "protection" : "private",
-      "line" : 410,
+      "line" : 352,
       "char" : 22,
       "storageClass" : [
        "static"
       ],
-      "deco" : "FC4dgui4core8controls7control7ControlC4dgui4core6events9eventargs9EventArgsZv",
+      "deco" : "FC4dgui4core8controls7control7ControlCQBkQBi6events9eventargs9EventArgsZv",
       "parameters" : [
        {
         "name" : "sender",
@@ -25141,7 +25125,7 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 413,
+      "endline" : 355,
       "endchar" : 2
      }
     ]
@@ -25335,23 +25319,20 @@
     "protection" : "private"
    },
    {
-    "name" : "std.utf",
+    "name" : "std.path",
     "kind" : "import",
     "line" : 13,
     "char" : 8,
-    "protection" : "private",
-    "selective" : [
-     "toUTFz"
-    ]
+    "protection" : "private"
    },
    {
-    "name" : "std.path",
+    "name" : "std.utf",
     "kind" : "import",
     "line" : 14,
     "char" : 8,
     "protection" : "private",
     "selective" : [
-     "extension"
+     "toUTFz"
     ]
    },
    {
@@ -26528,7 +26509,7 @@
       "protection" : "private",
       "line" : 335,
       "char" : 102,
-      "deco" : "PWPviiiiPviiiikZi"
+      "deco" : "PWPviiiiQgiiiikZi"
      },
      {
       "name" : "GdiAlphaBlendProc",
@@ -26536,7 +26517,7 @@
       "protection" : "private",
       "line" : 336,
       "char" : 111,
-      "deco" : "PWPviiiiPviiiiS4dgui4core6winapi13BLENDFUNCTIONZi"
+      "deco" : "PWPviiiiQgiiiiS4dgui4core6winapi13BLENDFUNCTIONZi"
      },
      {
       "name" : "GdiGradientFillProc",
@@ -26544,7 +26525,7 @@
       "protection" : "private",
       "line" : 337,
       "char" : 91,
-      "deco" : "PWPvPS4dgui4core6winapi9TRIVERTEXkPvkkZi"
+      "deco" : "PWPvPS4dgui4core6winapi9TRIVERTEXkQBgkkZi"
      },
      {
       "name" : "_gdiTransparentBlt",
@@ -26555,7 +26536,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPviiiiPviiiikZi",
+      "deco" : "PWPviiiiQgiiiikZi",
       "originalType" : "GdiTransparentBltProc",
       "init" : "null"
      },
@@ -26568,7 +26549,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPviiiiPviiiiS4dgui4core6winapi13BLENDFUNCTIONZi",
+      "deco" : "PWPviiiiQgiiiiS4dgui4core6winapi13BLENDFUNCTIONZi",
       "originalType" : "GdiAlphaBlendProc",
       "init" : "null"
      },
@@ -26581,7 +26562,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPvPS4dgui4core6winapi9TRIVERTEXkPvkkZi",
+      "deco" : "PWPvPS4dgui4core6winapi9TRIVERTEXkQBgkkZi",
       "originalType" : "GdiGradientFillProc",
       "init" : "null"
      },
@@ -26651,7 +26632,7 @@
       "protection" : "protected",
       "line" : 354,
       "char" : 12,
-      "deco" : "FPvbE4dgui6canvas6Canvas10CanvasTypeZC4dgui6canvas6Canvas",
+      "deco" : "FPvbE4dgui6canvas6Canvas10CanvasTypeZCQBhQBfQBb",
       "originalType" : "(HDC hdc, bool owned, CanvasType type)",
       "parameters" : [
        {
@@ -26684,7 +26665,7 @@
       "kind" : "function",
       "line" : 366,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasE4dgui6canvas14BitmapCopyModeS4dgui4core8geometry4RectS4dgui4core8geometry5PointZv",
+      "deco" : "FC4dgui6canvas6CanvasEQuQr14BitmapCopyModeSQBp4core8geometry4RectSQCmQxQu5PointZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26711,7 +26692,7 @@
       "kind" : "function",
       "line" : 381,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasS4dgui4core8geometry4RectS4dgui4core8geometry5PointZv",
+      "deco" : "FC4dgui6canvas6CanvasSQu4core8geometry4RectSQBqQxQu5PointZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26734,7 +26715,7 @@
       "kind" : "function",
       "line" : 386,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasE4dgui6canvas14BitmapCopyModeS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas6CanvasEQuQr14BitmapCopyModeSQBp4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26757,7 +26738,7 @@
       "kind" : "function",
       "line" : 391,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasE4dgui6canvas14BitmapCopyModeZv",
+      "deco" : "FC4dgui6canvas6CanvasEQuQr14BitmapCopyModeZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26791,7 +26772,7 @@
       "kind" : "function",
       "line" : 401,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasS4dgui6canvas5ColorZv",
+      "deco" : "FC4dgui6canvas6CanvasSQuQr5ColorZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26810,7 +26791,7 @@
       "kind" : "function",
       "line" : 406,
       "char" : 14,
-      "deco" : "FC4dgui6canvas6CanvasS4dgui6canvas5ColorS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas6CanvasSQuQr5ColorSQBf4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "c",
@@ -26848,7 +26829,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaC4dgui6canvas6CanvasC4dgui6canvas4FontZS4dgui4core8geometry4Size",
+      "deco" : "FAyaC4dgui6canvas6CanvasCQuQr4FontZSQBf4core8geometry4Size",
       "parameters" : [
        {
         "name" : "s",
@@ -26874,7 +26855,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaC4dgui6canvas6CanvasZS4dgui4core8geometry4Size",
+      "deco" : "FAyaC4dgui6canvas6CanvasZSQv4core8geometry4Size",
       "parameters" : [
        {
         "name" : "s",
@@ -26896,7 +26877,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaC4dgui6canvas4FontZS4dgui4core8geometry4Size",
+      "deco" : "FAyaC4dgui6canvas4FontZSQt4core8geometry4Size",
       "parameters" : [
        {
         "name" : "s",
@@ -26936,7 +26917,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FS4dgui4core8geometry4RectS4dgui6canvas5ColorS4dgui6canvas5ColorE4dgui6canvas20GradientFillRectModeZv",
+      "deco" : "FS4dgui4core8geometry4RectSQz6canvas5ColorQqEQBrQt20GradientFillRectModeZv",
       "parameters" : [
        {
         "name" : "r",
@@ -26966,7 +26947,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FiiiiiiS4dgui6canvas5ColorS4dgui6canvas5ColorS4dgui6canvas5ColorZv",
+      "deco" : "FiiiiiiS4dgui6canvas5ColorQtQvZv",
       "parameters" : [
        {
         "name" : "x1",
@@ -27016,7 +26997,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FS4dgui4core8geometry5PointS4dgui4core8geometry5PointS4dgui4core8geometry5PointS4dgui6canvas5ColorS4dgui6canvas5ColorS4dgui6canvas5ColorZv",
+      "deco" : "FS4dgui4core8geometry5PointQBaQBdSQBg6canvas5ColorQrQtZv",
       "parameters" : [
        {
         "name" : "pt1",
@@ -27054,7 +27035,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas5ImageS4dgui4core8geometry5PointS4dgui4core8geometry5PointS4dgui4core8geometry5PointZv",
+      "deco" : "FC4dgui6canvas5ImageSQt4core8geometry5PointQxQzZv",
       "parameters" : [
        {
         "name" : "img",
@@ -27084,7 +27065,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas5ImageiiS4dgui4core8geometry5PointS4dgui4core8geometry5PointS4dgui4core8geometry5PointZv",
+      "deco" : "FC4dgui6canvas5ImageiiSQv4core8geometry5PointQxQzZv",
       "parameters" : [
        {
         "name" : "img",
@@ -27148,7 +27129,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas5ImageS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas5ImageSQt4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "img",
@@ -27170,7 +27151,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FS4dgui4core8geometry4RectE4dgui6canvas9FrameTypeE4dgui6canvas9FrameModeZv",
+      "deco" : "FS4dgui4core8geometry4RectEQz6canvas9FrameTypeEQBtQv9FrameModeZv",
       "parameters" : [
        {
         "name" : "r",
@@ -27196,7 +27177,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FS4dgui4core8geometry4RectE4dgui6canvas8EdgeTypeE4dgui6canvas8EdgeModeZv",
+      "deco" : "FS4dgui4core8geometry4RectEQz6canvas8EdgeTypeEQBsQu8EdgeModeZv",
       "parameters" : [
        {
         "name" : "r",
@@ -27222,7 +27203,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectS4dgui6canvas5ColorC4dgui6canvas4FontC4dgui6canvas10TextFormatZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectSQz6canvas5ColorCQBpQr4FontCQCaQBc10TextFormatZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27256,7 +27237,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectS4dgui6canvas5ColorC4dgui6canvas4FontZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectSQz6canvas5ColorCQBpQr4FontZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27286,7 +27267,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectS4dgui6canvas5ColorZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectSQz6canvas5ColorZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27312,7 +27293,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectC4dgui6canvas4FontC4dgui6canvas10TextFormatZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectCQz6canvas4FontCQBoQq10TextFormatZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27342,7 +27323,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectC4dgui6canvas10TextFormatZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectCQz6canvas10TextFormatZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27368,7 +27349,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaS4dgui4core8geometry4RectC4dgui6canvas4FontZv",
+      "deco" : "FAyaS4dgui4core8geometry4RectCQz6canvas4FontZv",
       "parameters" : [
        {
         "name" : "text",
@@ -27450,7 +27431,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas3PenC4dgui6canvas5BrushS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas3PenCQrQo5BrushSQBc4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "pen",
@@ -27476,7 +27457,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas3PenS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas3PenSQr4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "pen",
@@ -27498,7 +27479,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas3PenC4dgui6canvas5BrushS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas3PenCQrQo5BrushSQBc4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "pen",
@@ -27524,7 +27505,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas3PenS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas3PenSQr4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "pen",
@@ -27546,7 +27527,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas5BrushS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas5BrushSQt4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "b",
@@ -27568,7 +27549,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas5BrushS4dgui4core8geometry4RectZv",
+      "deco" : "FC4dgui6canvas5BrushSQt4core8geometry4RectZv",
       "parameters" : [
        {
         "name" : "b",
@@ -27590,7 +27571,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FC4dgui6canvas6BitmapZC4dgui6canvas6Canvas",
+      "deco" : "FC4dgui6canvas6BitmapZCQvQs6Canvas",
       "parameters" : [
        {
         "name" : "b",
@@ -27830,7 +27811,7 @@
       "kind" : "constructor",
       "line" : 870,
       "char" : 9,
-      "deco" : "FS4dgui4core8geometry4SizeZC4dgui6canvas6Bitmap",
+      "deco" : "FS4dgui4core8geometry4SizeZCQBa6canvas6Bitmap",
       "originalType" : "(Size sz)",
       "parameters" : [
        {
@@ -27846,7 +27827,7 @@
       "kind" : "constructor",
       "line" : 876,
       "char" : 9,
-      "deco" : "FS4dgui4core8geometry4SizeS4dgui6canvas5ColorZC4dgui6canvas6Bitmap",
+      "deco" : "FS4dgui4core8geometry4SizeSQz6canvas5ColorZCQBqQs6Bitmap",
       "originalType" : "(Size sz, Color bc)",
       "parameters" : [
        {
@@ -27886,7 +27867,7 @@
       "kind" : "constructor",
       "line" : 888,
       "char" : 9,
-      "deco" : "FiiS4dgui6canvas5ColorZC4dgui6canvas6Bitmap",
+      "deco" : "FiiS4dgui6canvas5ColorZCQuQr6Bitmap",
       "originalType" : "(int w, int h, Color bc)",
       "parameters" : [
        {
@@ -28259,7 +28240,7 @@
       "kind" : "function",
       "line" : 1171,
       "char" : 16,
-      "deco" : "FS4dgui4core8geometry4SizeZC4dgui6canvas6Bitmap",
+      "deco" : "FS4dgui4core8geometry4SizeZCQBa6canvas6Bitmap",
       "parameters" : [
        {
         "name" : "sz",
@@ -28480,7 +28461,7 @@
       "kind" : "constructor",
       "line" : 1260,
       "char" : 9,
-      "deco" : "FAyaiE4dgui6canvas9FontStyleZC4dgui6canvas4Font",
+      "deco" : "FAyaiE4dgui6canvas9FontStyleZCQyQv4Font",
       "originalType" : "(string name, int h, FontStyle style = FontStyle.NORMAL)",
       "parameters" : [
        {
@@ -28505,7 +28486,7 @@
       "kind" : "constructor",
       "line" : 1271,
       "char" : 9,
-      "deco" : "FC4dgui6canvas4FontE4dgui6canvas9FontStyleZC4dgui6canvas4Font",
+      "deco" : "FC4dgui6canvas4FontEQsQp9FontStyleZQBi",
       "originalType" : "(Font f, FontStyle fs)",
       "parameters" : [
        {
@@ -28556,7 +28537,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FE4dgui6canvas9FontStyleKS4dgui4core6winapi8LOGFONTWZv",
+      "deco" : "FE4dgui6canvas9FontStyleKSQy4core6winapi8LOGFONTWZv",
       "parameters" : [
        {
         "name" : "style",
@@ -28671,7 +28652,7 @@
       "kind" : "constructor",
       "line" : 1377,
       "char" : 9,
-      "deco" : "FS4dgui6canvas5ColorZC4dgui6canvas10SolidBrush",
+      "deco" : "FS4dgui6canvas5ColorZCQuQr10SolidBrush",
       "originalType" : "(Color color)",
       "parameters" : [
        {
@@ -28771,7 +28752,7 @@
       "kind" : "constructor",
       "line" : 1404,
       "char" : 9,
-      "deco" : "FS4dgui6canvas5ColorE4dgui6canvas10HatchStyleZC4dgui6canvas10HatchBrush",
+      "deco" : "FS4dgui6canvas5ColorEQtQq10HatchStyleZCQBlQBj10HatchBrush",
       "originalType" : "(Color color, HatchStyle style)",
       "parameters" : [
        {
@@ -28879,7 +28860,7 @@
       "kind" : "constructor",
       "line" : 1437,
       "char" : 9,
-      "deco" : "FC4dgui6canvas6BitmapZC4dgui6canvas12PatternBrush",
+      "deco" : "FC4dgui6canvas6BitmapZCQvQs12PatternBrush",
       "originalType" : "(Bitmap bmp)",
       "parameters" : [
        {
@@ -28988,7 +28969,7 @@
       "kind" : "constructor",
       "line" : 1465,
       "char" : 9,
-      "deco" : "FS4dgui6canvas5ColoriE4dgui6canvas8PenStyleZC4dgui6canvas3Pen",
+      "deco" : "FS4dgui6canvas5ColoriEQuQr8PenStyleZCQBjQBh3Pen",
       "originalType" : "(Color color, int width = 1, PenStyle style = PenStyle.SOLID)",
       "parameters" : [
        {
@@ -30395,7 +30376,7 @@
       "kind" : "constructor",
       "line" : 2227,
       "char" : 9,
-      "deco" : "FC4dgui6canvas10TextFormatZC4dgui6canvas10TextFormat",
+      "deco" : "FC4dgui6canvas10TextFormatZQBa",
       "originalType" : "(TextFormat tf)",
       "parameters" : [
        {
@@ -30411,7 +30392,7 @@
       "kind" : "constructor",
       "line" : 2235,
       "char" : 9,
-      "deco" : "FE4dgui6canvas15TextFormatFlagsZC4dgui6canvas10TextFormat",
+      "deco" : "FE4dgui6canvas15TextFormatFlagsZCQBfQBd10TextFormat",
       "originalType" : "(TextFormatFlags tff)",
       "parameters" : [
        {
@@ -30911,7 +30892,7 @@
       "kind" : "variable",
       "line" : 109,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 388
      },
      {
@@ -30920,7 +30901,7 @@
       "protection" : "private",
       "line" : 111,
       "char" : 36,
-      "deco" : "C4dgui4core10collection46__T10CollectionTC4dgui8combobox12ComboBoxItemZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8combobox12ComboBoxItemZQBp",
       "originalType" : "Collection!ComboBoxItem",
       "offset" : 404
      },
@@ -31133,7 +31114,7 @@
       "protection" : "private",
       "line" : 249,
       "char" : 23,
-      "deco" : "FC4dgui8combobox12ComboBoxItemZC4dgui8combobox12ComboBoxItem",
+      "deco" : "FC4dgui8combobox12ComboBoxItemZQBe",
       "parameters" : [
        {
         "name" : "cbi",
@@ -31605,7 +31586,7 @@
     "kind" : "alias",
     "line" : 17,
     "char" : 30,
-    "deco" : "C4dgui4core6events9eventargs38__T15CancelEventArgsTC4dgui4form4FormZ15CancelEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx4form4FormZQBh"
    },
    {
     "name" : "FormBits",
@@ -31744,9 +31725,9 @@
       "kind" : "variable",
       "protection" : "private",
       "line" : 47,
-      "char" : 16,
-      "deco" : "m",
-      "init" : "0LU",
+      "char" : 19,
+      "deco" : "E4dgui4form8FormBits",
+      "init" : "cast(FormBits)0LU",
       "offset" : 392
      },
      {
@@ -31814,7 +31795,7 @@
       "kind" : "variable",
       "line" : 55,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 420
      },
      {
@@ -31822,24 +31803,32 @@
       "kind" : "variable",
       "line" : 56,
       "char" : 46,
-      "deco" : "S4dgui4core6events5event133__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs38__T15CancelEventArgsTC4dgui4form4FormZ15CancelEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T15CancelEventArgsTCQEe4form4FormZQBhZQDw",
       "originalType" : "Event!(Control, CancelFormEventArgs)",
       "offset" : 436
      },
      {
+      "name" : "load",
+      "kind" : "variable",
+      "line" : 57,
+      "char" : 36,
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
+      "offset" : 452
+     },
+     {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 58,
+      "line" : 59,
       "char" : 9,
       "deco" : "FZC4dgui4form4Form",
       "originalType" : "()",
-      "endline" : 61,
+      "endline" : 62,
       "endchar" : 2
      },
      {
       "name" : "formBorderStyle",
       "kind" : "function",
-      "line" : 63,
+      "line" : 64,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31851,13 +31840,13 @@
         "deco" : "E4dgui4form15FormBorderStyle"
        }
       ],
-      "endline" : 82,
+      "endline" : 83,
       "endchar" : 2
      },
      {
       "name" : "controlBox",
       "kind" : "function",
-      "line" : 84,
+      "line" : 85,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31869,13 +31858,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 87,
+      "endline" : 88,
       "endchar" : 2
      },
      {
       "name" : "maximizeBox",
       "kind" : "function",
-      "line" : 89,
+      "line" : 90,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31887,13 +31876,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 92,
+      "endline" : 93,
       "endchar" : 2
      },
      {
       "name" : "minimizeBox",
       "kind" : "function",
-      "line" : 94,
+      "line" : 95,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31905,13 +31894,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 97,
+      "endline" : 98,
       "endchar" : 2
      },
      {
       "name" : "showInTaskbar",
       "kind" : "function",
-      "line" : 99,
+      "line" : 100,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31923,25 +31912,25 @@
         "deco" : "b"
        }
       ],
-      "endline" : 102,
+      "endline" : 103,
       "endchar" : 2
      },
      {
       "name" : "menu",
       "kind" : "function",
-      "line" : 104,
+      "line" : 105,
       "char" : 33,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZC4dgui7menubar7MenuBar",
-      "endline" : 107,
+      "endline" : 108,
       "endchar" : 2
      },
      {
       "name" : "menu",
       "kind" : "function",
-      "line" : 109,
+      "line" : 110,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31953,25 +31942,25 @@
         "deco" : "C4dgui7menubar7MenuBar"
        }
       ],
-      "endline" : 123,
+      "endline" : 124,
       "endchar" : 2
      },
      {
       "name" : "icon",
       "kind" : "function",
-      "line" : 125,
+      "line" : 126,
       "char" : 30,
       "storageClass" : [
        "final"
       ],
       "deco" : "FNdZC4dgui6canvas4Icon",
-      "endline" : 128,
+      "endline" : 129,
       "endchar" : 2
      },
      {
       "name" : "icon",
       "kind" : "function",
-      "line" : 130,
+      "line" : 131,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -31983,13 +31972,13 @@
         "deco" : "C4dgui6canvas4Icon"
        }
       ],
-      "endline" : 144,
+      "endline" : 145,
       "endchar" : 2
      },
      {
       "name" : "topMost",
       "kind" : "function",
-      "line" : 146,
+      "line" : 147,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -32001,13 +31990,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 149,
+      "endline" : 150,
       "endchar" : 2
      },
      {
       "name" : "startPosition",
       "kind" : "function",
-      "line" : 151,
+      "line" : 152,
       "char" : 30,
       "storageClass" : [
        "final"
@@ -32019,29 +32008,29 @@
         "deco" : "E4dgui4form17FormStartPosition"
        }
       ],
-      "endline" : 154,
+      "endline" : 155,
       "endchar" : 2
      },
      {
       "name" : "doEvents",
       "kind" : "function",
       "protection" : "private",
-      "line" : 156,
+      "line" : 157,
       "char" : 15,
       "deco" : "FZv",
-      "endline" : 172,
+      "endline" : 173,
       "endchar" : 2
      },
      {
       "name" : "show",
       "kind" : "function",
-      "line" : 174,
+      "line" : 175,
       "char" : 23,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 179,
+      "endline" : 180,
       "endchar" : 2,
       "overrides" : [
        "dgui.layout.layoutcontrol.LayoutControl.show"
@@ -32050,33 +32039,33 @@
      {
       "name" : "showDialog",
       "kind" : "function",
-      "line" : 181,
+      "line" : 182,
       "char" : 28,
       "storageClass" : [
        "final"
       ],
       "deco" : "FZE4dgui4core7dialogs12dialogresult12DialogResult",
-      "endline" : 189,
+      "endline" : 190,
       "endchar" : 2
      },
      {
       "name" : "doFormStartPosition",
       "kind" : "function",
       "protection" : "private",
-      "line" : 191,
+      "line" : 192,
       "char" : 21,
       "storageClass" : [
        "final"
       ],
       "deco" : "FZv",
-      "endline" : 214,
+      "endline" : 215,
       "endchar" : 2
      },
      {
       "name" : "makeFormBorderStyle",
       "kind" : "function",
       "protection" : "private",
-      "line" : 216,
+      "line" : 217,
       "char" : 22,
       "storageClass" : [
        "static"
@@ -32102,14 +32091,14 @@
         ]
        }
       ],
-      "endline" : 277,
+      "endline" : 278,
       "endchar" : 2
      },
      {
       "name" : "onDGuiMessage",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 279,
+      "line" : 280,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -32124,7 +32113,7 @@
         ]
        }
       ],
-      "endline" : 299,
+      "endline" : 300,
       "endchar" : 2,
       "overrides" : [
        "dgui.layout.layoutcontrol.LayoutControl.onDGuiMessage"
@@ -32134,7 +32123,7 @@
       "name" : "createControlParams",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 301,
+      "line" : 302,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -32149,7 +32138,7 @@
         ]
        }
       ],
-      "endline" : 313,
+      "endline" : 314,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.containercontrol.ContainerControl.createControlParams"
@@ -32159,7 +32148,7 @@
       "name" : "onHandleCreated",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 315,
+      "line" : 316,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -32171,7 +32160,7 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 334,
+      "endline" : 335,
       "endchar" : 2,
       "overrides" : [
        "dgui.layout.layoutcontrol.LayoutControl.onHandleCreated"
@@ -32181,7 +32170,7 @@
       "name" : "wndProc",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 336,
+      "line" : 337,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -32196,7 +32185,7 @@
         ]
        }
       ],
-      "endline" : 366,
+      "endline" : 372,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.reflectedcontrol.ReflectedControl.wndProc"
@@ -32206,24 +32195,24 @@
       "name" : "onClosing",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 368,
+      "line" : 374,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs38__T15CancelEventArgsTC4dgui4form4FormZ15CancelEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T15CancelEventArgsTCQBx4form4FormZQBhZv",
       "originalType" : "void(CancelFormEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs38__T15CancelEventArgsTC4dgui4form4FormZ15CancelEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx4form4FormZQBh"
        }
       ],
-      "endline" : 371,
+      "endline" : 377,
       "endchar" : 2
      },
      {
       "name" : "onClose",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 373,
+      "line" : 379,
       "char" : 17,
       "deco" : "FC4dgui4core6events9eventargs9EventArgsZv",
       "parameters" : [
@@ -32232,7 +32221,23 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 376,
+      "endline" : 382,
+      "endchar" : 2
+     },
+     {
+      "name" : "onLoad",
+      "kind" : "function",
+      "protection" : "protected",
+      "line" : 384,
+      "char" : 17,
+      "deco" : "FC4dgui4core6events9eventargs9EventArgsZv",
+      "parameters" : [
+       {
+        "name" : "e",
+        "deco" : "C4dgui4core6events9eventargs9EventArgs"
+       }
+      ],
+      "endline" : 387,
       "endchar" : 2
      }
     ]
@@ -32344,7 +32349,7 @@
     "protection" : "private",
     "line" : 32,
     "char" : 63,
-    "deco" : "PWPvZPv"
+    "deco" : "PWPvZQd"
    },
    {
     "name" : "ImageList_RemoveProc",
@@ -32360,7 +32365,7 @@
     "protection" : "private",
     "line" : 34,
     "char" : 63,
-    "deco" : "PWPvPvZi"
+    "deco" : "PWPvQcZi"
    },
    {
     "name" : "ImageList_DrawProc",
@@ -32368,7 +32373,7 @@
     "protection" : "private",
     "line" : 35,
     "char" : 82,
-    "deco" : "PWPviPviikZi"
+    "deco" : "PWPviQdiikZi"
    },
    {
     "name" : "ImageList_SetBkColorProc",
@@ -32421,7 +32426,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPvPvZi",
+      "deco" : "PWPvQcZi",
       "originalType" : "ImageList_AddIconProc"
      },
      {
@@ -32433,7 +32438,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPvZPv",
+      "deco" : "PWPvZQd",
       "originalType" : "ImageList_DestroyProc"
      },
      {
@@ -32445,7 +32450,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "PWPviPviikZi",
+      "deco" : "PWPviQdiikZi",
       "originalType" : "ImageList_DrawProc"
      },
      {
@@ -32485,7 +32490,7 @@
       "protection" : "private",
       "line" : 49,
       "char" : 28,
-      "deco" : "C4dgui4core10collection35__T10CollectionTC4dgui6canvas4IconZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn6canvas4IconZQBe",
       "originalType" : "Collection!Icon",
       "offset" : 28
      },
@@ -32544,7 +32549,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FiC4dgui6canvas6CanvasS4dgui4core8geometry5PointZv",
+      "deco" : "FiC4dgui6canvas6CanvasSQu4core8geometry5PointZv",
       "parameters" : [
        {
         "name" : "i",
@@ -33007,7 +33012,7 @@
       "kind" : "variable",
       "line" : 32,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 424
      },
      {
@@ -33016,7 +33021,7 @@
       "protection" : "private",
       "line" : 34,
       "char" : 30,
-      "deco" : "C4dgui4core10collection25__T10CollectionTC6ObjectZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTC6ObjectZQw",
       "originalType" : "Collection!Object",
       "offset" : 440
      },
@@ -33427,7 +33432,7 @@
       "protection" : "private",
       "line" : 41,
       "char" : 36,
-      "deco" : "C4dgui4core10collection46__T10CollectionTC4dgui8listview12ListViewItemZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8listview12ListViewItemZQBp",
       "originalType" : "Collection!ListViewItem",
       "offset" : 8
      },
@@ -33491,7 +33496,7 @@
       "protection" : "package",
       "line" : 50,
       "char" : 10,
-      "deco" : "FC4dgui8listview8ListViewAyaibZC4dgui8listview12ListViewItem",
+      "deco" : "FC4dgui8listview8ListViewAyaibZCQBeQBc12ListViewItem",
       "originalType" : "(ListView owner, string txt, int imgIdx, bool check)",
       "parameters" : [
        {
@@ -33520,7 +33525,7 @@
       "protection" : "package",
       "line" : 58,
       "char" : 10,
-      "deco" : "FC4dgui8listview8ListViewC4dgui8listview12ListViewItemAyaibZC4dgui8listview12ListViewItem",
+      "deco" : "FC4dgui8listview8ListViewCQyQv12ListViewItemAyaibZQz",
       "originalType" : "(ListView owner, ListViewItem parentItem, string txt, int imgIdx, bool check)",
       "parameters" : [
        {
@@ -33799,7 +33804,7 @@
       "protection" : "package",
       "line" : 247,
       "char" : 10,
-      "deco" : "FC4dgui8listview8ListViewAyaiE4dgui8listview15ColumnTextAlignZC4dgui8listview14ListViewColumn",
+      "deco" : "FC4dgui8listview8ListViewAyaiEQBcQBa15ColumnTextAlignZCQCbQBz14ListViewColumn",
       "originalType" : "(ListView owner, string txt, int w, ColumnTextAlign cta)",
       "parameters" : [
        {
@@ -33874,7 +33879,7 @@
     "kind" : "alias",
     "line" : 296,
     "char" : 43,
-    "deco" : "C4dgui4core6events9eventargs49__T13ItemEventArgsTC4dgui8listview12ListViewItemZ13ItemEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8listview12ListViewItemZQBs"
    },
    {
     "name" : "ListView",
@@ -33888,7 +33893,7 @@
       "kind" : "variable",
       "line" : 300,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 424
      },
      {
@@ -33896,7 +33901,7 @@
       "kind" : "variable",
       "line" : 301,
       "char" : 55,
-      "deco" : "S4dgui4core6events5event142__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs49__T13ItemEventArgsTC4dgui8listview12ListViewItemZ13ItemEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T13ItemEventArgsTCQEc8listview12ListViewItemZQBsZQEh",
       "originalType" : "Event!(Control, ListViewItemCheckedEventArgs)",
       "offset" : 440
      },
@@ -33906,7 +33911,7 @@
       "protection" : "private",
       "line" : 303,
       "char" : 38,
-      "deco" : "C4dgui4core10collection48__T10CollectionTC4dgui8listview14ListViewColumnZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8listview14ListViewColumnZQBr",
       "originalType" : "Collection!ListViewColumn",
       "offset" : 456
      },
@@ -33916,7 +33921,7 @@
       "protection" : "private",
       "line" : 304,
       "char" : 36,
-      "deco" : "C4dgui4core10collection46__T10CollectionTC4dgui8listview12ListViewItemZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8listview12ListViewItemZQBp",
       "originalType" : "Collection!ListViewItem",
       "offset" : 460
      },
@@ -34120,7 +34125,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaiE4dgui8listview15ColumnTextAlignZC4dgui8listview14ListViewColumn",
+      "deco" : "FAyaiE4dgui8listview15ColumnTextAlignZCQBhQBf14ListViewColumn",
       "originalType" : "ListViewColumn(string txt, int w, ColumnTextAlign cta = ColumnTextAlign.LEFT)",
       "parameters" : [
        {
@@ -34224,7 +34229,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FNdZC4dgui4core10collection46__T10CollectionTC4dgui8listview12ListViewItemZ10Collection",
+      "deco" : "FNdZC4dgui4core10collection__T10CollectionTCQBn8listview12ListViewItemZQBp",
       "originalType" : "@property Collection!ListViewItem()",
       "endline" : 499,
       "endchar" : 2
@@ -34237,7 +34242,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FNdZC4dgui4core10collection48__T10CollectionTC4dgui8listview14ListViewColumnZ10Collection",
+      "deco" : "FNdZC4dgui4core10collection__T10CollectionTCQBn8listview14ListViewColumnZQBr",
       "originalType" : "@property Collection!ListViewColumn()",
       "endline" : 504,
       "endchar" : 2
@@ -34379,12 +34384,12 @@
       "protection" : "protected",
       "line" : 692,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs49__T13ItemEventArgsTC4dgui8listview12ListViewItemZ13ItemEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8listview12ListViewItemZQBsZv",
       "originalType" : "void(ListViewItemCheckedEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs49__T13ItemEventArgsTC4dgui8listview12ListViewItemZ13ItemEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8listview12ListViewItemZQBs"
        }
       ],
       "endline" : 695,
@@ -34587,7 +34592,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaAyaE4dgui10messagebox13MsgBoxButtonsE4dgui10messagebox11MsgBoxIconsZE4dgui4core7dialogs12dialogresult12DialogResult",
+      "deco" : "FAyaQdE4dgui10messagebox13MsgBoxButtonsEQBhQBf11MsgBoxIconsZEQCc4core7dialogs12dialogresult12DialogResult",
       "parameters" : [
        {
         "name" : "title",
@@ -34617,7 +34622,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaAyaE4dgui10messagebox13MsgBoxButtonsZE4dgui4core7dialogs12dialogresult12DialogResult",
+      "deco" : "FAyaQdE4dgui10messagebox13MsgBoxButtonsZEQBi4core7dialogs12dialogresult12DialogResult",
       "parameters" : [
        {
         "name" : "title",
@@ -34643,7 +34648,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaAyaE4dgui10messagebox11MsgBoxIconsZE4dgui4core7dialogs12dialogresult12DialogResult",
+      "deco" : "FAyaQdE4dgui10messagebox11MsgBoxIconsZEQBg4core7dialogs12dialogresult12DialogResult",
       "parameters" : [
        {
         "name" : "title",
@@ -34669,7 +34674,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FAyaAyaZE4dgui4core7dialogs12dialogresult12DialogResult",
+      "deco" : "FAyaQdZE4dgui4core7dialogs12dialogresult12DialogResult",
       "parameters" : [
        {
         "name" : "title",
@@ -36082,7 +36087,7 @@
       "kind" : "function",
       "line" : 32,
       "char" : 14,
-      "deco" : "FtS4dgui4core8geometry4SizeZC4dgui6canvas4Icon",
+      "deco" : "FtS4dgui4core8geometry4SizeZCQBa6canvas4Icon",
       "parameters" : [
        {
         "name" : "id",
@@ -36366,7 +36371,7 @@
       "protection" : "private",
       "line" : 30,
       "char" : 10,
-      "deco" : "FC4dgui4core8controls7control7ControlE4dgui9scrollbar13ScrollBarTypeZC4dgui9scrollbar9ScrollBar",
+      "deco" : "FC4dgui4core8controls7control7ControlEQBk9scrollbar13ScrollBarTypeZCQCoQBe9ScrollBar",
       "originalType" : "(Control c, ScrollBarType sbt)",
       "parameters" : [
        {
@@ -36546,7 +36551,7 @@
       "storageClass" : [
        "static"
       ],
-      "deco" : "FC4dgui4core8controls7control7ControlE4dgui9scrollbar13ScrollBarTypeZC4dgui9scrollbar9ScrollBar",
+      "deco" : "FC4dgui4core8controls7control7ControlEQBk9scrollbar13ScrollBarTypeZCQCoQBe9ScrollBar",
       "parameters" : [
        {
         "name" : "c",
@@ -36626,7 +36631,7 @@
       "protection" : "package",
       "line" : 20,
       "char" : 10,
-      "deco" : "FC4dgui9statusbar9StatusBarAyaiZC4dgui9statusbar10StatusPart",
+      "deco" : "FC4dgui9statusbar9StatusBarAyaiZCQBfQBd10StatusPart",
       "originalType" : "(StatusBar sb, string txt, int w)",
       "parameters" : [
        {
@@ -36711,7 +36716,7 @@
       "protection" : "private",
       "line" : 68,
       "char" : 34,
-      "deco" : "C4dgui4core10collection45__T10CollectionTC4dgui9statusbar10StatusPartZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn9statusbar10StatusPartZQBo",
       "originalType" : "Collection!StatusPart",
       "offset" : 388
      },
@@ -37174,7 +37179,7 @@
     "kind" : "alias",
     "line" : 124,
     "char" : 33,
-    "deco" : "C4dgui4core6events9eventargs48__T15CancelEventArgsTC4dgui10tabcontrol7TabPageZ15CancelEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx10tabcontrol7TabPageZQBr"
    },
    {
     "name" : "TabControl",
@@ -37191,7 +37196,7 @@
       "kind" : "variable",
       "line" : 128,
       "char" : 49,
-      "deco" : "S4dgui4core6events5event143__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs48__T15CancelEventArgsTC4dgui10tabcontrol7TabPageZ15CancelEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T15CancelEventArgsTCQEe10tabcontrol7TabPageZQBrZQEg",
       "originalType" : "Event!(Control, CancelTabPageEventArgs)",
       "offset" : 392
      },
@@ -37200,7 +37205,7 @@
       "kind" : "variable",
       "line" : 129,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 408
      },
      {
@@ -37209,7 +37214,7 @@
       "protection" : "private",
       "line" : 131,
       "char" : 31,
-      "deco" : "C4dgui4core10collection43__T10CollectionTC4dgui10tabcontrol7TabPageZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn10tabcontrol7TabPageZQBm",
       "originalType" : "Collection!TabPage",
       "offset" : 424
      },
@@ -37607,12 +37612,12 @@
       "protection" : "protected",
       "line" : 397,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs48__T15CancelEventArgsTC4dgui10tabcontrol7TabPageZ15CancelEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T15CancelEventArgsTCQBx10tabcontrol7TabPageZQBrZv",
       "originalType" : "void(CancelTabPageEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs48__T15CancelEventArgsTC4dgui10tabcontrol7TabPageZ15CancelEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx10tabcontrol7TabPageZQBr"
        }
       ],
       "endline" : 400,
@@ -37962,7 +37967,7 @@
       "kind" : "variable",
       "line" : 21,
       "char" : 34,
-      "deco" : "S4dgui4core6events5event68__T5EventTC4dgui5timer5TimerTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBi5timer5TimerTCQBzQBxQBv9eventargs9EventArgsZQCd",
       "offset" : 12
      },
      {
@@ -38182,7 +38187,7 @@
       "kind" : "variable",
       "line" : 24,
       "char" : 39,
-      "deco" : "S4dgui4core6events5event76__T5EventTC4dgui7toolbar10ToolButtonTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBi7toolbar10ToolButtonTCQChQCfQCd9eventargs9EventArgsZQCl",
       "offset" : 8
      },
      {
@@ -38238,7 +38243,7 @@
       "protection" : "package",
       "line" : 32,
       "char" : 10,
-      "deco" : "FC4dgui7toolbar7ToolBarE4dgui7toolbar15ToolButtonStyleibZC4dgui7toolbar10ToolButton",
+      "deco" : "FC4dgui7toolbar7ToolBarEQwQt15ToolButtonStyleibZCQBvQBt10ToolButton",
       "originalType" : "(ToolBar tb, ToolButtonStyle tbs, int imgIndex, bool enabled)",
       "parameters" : [
        {
@@ -38430,7 +38435,7 @@
       "protection" : "private",
       "line" : 147,
       "char" : 34,
-      "deco" : "C4dgui4core10collection43__T10CollectionTC4dgui7toolbar10ToolButtonZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn7toolbar10ToolButtonZQBm",
       "originalType" : "Collection!ToolButton",
       "offset" : 388
      },
@@ -38482,7 +38487,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FiC4dgui11contextmenu11ContextMenubZC4dgui7toolbar10ToolButton",
+      "deco" : "FiC4dgui11contextmenu11ContextMenubZCQBi7toolbar10ToolButton",
       "parameters" : [
        {
         "name" : "imgIndex",
@@ -38710,16 +38715,9 @@
   "file" : "..\\dgui\\tooltip.d",
   "members" : [
    {
-    "name" : "dgui.core.controls.subclassedcontrol",
-    "kind" : "import",
-    "line" : 11,
-    "char" : 8,
-    "protection" : "private"
-   },
-   {
     "name" : "std.utf",
     "kind" : "import",
-    "line" : 12,
+    "line" : 11,
     "char" : 8,
     "protection" : "private",
     "selective" : [
@@ -38727,9 +38725,16 @@
     ]
    },
    {
+    "name" : "dgui.core.controls.subclassedcontrol",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
     "name" : "ToolTipIcons",
     "kind" : "enum",
-    "line" : 13,
+    "line" : 14,
     "char" : 1,
     "baseDeco" : "k",
     "members" : [
@@ -38737,28 +38742,28 @@
       "name" : "NONE",
       "kind" : "enum member",
       "value" : "0u",
-      "line" : 15,
+      "line" : 16,
       "char" : 2
      },
      {
       "name" : "INFO",
       "kind" : "enum member",
       "value" : "1u",
-      "line" : 16,
+      "line" : 17,
       "char" : 2
      },
      {
       "name" : "WARNING",
       "kind" : "enum member",
       "value" : "2u",
-      "line" : 17,
+      "line" : 18,
       "char" : 2
      },
      {
       "name" : "ERROR",
       "kind" : "enum member",
       "value" : "3u",
-      "line" : 18,
+      "line" : 19,
       "char" : 2
      }
     ]
@@ -38766,7 +38771,7 @@
    {
     "name" : "ToolTip",
     "kind" : "class",
-    "line" : 21,
+    "line" : 22,
     "char" : 1,
     "base" : "dgui.core.controls.subclassedcontrol.SubclassedControl",
     "members" : [
@@ -38774,7 +38779,7 @@
       "name" : "_ttIcon",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 23,
+      "line" : 24,
       "char" : 23,
       "deco" : "E4dgui7tooltip12ToolTipIcons",
       "init" : "cast(ToolTipIcons)0u",
@@ -38784,7 +38789,7 @@
       "name" : "_creating",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 24,
+      "line" : 25,
       "char" : 15,
       "deco" : "b",
       "init" : "false",
@@ -38794,7 +38799,7 @@
       "name" : "_ctrl",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 25,
+      "line" : 26,
       "char" : 18,
       "deco" : "C4dgui4core8controls7control7Control",
       "originalType" : "Control",
@@ -38804,7 +38809,7 @@
       "name" : "_title",
       "kind" : "variable",
       "protection" : "private",
-      "line" : 26,
+      "line" : 27,
       "char" : 17,
       "deco" : "Aya",
       "offset" : 400
@@ -38812,13 +38817,13 @@
      {
       "name" : "dispose",
       "kind" : "function",
-      "line" : 28,
+      "line" : 29,
       "char" : 23,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 36,
+      "endline" : 37,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.dispose"
@@ -38828,7 +38833,7 @@
       "name" : "addTool",
       "kind" : "function",
       "protection" : "private",
-      "line" : 38,
+      "line" : 39,
       "char" : 15,
       "deco" : "FC4dgui4core8controls7control7ControlZv",
       "parameters" : [
@@ -38837,23 +38842,23 @@
         "deco" : "C4dgui4core8controls7control7Control"
        }
       ],
-      "endline" : 51,
+      "endline" : 52,
       "endchar" : 2
      },
      {
       "name" : "removeTool",
       "kind" : "function",
       "protection" : "private",
-      "line" : 53,
+      "line" : 54,
       "char" : 15,
       "deco" : "FZv",
-      "endline" : 63,
+      "endline" : 64,
       "endchar" : 2
      },
      {
       "name" : "icon",
       "kind" : "function",
-      "line" : 65,
+      "line" : 66,
       "char" : 24,
       "deco" : "FNdE4dgui7tooltip12ToolTipIconsZv",
       "parameters" : [
@@ -38862,22 +38867,22 @@
         "deco" : "E4dgui7tooltip12ToolTipIcons"
        }
       ],
-      "endline" : 73,
+      "endline" : 74,
       "endchar" : 2
      },
      {
       "name" : "title",
       "kind" : "function",
-      "line" : 75,
+      "line" : 76,
       "char" : 26,
       "deco" : "FNdZAya",
-      "endline" : 78,
+      "endline" : 79,
       "endchar" : 2
      },
      {
       "name" : "title",
       "kind" : "function",
-      "line" : 80,
+      "line" : 81,
       "char" : 24,
       "deco" : "FNdAyaZv",
       "parameters" : [
@@ -38886,13 +38891,13 @@
         "deco" : "Aya"
        }
       ],
-      "endline" : 88,
+      "endline" : 89,
       "endchar" : 2
      },
      {
       "name" : "baloonTip",
       "kind" : "function",
-      "line" : 90,
+      "line" : 91,
       "char" : 24,
       "deco" : "FNdbZv",
       "parameters" : [
@@ -38901,13 +38906,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 93,
+      "endline" : 94,
       "endchar" : 2
      },
      {
       "name" : "closeButton",
       "kind" : "function",
-      "line" : 95,
+      "line" : 96,
       "char" : 24,
       "deco" : "FNdbZv",
       "parameters" : [
@@ -38916,13 +38921,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 98,
+      "endline" : 99,
       "endchar" : 2
      },
      {
       "name" : "alwaysTip",
       "kind" : "function",
-      "line" : 100,
+      "line" : 101,
       "char" : 24,
       "deco" : "FNdbZv",
       "parameters" : [
@@ -38931,13 +38936,13 @@
         "deco" : "b"
        }
       ],
-      "endline" : 103,
+      "endline" : 104,
       "endchar" : 2
      },
      {
       "name" : "parent",
       "kind" : "function",
-      "line" : 105,
+      "line" : 106,
       "char" : 33,
       "storageClass" : [
        "override"
@@ -38949,7 +38954,7 @@
         "deco" : "C4dgui4core8controls7control7Control"
        }
       ],
-      "endline" : 115,
+      "endline" : 116,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.parent"
@@ -38958,7 +38963,7 @@
      {
       "name" : "activate",
       "kind" : "function",
-      "line" : 117,
+      "line" : 118,
       "char" : 20,
       "storageClass" : [
        "final"
@@ -38970,19 +38975,19 @@
         "deco" : "C4dgui4core8controls7control7Control"
        }
       ],
-      "endline" : 138,
+      "endline" : 139,
       "endchar" : 2
      },
      {
       "name" : "show",
       "kind" : "function",
-      "line" : 140,
+      "line" : 141,
       "char" : 23,
       "storageClass" : [
        "override"
       ],
       "deco" : "FZv",
-      "endline" : 150,
+      "endline" : 151,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.show"
@@ -38992,7 +38997,7 @@
       "name" : "createControlParams",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 152,
+      "line" : 153,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -39007,7 +39012,7 @@
         ]
        }
       ],
-      "endline" : 171,
+      "endline" : 172,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.subclassedcontrol.SubclassedControl.createControlParams"
@@ -39017,7 +39022,7 @@
       "name" : "onReflectedMessage",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 173,
+      "line" : 174,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -39032,7 +39037,7 @@
         ]
        }
       ],
-      "endline" : 187,
+      "endline" : 188,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.onReflectedMessage"
@@ -39042,7 +39047,7 @@
       "name" : "onHandleCreated",
       "kind" : "function",
       "protection" : "protected",
-      "line" : 189,
+      "line" : 190,
       "char" : 26,
       "storageClass" : [
        "override"
@@ -39054,7 +39059,7 @@
         "deco" : "C4dgui4core6events9eventargs9EventArgs"
        }
       ],
-      "endline" : 198,
+      "endline" : 199,
       "endchar" : 2,
       "overrides" : [
        "dgui.core.controls.control.Control.onHandleCreated"
@@ -39063,7 +39068,7 @@
      {
       "name" : "this",
       "kind" : "constructor",
-      "line" : 21,
+      "line" : 22,
       "char" : 1,
       "deco" : "FZC4dgui7tooltip7ToolTip",
       "originalType" : "()"
@@ -39096,7 +39101,7 @@
       "kind" : "variable",
       "line" : 15,
       "char" : 36,
-      "deco" : "S4dgui4core6events5event86__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs9EventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs9EventArgsZQCt",
       "offset" : 388
      },
      {
@@ -39383,7 +39388,7 @@
       "protection" : "private",
       "line" : 24,
       "char" : 32,
-      "deco" : "C4dgui4core10collection41__T10CollectionTC4dgui8treeview8TreeNodeZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8treeview8TreeNodeZQBk",
       "originalType" : "Collection!TreeNode",
       "offset" : 12
      },
@@ -39473,7 +39478,7 @@
       "protection" : "package",
       "line" : 36,
       "char" : 10,
-      "deco" : "FC4dgui8treeview8TreeViewAyaiiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FC4dgui8treeview8TreeViewAyaiiEQBdQBb14NodeInsertModeZCQCbQBz8TreeNode",
       "originalType" : "(TreeView owner, string txt, int imgIndex, int selImgIndex, NodeInsertMode nim)",
       "parameters" : [
        {
@@ -39506,7 +39511,7 @@
       "protection" : "package",
       "line" : 46,
       "char" : 10,
-      "deco" : "FC4dgui8treeview8TreeViewC4dgui8treeview8TreeNodeAyaiiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FC4dgui8treeview8TreeViewCQyQv8TreeNodeAyaiiEQBrQBp14NodeInsertModeZQBr",
       "originalType" : "(TreeView owner, TreeNode parent, string txt, int imgIndex, int selImgIndex, NodeInsertMode nim)",
       "parameters" : [
        {
@@ -39545,7 +39550,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaiiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaiiE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "originalType" : "TreeNode(string txt, int imgIndex = -1, int selImgIndex = -1, NodeInsertMode nim = NodeInsertMode.TAIL)",
       "parameters" : [
        {
@@ -39579,7 +39584,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaiE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "parameters" : [
        {
         "name" : "txt",
@@ -39605,7 +39610,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "parameters" : [
        {
         "name" : "txt",
@@ -39954,21 +39959,21 @@
     "kind" : "alias",
     "line" : 321,
     "char" : 46,
-    "deco" : "C4dgui4core6events9eventargs51__T20ItemChangedEventArgsTC4dgui8treeview8TreeNodeZ20ItemChangedEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T20ItemChangedEventArgsTCQCc8treeview8TreeNodeZQBu"
    },
    {
     "name" : "TreeNodeEventArgs",
     "kind" : "alias",
     "line" : 322,
     "char" : 39,
-    "deco" : "C4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8treeview8TreeNodeZQBn"
    },
    {
     "name" : "CancelTreeNodeEventArgs",
     "kind" : "alias",
     "line" : 323,
     "char" : 41,
-    "deco" : "C4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgs"
+    "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx8treeview8TreeNodeZQBp"
    },
    {
     "name" : "TreeView",
@@ -39982,7 +39987,7 @@
       "kind" : "variable",
       "line" : 327,
       "char" : 50,
-      "deco" : "S4dgui4core6events5event141__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T15CancelEventArgsTCQEe8treeview8TreeNodeZQBpZQEe",
       "originalType" : "Event!(Control, CancelTreeNodeEventArgs)",
       "offset" : 388
      },
@@ -39991,7 +39996,7 @@
       "kind" : "variable",
       "line" : 328,
       "char" : 51,
-      "deco" : "S4dgui4core6events5event151__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs51__T20ItemChangedEventArgsTC4dgui8treeview8TreeNodeZ20ItemChangedEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T20ItemChangedEventArgsTCQEj8treeview8TreeNodeZQBuZQEj",
       "originalType" : "Event!(Control, TreeNodeChangedEventArgs)",
       "offset" : 404
      },
@@ -40000,7 +40005,7 @@
       "kind" : "variable",
       "line" : 329,
       "char" : 50,
-      "deco" : "S4dgui4core6events5event141__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T15CancelEventArgsTCQEe8treeview8TreeNodeZQBpZQEe",
       "originalType" : "Event!(Control, CancelTreeNodeEventArgs)",
       "offset" : 420
      },
@@ -40009,7 +40014,7 @@
       "kind" : "variable",
       "line" : 330,
       "char" : 44,
-      "deco" : "S4dgui4core6events5event137__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T13ItemEventArgsTCQEc8treeview8TreeNodeZQBnZQEc",
       "originalType" : "Event!(Control, TreeNodeEventArgs)",
       "offset" : 436
      },
@@ -40018,7 +40023,7 @@
       "kind" : "variable",
       "line" : 331,
       "char" : 44,
-      "deco" : "S4dgui4core6events5event137__T5EventTC4dgui4core8controls7control7ControlTC4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgsZ5Event",
+      "deco" : "S4dgui4core6events5event__T5EventTCQBiQBg8controls7control7ControlTCQCpQCnQCl9eventargs__T13ItemEventArgsTCQEc8treeview8TreeNodeZQBnZQEc",
       "originalType" : "Event!(Control, TreeNodeEventArgs)",
       "offset" : 452
      },
@@ -40028,7 +40033,7 @@
       "protection" : "private",
       "line" : 333,
       "char" : 32,
-      "deco" : "C4dgui4core10collection41__T10CollectionTC4dgui8treeview8TreeNodeZ10Collection",
+      "deco" : "C4dgui4core10collection__T10CollectionTCQBn8treeview8TreeNodeZQBk",
       "originalType" : "Collection!TreeNode",
       "offset" : 468
      },
@@ -40072,7 +40077,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaiiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaiiE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "originalType" : "TreeNode(string txt, int imgIndex = -1, int selImgIndex = -1, NodeInsertMode nim = NodeInsertMode.TAIL)",
       "parameters" : [
        {
@@ -40106,7 +40111,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaiE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaiE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "parameters" : [
        {
         "name" : "txt",
@@ -40132,7 +40137,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FAyaE4dgui8treeview14NodeInsertModeZC4dgui8treeview8TreeNode",
+      "deco" : "FAyaE4dgui8treeview14NodeInsertModeZCQBgQBe8TreeNode",
       "parameters" : [
        {
         "name" : "txt",
@@ -40190,7 +40195,7 @@
       "storageClass" : [
        "final"
       ],
-      "deco" : "FNdZC4dgui4core10collection41__T10CollectionTC4dgui8treeview8TreeNodeZ10Collection",
+      "deco" : "FNdZC4dgui4core10collection__T10CollectionTCQBn8treeview8TreeNodeZQBk",
       "originalType" : "@property Collection!TreeNode()",
       "endline" : 406,
       "endchar" : 2
@@ -40395,12 +40400,12 @@
       "protection" : "protected",
       "line" : 607,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T15CancelEventArgsTCQBx8treeview8TreeNodeZQBpZv",
       "originalType" : "void(CancelTreeNodeEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx8treeview8TreeNodeZQBp"
        }
       ],
       "endline" : 610,
@@ -40412,12 +40417,12 @@
       "protection" : "protected",
       "line" : 612,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8treeview8TreeNodeZQBnZv",
       "originalType" : "void(TreeNodeEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8treeview8TreeNodeZQBn"
        }
       ],
       "endline" : 615,
@@ -40429,12 +40434,12 @@
       "protection" : "protected",
       "line" : 617,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8treeview8TreeNodeZQBnZv",
       "originalType" : "void(TreeNodeEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs44__T13ItemEventArgsTC4dgui8treeview8TreeNodeZ13ItemEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T13ItemEventArgsTCQBv8treeview8TreeNodeZQBn"
        }
       ],
       "endline" : 620,
@@ -40446,12 +40451,12 @@
       "protection" : "protected",
       "line" : 622,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T15CancelEventArgsTCQBx8treeview8TreeNodeZQBpZv",
       "originalType" : "void(CancelTreeNodeEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs46__T15CancelEventArgsTC4dgui8treeview8TreeNodeZ15CancelEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T15CancelEventArgsTCQBx8treeview8TreeNodeZQBp"
        }
       ],
       "endline" : 625,
@@ -40463,12 +40468,12 @@
       "protection" : "protected",
       "line" : 627,
       "char" : 17,
-      "deco" : "FC4dgui4core6events9eventargs51__T20ItemChangedEventArgsTC4dgui8treeview8TreeNodeZ20ItemChangedEventArgsZv",
+      "deco" : "FC4dgui4core6events9eventargs__T20ItemChangedEventArgsTCQCc8treeview8TreeNodeZQBuZv",
       "originalType" : "void(TreeNodeChangedEventArgs e)",
       "parameters" : [
        {
         "name" : "e",
-        "deco" : "C4dgui4core6events9eventargs51__T20ItemChangedEventArgsTC4dgui8treeview8TreeNodeZ20ItemChangedEventArgs"
+        "deco" : "C4dgui4core6events9eventargs__T20ItemChangedEventArgsTCQCc8treeview8TreeNodeZQBu"
        }
       ],
       "endline" : 630,
